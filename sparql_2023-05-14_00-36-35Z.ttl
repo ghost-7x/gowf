@@ -1,0 +1,30 @@
+@prefix schema:	<http://schema.org/> .
+<http://linkeddata.uriburner.com/about/id/entity/https/www.usgs.gov/rss.xml>	schema:description	"" ;
+	schema:inLanguage	"en" ;
+	schema:relatedLink	<https://www.usgs.gov/> ;
+	schema:title	"U.S. Geological Survey" .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+<http://linkeddata.uriburner.com/about/id/entity/https/www.usgs.gov/rss.xml>	rdf:type	schema:DataFeed .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+<http://linkeddata.uriburner.com/about/id/entity/https/www.usgs.gov/rss.xml>	rdfs:label	"U.S. Geological Survey" .
+@prefix ns3:	<http://linkeddata.uriburner.com/about/id/https/www.usgs.gov/rss.xml#> .
+<http://linkeddata.uriburner.com/about/id/entity/https/www.usgs.gov/rss.xml>	rdfs:seeAlso	ns3:Dataset .
+@prefix wdrs:	<http://www.w3.org/2007/05/powder-s#> .
+<http://linkeddata.uriburner.com/about/id/entity/https/www.usgs.gov/rss.xml>	wdrs:describedby	<http://linkeddata.uriburner.com/about/id/https/www.usgs.gov/rss.xml> .
+@prefix dc:	<http://purl.org/dc/elements/1.1/> .
+<http://linkeddata.uriburner.com/about/id/entity/https/www.usgs.gov/rss.xml>	dc:source	"" ;
+	schema:url	<https://www.usgs.gov/> .
+@prefix ns6:	<http://linkeddata.uriburner.com/proxy-iri/> .
+<http://linkeddata.uriburner.com/about/id/entity/https/www.usgs.gov/rss.xml>	schema:dataFeedElement	ns6:da30aff66aa1921421bbaeb71a1791c27489bb6a ,
+		ns6:eb9a98f17fe0f625ba187358754b58ab7287831d ,
+		<http://linkeddata.uriburner.com/proxy-iri/59e5141a6d5c34488b16a69d3ae293920f474b39> ,
+		ns6:b7b02c9146fc410277e62ca27a889bb123b8be9b ,
+		ns6:f3dcb45a0606a6608a99f888e27edba30d3a5584 ,
+		<http://linkeddata.uriburner.com/proxy-iri/7093ca11685473f1187aeb06fa239670fe0cdacf> ,
+		ns6:b5bbe74d677e9f14b4b8633ab7c81f0e8fe2f393 ,
+		<http://linkeddata.uriburner.com/proxy-iri/86ba48ccae3316e735c5a8a79e450027bf299a50> ,
+		ns6:c2f64b414087d11582566a8bbd08e35abfe7f67d ,
+		ns6:a98919baff56b7d63a3fe8cb9eed54cd8cc43c98 .
+<https://www.usgs.gov/rss.xml>	schema:mainEntity	<http://linkeddata.uriburner.com/about/id/entity/https/www.usgs.gov/rss.xml> .
+@prefix ns7:	<https://www.usgs.gov/rss.xml#> .
+ns7:this	schema:mainEntity	<http://linkeddata.uriburner.com/about/id/entity/https/www.usgs.gov/rss.xml> .

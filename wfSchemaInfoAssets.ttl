@@ -1,0 +1,413 @@
+@prefix afn:                  <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix arg:                  <http://spinrdf.org/arg#> .
+@prefix corpus:               <http://topbraid.org/corpus#> .
+@prefix corpusprojects:       <http://topbraid.org/corpus-projects#> .
+@prefix crosswalk:            <http://topbraid.org/crosswalk#> .
+@prefix crosswalk.spin:       <http://topbraid.org/crosswalk.spin#> .
+@prefix crosswalkapp:         <http://topbraid.org/swa/crosswalkapp#> .
+@prefix crosswalkprojects:    <http://teamwork.topbraidlive.org/crosswalkprojects#> .
+@prefix dash:                 <http://datashapes.org/dash#> .
+@prefix datagraph:            <http://teamwork.topbraidlive.org/datagraph/datagraphprojects#> .
+@prefix datatype:             <http://qudt.org/vocab/datatype/> .
+@prefix dc:                   <http://purl.org/dc/elements/1.1/> .
+@prefix dcam:                 <http://purl.org/dc/dcam/> .
+@prefix dct:                  <http://purl.org/dc/terms/> .
+@prefix debug-swa:            <http://debug.topbraidlive.org/1.0/swa/> .
+@prefix dtype:                <http://www.linkedmodel.org/schema/dtype#> .
+@prefix edg:                  <http://edg.topbraid.solutions/model/> .
+@prefix edg.v:                <http://edg.topbraid.solutions/view/> .
+@prefix evnconstraints:       <http://topbraid.org/spin/evnconstraints#> .
+@prefix fn:                   <http://www.w3.org/2005/xpath-functions#> .
+@prefix foaf:                 <http://xmlns.com/foaf/0.1/> .
+@prefix geo:                  <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix governance:           <http://topbraid.org/teamworkgovernance.ui#> .
+@prefix graphql:              <http://datashapes.org/graphql#> .
+@prefix html:                 <http://uispin.org/html#> .
+@prefix jfn:                  <java:org.apache.jena.sparql.function.library.> .
+@prefix lib-importer:         <http://edg.topbraid.solutions/importer/lib#> .
+@prefix list:                 <http://jena.apache.org/ARQ/list#> .
+@prefix metadata:             <http://topbraid.org/metadata#> .
+@prefix metash:               <http://datashapes.org/metash#> .
+@prefix nlp:                  <http://topbraid.org/nlp#> .
+@prefix nwcginfo:             <http://nwcg.gov/model/informationAssetExtension#> .
+@prefix ontologyprojects:     <http://teamwork.topbraidlive.org/ontologyprojects#> .
+@prefix org:                  <http://www.w3.org/ns/org#> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix owlrl:                <http://topbraid.org/spin/owlrl#> .
+@prefix pf:                   <http://jena.hpl.hp.com/ARQ/property#> .
+@prefix prov:                 <http://www.w3.org/ns/prov#> .
+@prefix quantity:             <http://qudt.org/vocab/quantity/> .
+@prefix quantitykind:         <http://qudt.org/vocab/quantitykind/> .
+@prefix qudt:                 <http://qudt.org/schema/qudt/> .
+@prefix qudt.type:            <http://qudt.org/vocab/type/> .
+@prefix raci:                 <http://topbraid.org/raci#> .
+@prefix rdf:                  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdm:                  <http://rdm.topbraidlive.org/rdm/> .
+@prefix rdmfact:              <http://topbraid.org/rdmfact#> .
+@prefix rdmprojects:          <http://rdm.topbraidlive.org/rdmprojects#> .
+@prefix s3:                   <http://topbraid.org/s3#> .
+@prefix safindex:             <http://topbraid.org/safindex#> .
+@prefix scheduler:            <http://topbraid.org/scheduler#> .
+@prefix search:               <http://topbraid.org/search#> .
+@prefix sh:                   <http://www.w3.org/ns/shacl#> .
+@prefix sharepoint-termstore: <http://teamwork.topbraidlive.org/taxonomy/sharepoint-termstore#> .
+@prefix sioc:                 <http://rdfs.org/sioc/ns#> .
+@prefix skos:                 <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosspin:             <http://topbraid.org/spin/skosspin#> .
+@prefix skostemplate:         <http://topbraid.org/spin/skostemplates#> .
+@prefix skosxl:               <http://www.w3.org/2008/05/skos-xl#> .
+@prefix sm:                   <http://topbraid.org/sparqlmotion#> .
+@prefix smf:                  <http://topbraid.org/sparqlmotionfunctions#> .
+@prefix sml:                  <http://topbraid.org/sparqlmotionlib#> .
+@prefix softwareprojects:     <http://teamwork.topbraidlive.org/software/softwareprojects#> .
+@prefix sp:                   <http://spinrdf.org/sp#> .
+@prefix sparql:               <http://datashapes.org/sparql#> .
+@prefix spif:                 <http://spinrdf.org/spif#> .
+@prefix spin:                 <http://spinrdf.org/spin#> .
+@prefix spinmap:              <http://spinrdf.org/spinmap#> .
+@prefix spinmapl:             <http://topbraid.org/spin/spinmapl#> .
+@prefix spl:                  <http://spinrdf.org/spl#> .
+@prefix spr:                  <http://spinrdf.org/spr#> .
+@prefix spra:                 <http://spinrdf.org/spra#> .
+@prefix swa:                  <http://topbraid.org/swa#> .
+@prefix swaclasses:           <http://topbraid.org/swaclasses#> .
+@prefix swash:                <http://topbraid.org/swash#> .
+@prefix swauml:               <http://topbraid.org/swauml#> .
+@prefix swon:                 <http://uispin.org/swon#> .
+@prefix tables:               <http://topbraid.org/tables#> .
+@prefix tablesmap:            <http://topbraid.org/spin/tablesmap#> .
+@prefix taggerprojects:       <http://evn.topbraidlive.org/taggerprojects#> .
+@prefix tasks:                <http://topbraid.org/tasks#> .
+@prefix taxonomies:           <http://evn.topbraidlive.org/evnprojects#> .
+@prefix tbgeo:                <http://topbraid.org/tbgeo#> .
+@prefix tbladmin:             <http://server.topbraidlive.org/system-applications/tbladmin#> .
+@prefix teamwork:             <http://topbraid.org/teamwork#> .
+@prefix teamworkconstraints:  <http://topbraid.org/teamworkconstraints#> .
+@prefix teamworks3:           <http://teamwork.topbraidlive.org/ui/teamworks3#> .
+@prefix teamworkupdate:       <http://teamworkAPI.topbraid.com/teamworkUpdate#> .
+@prefix textindex:            <http://topbraid.org/textindex#> .
+@prefix tops:                 <http://www.topbraid.org/tops#> .
+@prefix tosh:                 <http://topbraid.org/tosh#> .
+@prefix tosh.ui:              <http://topbraid.org/tosh.ui#> .
+@prefix tracker:              <http://teamwork.topbraidlive.org/ui/tracker#> .
+@prefix ui:                   <http://uispin.org/ui#> .
+@prefix uix:                  <http://topbraidlive.org/uix#> .
+@prefix unit:                 <http://qudt.org/vocab/unit/> .
+@prefix vaem:                 <http://www.linkedmodel.org/schema/vaem#> .
+@prefix voag:                 <http://voag.linkedmodel.org/voag/> .
+@prefix vs:                   <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix wot:                  <http://xmlns.com/wot/0.1/> .
+@prefix xsd:                  <http://www.w3.org/2001/XMLSchema#> .
+
+nwcginfo:Training-primaryAudience
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     rdf:HTML ;
+        sh:description  "Target group(s) to take the training." ;
+        sh:group        edg:NarratablePropertiesGroup ;
+        sh:maxCount     1 ;
+        sh:name         "primary audience" ;
+        sh:order        "121"^^xsd:decimal ;
+        sh:path         nwcginfo:primaryAudience .
+
+nwcginfo:nwcgTraining-virtualSelfPacedUnits
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:decimal ;
+        sh:group     nwcginfo:CourseComponentsPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "virtual self paced units" ;
+        sh:order     "5"^^xsd:decimal ;
+        sh:path      nwcginfo:virtualSelfPacedUnits .
+
+nwcginfo:nwcgTraining-hrsMinPreselectionAssessment
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:decimal ;
+        sh:group     nwcginfo:CourseComponentsPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "hrs min preselection assessment" ;
+        sh:order     "14"^^xsd:decimal ;
+        sh:path      nwcginfo:hrsMinPreselectionAssessment .
+
+<urn:x-evn-master:nwcginfo>
+        rdf:type                      ontologyprojects:Ontology , owl:Ontology , teamwork:Vocabulary ;
+        rdfs:comment                  "A model extending the Enterprise Asset Schema to include specifics for NWCG." ;
+        rdfs:label                    "WF Schema - NWCG Information Asset Extension" ;
+        dash:generateClass            edg:Document ;
+        dash:generatePrefixClasses    "nwcginfo" ;
+        dash:generatePrefixConstants  "nwcginfo" ;
+        graphql:publicClass           nwcginfo:nwcgTraining ;
+        edg:subjectArea               <urn:x-tb-governance:WF> ;
+        metadata:status               metadata:UnderDevelopmentStatus ;
+        swa:defaultNamespace          "http://nwcg.gov/model/informationAssetExtension#" ;
+        teamwork:rootClass            edg:InformationAssetViewpoint ;
+        owl:imports                   <http://datashapes.org/graphql> , <http://topbraid.org/teamworkconstraints> , <http://edg.topbraid.solutions/1.0/schema/enterprise-models> .
+
+nwcginfo:nwcgTraining
+        rdf:type         edg:AssetClass , sh:NodeShape ;
+        rdfs:label       "NWCG Training" ;
+        rdfs:subClassOf  nwcginfo:Training ;
+        sh:property      nwcginfo:nwcgTraining-maxTotal , nwcginfo:nwcgTraining-hrsMinPreCourseWork , nwcginfo:nwcgTraining-hrsMinOnline , nwcginfo:nwcgTraining-hrsMinPreselectionAssessment , nwcginfo:nwcgTraining-onlineTraining , nwcginfo:nwcgTraining-instructorLedTraining , nwcginfo:nwcgTraining-hrsMinInstructorLed , nwcginfo:nwcgTraining-nwcgCourseNumber , nwcginfo:nwcgTraining-hrsMaxPreselectionAssessment , nwcginfo:nwcgTraining-virtualSelfPacedUnits , nwcginfo:nwcgTraining-hrsMaxPreCourseWork , nwcginfo:nwcgTraining-hrsMaxInstructorLed , nwcginfo:nwcgTraining-hrsMaxOnline , nwcginfo:nwcgTraining-preSelectionAssessment , nwcginfo:nwcgTraining-preCourseWork , nwcginfo:nwcgTraining-totalHours , nwcginfo:nwcgTraining-objectives , nwcginfo:nwcgTraining-hrsMinTotal .
+
+nwcginfo:nwcgPublication
+        rdf:type         edg:AssetClass , sh:NodeShape ;
+        rdfs:label       "NWCG Publication" ;
+        rdfs:subClassOf  nwcginfo:nwcgDocument .
+
+nwcginfo:icsForm  rdf:type  edg:AssetClass , sh:NodeShape ;
+        rdfs:label       "ICS Form" ;
+        rdfs:subClassOf  edg:Form ;
+        sh:property      nwcginfo:icsForm-icsFormNumber .
+
+nwcginfo:nwcgDocument-nfesID
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:string ;
+        sh:group     edg:IdentifiersGroup ;
+        sh:maxCount  1 ;
+        sh:name      "nfes ID" ;
+        sh:order     "42"^^xsd:decimal ;
+        sh:path      nwcginfo:nfesID .
+
+nwcginfo:femaTraining
+        rdf:type         edg:ViewpointClass , sh:NodeShape ;
+        rdfs:label       "FEMA Training" ;
+        rdfs:subClassOf  nwcginfo:Training .
+
+nwcginfo:nwcgTraining-hrsMinTotal
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:decimal ;
+        sh:group     nwcginfo:CourseComponentsPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "hrs min total" ;
+        sh:order     "6"^^xsd:decimal ;
+        sh:path      nwcginfo:hrsMinTotal .
+
+nwcginfo:nwcgJobAid-jobAidNumber
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     xsd:string ;
+        sh:description  "A unique number given to job aids." ;
+        sh:group        edg:IdentifiersGroup ;
+        sh:maxCount     1 ;
+        sh:name         "job aid number" ;
+        sh:order        "101"^^xsd:decimal ;
+        sh:path         nwcginfo:jobAidNumber .
+
+nwcginfo:Training  rdf:type  edg:ViewpointClass , sh:NodeShape ;
+        rdfs:comment     "A broad class of training. More specific training may be described as FEMA/DHS or NWCG." ;
+        rdfs:label       "Training" ;
+        rdfs:subClassOf  edg:InformationAssetViewpoint , edg:InformationAsset ;
+        sh:property      nwcginfo:Training-primaryAudience , nwcginfo:nwcgTraining-prerequisite .
+
+nwcginfo:nwcgTraining-prerequisite
+        rdf:type        sh:PropertyShape ;
+        sh:class        nwcginfo:Training ;
+        sh:description  "Any training course required prior to taking this course." ;
+        sh:group        edg:NarratablePropertiesGroup ;
+        sh:name         "prerequisite" ;
+        sh:order        "121"^^xsd:decimal ;
+        sh:path         nwcginfo:prerequisite .
+
+nwcginfo:CourseComponentsPropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Course Components and Hours to Complete" ;
+        sh:order    30.1 .
+
+nwcginfo:agencySpecificPositionTaskbook
+        rdf:type         edg:AssetClass , sh:NodeShape ;
+        rdfs:label       "Agency Specific Position Task Book" ;
+        rdfs:subClassOf  nwcginfo:positionTaskbook ;
+        sh:property      nwcginfo:agencySpecificPositionTaskbook-acceptedBy .
+
+nwcginfo:nwcgTraining-hrsMaxPreselectionAssessment
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:decimal ;
+        sh:group     nwcginfo:CourseComponentsPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "hrs max preselection assessment" ;
+        sh:order     "15"^^xsd:decimal ;
+        sh:path      nwcginfo:hrsMaxPreselectionAssessment .
+
+nwcginfo:nwcgTraining-preSelectionAssessment
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:decimal ;
+        sh:group     nwcginfo:CourseComponentsPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "pre-selection assessment" ;
+        sh:order     "1"^^xsd:decimal ;
+        sh:path      nwcginfo:preSelectionAssessment .
+
+nwcginfo:nwcgTraining-nwcgCourseNumber
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:string ;
+        sh:group     edg:IdentifiersGroup ;
+        sh:maxCount  1 ;
+        sh:name      "nwcg course number" ;
+        sh:order     "101"^^xsd:decimal ;
+        sh:path      nwcginfo:nwcgCourseNumber .
+
+nwcginfo:nwcgTraining-objectives
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  rdf:HTML ;
+        sh:group     edg:NarratablePropertiesGroup ;
+        sh:name      "objectives" ;
+        sh:order     "121"^^xsd:decimal ;
+        sh:path      nwcginfo:objectives .
+
+nwcginfo:nwcgTraining-instructorLedTraining
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:decimal ;
+        sh:group     nwcginfo:CourseComponentsPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "instructor-led training" ;
+        sh:order     "3"^^xsd:decimal ;
+        sh:path      nwcginfo:instructorLedTraining .
+
+nwcginfo:icsForm-icsFormNumber
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:string ;
+        sh:group     edg:IdentifiersGroup ;
+        sh:maxCount  1 ;
+        sh:name      "ics form number" ;
+        sh:order     "21"^^xsd:decimal ;
+        sh:path      nwcginfo:icsFormNumber .
+
+nwcginfo:nwcgTaskbook
+        rdf:type         edg:AssetClass , sh:NodeShape ;
+        rdfs:label       "NWCG Position Task Book" ;
+        rdfs:subClassOf  nwcginfo:positionTaskbook , nwcginfo:nwcgPublication .
+
+edg:Identifiable-identifier
+        sh:name  "identifier" .
+
+nwcginfo:nwcgDocument
+        rdf:type         edg:AssetClass , sh:NodeShape ;
+        rdfs:label       "NWCG Document" ;
+        rdfs:subClassOf  edg:Document ;
+        sh:property      nwcginfo:nwcgDocument-nfesID , edg:Document-pmsNumber .
+
+nwcginfo:agencySpecificPositionTaskbook-acceptedBy
+        rdf:type  sh:PropertyShape ;
+        sh:class  edg:Party ;
+        sh:group  edg:EnterpriseContextGroup ;
+        sh:name   "accepted by" ;
+        sh:order  "251"^^xsd:decimal ;
+        sh:path   nwcginfo:acceptedBy .
+
+nwcginfo:nwcgTraining-hrsMaxOnline
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:decimal ;
+        sh:group     nwcginfo:CourseComponentsPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "hrs max online" ;
+        sh:order     "12"^^xsd:decimal ;
+        sh:path      nwcginfo:hrsMaxOnline .
+
+nwcginfo:nwcgTraining-maxTotal
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:decimal ;
+        sh:group     nwcginfo:CourseComponentsPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "max total" ;
+        sh:order     "11"^^xsd:decimal ;
+        sh:path      nwcginfo:maxTotal .
+
+edg:Document-pmsNumber
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     xsd:string ;
+        sh:description  "A unique number given to NWCG documents." ;
+        sh:group        edg:IdentifiersGroup ;
+        sh:maxCount     1 ;
+        sh:name         "pms#" ;
+        sh:order        "41"^^xsd:decimal ;
+        sh:path         nwcginfo:pmsNumber .
+
+nwcginfo:nwcgTraining-onlineTraining
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:decimal ;
+        sh:group     nwcginfo:CourseComponentsPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "online training" ;
+        sh:order     "2"^^xsd:decimal ;
+        sh:path      nwcginfo:onlineTraining .
+
+ontologyprojects:Ontology
+        rdfs:subClassOf  teamwork:Vocabulary .
+
+nwcginfo:nwcgJobAid  rdf:type  edg:AssetClass , sh:NodeShape ;
+        rdfs:label       "NWCG Job Aid" ;
+        rdfs:subClassOf  nwcginfo:nwcgPublication ;
+        sh:property      nwcginfo:nwcgJobAid-jobAidNumber .
+
+nwcginfo:positionTaskbook
+        rdf:type         edg:AssetClass , sh:NodeShape ;
+        rdfs:label       "Position Task Book" ;
+        rdfs:subClassOf  edg:Document .
+
+nwcginfo:aviationTraining
+        rdf:type         edg:ViewpointClass , sh:NodeShape ;
+        rdfs:label       "Aviation Training" ;
+        rdfs:subClassOf  nwcginfo:Training .
+
+nwcginfo:nwcgTraining-hrsMinOnline
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:decimal ;
+        sh:group     nwcginfo:CourseComponentsPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "hrs min online" ;
+        sh:order     "13"^^xsd:decimal ;
+        sh:path      nwcginfo:hrsMinOnline .
+
+nwcginfo:nwcgTraining-hrsMinInstructorLed
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:decimal ;
+        sh:group     nwcginfo:CourseComponentsPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "hrs min instructor led" ;
+        sh:order     "9"^^xsd:decimal ;
+        sh:path      nwcginfo:hrsMinInstructorLed .
+
+nwcginfo:nwcgTraining-hrsMinPreCourseWork
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:decimal ;
+        sh:group     nwcginfo:CourseComponentsPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "hrs min pre course work" ;
+        sh:order     "7"^^xsd:decimal ;
+        sh:path      nwcginfo:hrsMinPreCourseWork .
+
+nwcginfo:nwcgTraining-totalHours
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:decimal ;
+        sh:group     nwcginfo:CourseComponentsPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "total hours" ;
+        sh:order     "4"^^xsd:decimal ;
+        sh:path      nwcginfo:totalHours .
+
+teamwork:Vocabulary  rdfs:subClassOf  owl:Ontology .
+
+nwcginfo:nwcgTraining-hrsMaxInstructorLed
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:decimal ;
+        sh:group     nwcginfo:CourseComponentsPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "hrs max instructor led" ;
+        sh:order     "10"^^xsd:decimal ;
+        sh:path      nwcginfo:hrsMaxInstructorLed .
+
+nwcginfo:nwcgTraining-preCourseWork
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:decimal ;
+        sh:group     nwcginfo:CourseComponentsPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "pre-course work" ;
+        sh:order     "0"^^xsd:decimal ;
+        sh:path      nwcginfo:preCourseWork .
+
+nwcginfo:nwcgTraining-hrsMaxPreCourseWork
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:decimal ;
+        sh:group     nwcginfo:CourseComponentsPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "hrs max pre course work" ;
+        sh:order     "8"^^xsd:decimal ;
+        sh:path      nwcginfo:hrsMaxPreCourseWork .

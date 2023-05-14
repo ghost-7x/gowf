@@ -1,0 +1,412 @@
+@prefix afn:                  <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix arg:                  <http://spinrdf.org/arg#> .
+@prefix corpus:               <http://topbraid.org/corpus#> .
+@prefix corpusprojects:       <http://topbraid.org/corpus-projects#> .
+@prefix crosswalk:            <http://topbraid.org/crosswalk#> .
+@prefix crosswalk.spin:       <http://topbraid.org/crosswalk.spin#> .
+@prefix crosswalkapp:         <http://topbraid.org/swa/crosswalkapp#> .
+@prefix crosswalkprojects:    <http://teamwork.topbraidlive.org/crosswalkprojects#> .
+@prefix dash:                 <http://datashapes.org/dash#> .
+@prefix datagraph:            <http://teamwork.topbraidlive.org/datagraph/datagraphprojects#> .
+@prefix datatype:             <http://qudt.org/vocab/datatype/> .
+@prefix dc:                   <http://purl.org/dc/elements/1.1/> .
+@prefix dcam:                 <http://purl.org/dc/dcam/> .
+@prefix dct:                  <http://purl.org/dc/terms/> .
+@prefix debug-swa:            <http://debug.topbraidlive.org/1.0/swa/> .
+@prefix dtype:                <http://www.linkedmodel.org/schema/dtype#> .
+@prefix edg:                  <http://edg.topbraid.solutions/model/> .
+@prefix edg.v:                <http://edg.topbraid.solutions/view/> .
+@prefix evnconstraints:       <http://topbraid.org/spin/evnconstraints#> .
+@prefix fn:                   <http://www.w3.org/2005/xpath-functions#> .
+@prefix foaf:                 <http://xmlns.com/foaf/0.1/> .
+@prefix geo:                  <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix governance:           <http://topbraid.org/teamworkgovernance.ui#> .
+@prefix graphql:              <http://datashapes.org/graphql#> .
+@prefix html:                 <http://uispin.org/html#> .
+@prefix jfn:                  <java:org.apache.jena.sparql.function.library.> .
+@prefix lib-importer:         <http://edg.topbraid.solutions/importer/lib#> .
+@prefix list:                 <http://jena.apache.org/ARQ/list#> .
+@prefix metadata:             <http://topbraid.org/metadata#> .
+@prefix metash:               <http://datashapes.org/metash#> .
+@prefix nlp:                  <http://topbraid.org/nlp#> .
+@prefix ontologyprojects:     <http://teamwork.topbraidlive.org/ontologyprojects#> .
+@prefix org:                  <http://www.w3.org/ns/org#> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix owlrl:                <http://topbraid.org/spin/owlrl#> .
+@prefix pf:                   <http://jena.hpl.hp.com/ARQ/property#> .
+@prefix prov:                 <http://www.w3.org/ns/prov#> .
+@prefix quantity:             <http://qudt.org/vocab/quantity/> .
+@prefix quantitykind:         <http://qudt.org/vocab/quantitykind/> .
+@prefix qudt:                 <http://qudt.org/schema/qudt/> .
+@prefix qudt.type:            <http://qudt.org/vocab/type/> .
+@prefix raci:                 <http://topbraid.org/raci#> .
+@prefix rdf:                  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdm:                  <http://rdm.topbraidlive.org/rdm/> .
+@prefix rdmfact:              <http://topbraid.org/rdmfact#> .
+@prefix rdmprojects:          <http://rdm.topbraidlive.org/rdmprojects#> .
+@prefix s3:                   <http://topbraid.org/s3#> .
+@prefix safindex:             <http://topbraid.org/safindex#> .
+@prefix scheduler:            <http://topbraid.org/scheduler#> .
+@prefix search:               <http://topbraid.org/search#> .
+@prefix sh:                   <http://www.w3.org/ns/shacl#> .
+@prefix sharepoint-termstore: <http://teamwork.topbraidlive.org/taxonomy/sharepoint-termstore#> .
+@prefix sioc:                 <http://rdfs.org/sioc/ns#> .
+@prefix skos:                 <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosspin:             <http://topbraid.org/spin/skosspin#> .
+@prefix skostemplate:         <http://topbraid.org/spin/skostemplates#> .
+@prefix skosxl:               <http://www.w3.org/2008/05/skos-xl#> .
+@prefix sm:                   <http://topbraid.org/sparqlmotion#> .
+@prefix smf:                  <http://topbraid.org/sparqlmotionfunctions#> .
+@prefix sml:                  <http://topbraid.org/sparqlmotionlib#> .
+@prefix softwareprojects:     <http://teamwork.topbraidlive.org/software/softwareprojects#> .
+@prefix sp:                   <http://spinrdf.org/sp#> .
+@prefix sparql:               <http://datashapes.org/sparql#> .
+@prefix spif:                 <http://spinrdf.org/spif#> .
+@prefix spin:                 <http://spinrdf.org/spin#> .
+@prefix spinmap:              <http://spinrdf.org/spinmap#> .
+@prefix spinmapl:             <http://topbraid.org/spin/spinmapl#> .
+@prefix spl:                  <http://spinrdf.org/spl#> .
+@prefix spr:                  <http://spinrdf.org/spr#> .
+@prefix spra:                 <http://spinrdf.org/spra#> .
+@prefix swa:                  <http://topbraid.org/swa#> .
+@prefix swaclasses:           <http://topbraid.org/swaclasses#> .
+@prefix swash:                <http://topbraid.org/swash#> .
+@prefix swauml:               <http://topbraid.org/swauml#> .
+@prefix swon:                 <http://uispin.org/swon#> .
+@prefix tables:               <http://topbraid.org/tables#> .
+@prefix tablesmap:            <http://topbraid.org/spin/tablesmap#> .
+@prefix taggerprojects:       <http://evn.topbraidlive.org/taggerprojects#> .
+@prefix tasks:                <http://topbraid.org/tasks#> .
+@prefix taxonomies:           <http://evn.topbraidlive.org/evnprojects#> .
+@prefix tbgeo:                <http://topbraid.org/tbgeo#> .
+@prefix tbladmin:             <http://server.topbraidlive.org/system-applications/tbladmin#> .
+@prefix teamwork:             <http://topbraid.org/teamwork#> .
+@prefix teamworkconstraints:  <http://topbraid.org/teamworkconstraints#> .
+@prefix teamworks3:           <http://teamwork.topbraidlive.org/ui/teamworks3#> .
+@prefix teamworkupdate:       <http://teamworkAPI.topbraid.com/teamworkUpdate#> .
+@prefix textindex:            <http://topbraid.org/textindex#> .
+@prefix tops:                 <http://www.topbraid.org/tops#> .
+@prefix tosh:                 <http://topbraid.org/tosh#> .
+@prefix tosh.ui:              <http://topbraid.org/tosh.ui#> .
+@prefix tracker:              <http://teamwork.topbraidlive.org/ui/tracker#> .
+@prefix ui:                   <http://uispin.org/ui#> .
+@prefix uix:                  <http://topbraidlive.org/uix#> .
+@prefix unit:                 <http://qudt.org/vocab/unit/> .
+@prefix vaem:                 <http://www.linkedmodel.org/schema/vaem#> .
+@prefix voag:                 <http://voag.linkedmodel.org/voag/> .
+@prefix vs:                   <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix wfitenum:             <http://nwcg.gov/enum/wfit#> .
+@prefix wftech:               <http://nwcg.gov/model/tech_extension#> .
+@prefix wot:                  <http://xmlns.com/wot/0.1/> .
+@prefix xsd:                  <http://www.w3.org/2001/XMLSchema#> .
+
+edg:System-mandatedInvestment
+        rdf:type     sh:PropertyShape ;
+        sh:class     wfitenum:MandatedInvestment ;
+        sh:group     edg:CompliancePropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "mandated investment" ;
+        sh:nodeKind  sh:IRI ;
+        sh:order     "101"^^xsd:decimal ;
+        sh:path      wftech:mandatedInvestment .
+
+wftech:ApplicationCost-year
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     xsd:integer ;
+        sh:description  "The calendar year the cost pertains to" ;
+        sh:group        wftech:FiscalYearCostsPropertyGroup ;
+        sh:maxCount     1 ;
+        sh:name         "year" ;
+        sh:order        "-1"^^xsd:decimal ;
+        sh:path         wftech:year .
+
+edg:System-availabilityRequirement
+        rdf:type     sh:PropertyShape ;
+        sh:group     wftech:ProjectManagementPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "availability requirement" ;
+        sh:nodeKind  sh:IRI ;
+        sh:order     "7"^^xsd:decimal ;
+        sh:path      wftech:availabilityRequirement .
+
+edg:System-multiBureauBenefit
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:boolean ;
+        sh:group     edg:CompliancePropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "interagency investment - multi-bureau benefit" ;
+        sh:order     "102"^^xsd:decimal ;
+        sh:path      wftech:multiBureauBenefit .
+
+edg:System-partOfCohesiveStrategy
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:boolean ;
+        sh:group     edg:CompliancePropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "strategic investment as part of the cohesive strategy" ;
+        sh:order     "101"^^xsd:decimal ;
+        sh:path      wftech:partOfCohesiveStrategy .
+
+edg:System-applicationPlatform
+        rdf:type     sh:PropertyShape ;
+        sh:group     edg:TechnicalContextGroup ;
+        sh:name      "application platform" ;
+        sh:nodeKind  sh:IRI ;
+        sh:order     "121"^^xsd:decimal ;
+        sh:path      wftech:applicationPlatform .
+
+edg:System-tier  rdf:type  sh:PropertyShape ;
+        sh:class        wfitenum:applicationTier ;
+        sh:description  "The tier that the application is designated" ;
+        sh:group        edg:IdentifiersGroup ;
+        sh:maxCount     1 ;
+        sh:name         "tier" ;
+        sh:order        "106"^^xsd:decimal ;
+        sh:path         wftech:tier .
+
+edg:System-providesDataToOtherSystems
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:boolean ;
+        sh:group     edg:EnterpriseContextGroup ;
+        sh:maxCount  1 ;
+        sh:name      "provides data to other systems" ;
+        sh:order     "233"^^xsd:decimal ;
+        sh:path      wftech:providesDataToOtherSystems .
+
+wftech:OperatingSystem
+        rdf:type         edg:AssetClass , sh:NodeShape ;
+        rdfs:label       "Operating System" ;
+        rdfs:subClassOf  edg:System .
+
+edg:InternalSystem-responsibleCommittee
+        rdf:type        sh:PropertyShape ;
+        sh:class        edg:Organization ;
+        sh:description  "NWCG Committee responsible for maintaining the capability requirements for the related application." ;
+        sh:group        edg:EnterpriseContextGroup ;
+        sh:name         "responsible committee" ;
+        sh:order        "21"^^xsd:decimal ;
+        sh:path         wftech:responsibleCommittee .
+
+wftech:ApplicationCost
+        rdf:type      sh:NodeShape ;
+        rdfs:comment  "The monetary cost of running an application" ;
+        rdfs:label    "Application Cost" ;
+        sh:property   wftech:ApplicationCost-cost , wftech:ApplicationCost-year .
+
+wftech:FiscalYearCostsPropertyGroup
+        rdf:type      sh:PropertyGroup ;
+        rdfs:comment  "Track the various cost types per application" ;
+        rdfs:label    "Fiscal Year Costs" ;
+        sh:order      "251"^^xsd:decimal .
+
+edg:System-budgetComment
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  rdf:HTML ;
+        sh:group     wftech:ProjectManagementPropertyGroup ;
+        sh:name      "budget comment" ;
+        sh:order     "6"^^xsd:decimal ;
+        sh:path      wftech:budgetComment .
+
+wftech:ApplicationCost-cost
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     xsd:decimal ;
+        sh:description  "The dollar amount associated with a particular application cost - specified by the property." ;
+        sh:group        wftech:FiscalYearCostsPropertyGroup ;
+        sh:name         "cost" ;
+        sh:path         wftech:cost .
+
+<urn:x-evn-master:wftech>
+        rdf:type              ontologyprojects:Ontology , owl:Ontology , teamwork:Vocabulary ;
+        rdfs:label            "WF Schema - Technical Assets Extension" ;
+        edg:subjectArea       <urn:x-tb-governance:WF> ;
+        dc:description        "<div><strong>4/7/2022<br /></strong>Modifying Software System to match with Forest Service application inventory</div>"^^rdf:HTML ;
+        metadata:status       metadata:UnderDevelopmentStatus ;
+        swa:defaultNamespace  "http://nwcg.gov/model/tech_extension#" ;
+        teamwork:rootClass    edg:EnterpriseSoftware ;
+        owl:imports           <http://edg.topbraid.solutions/1.0/schema/technical-assets> , <http://topbraid.org/teamworkconstraints> , <http://datashapes.org/graphql> , <urn:x-evn-master:wfitenum> .
+
+edg:System-missionCriticalityEmergencyResponseCapability
+        rdf:type     sh:PropertyShape ;
+        sh:group     wftech:ProjectManagementPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "mission criticality - emergency response capability" ;
+        sh:nodeKind  sh:IRI ;
+        sh:order     "3"^^xsd:decimal ;
+        sh:path      wftech:missionCriticalityEmergencyResponseCapability .
+
+edg:System-reportingPlatform
+        rdf:type     sh:PropertyShape ;
+        sh:group     edg:TechnicalContextGroup ;
+        sh:maxCount  1 ;
+        sh:name      "reporting platform" ;
+        sh:nodeKind  sh:IRI ;
+        sh:order     "121"^^xsd:decimal ;
+        sh:path      wftech:reportingPlatform .
+
+edg:System-actualTotalCost
+        rdf:type          sh:PropertyShape ;
+        dash:reifiableBy  wftech:ApplicationCost ;
+        sh:datatype       xsd:string ;
+        sh:description    "The final cost associated with an application for a given calendar year." ;
+        sh:group          wftech:FiscalYearCostsPropertyGroup ;
+        sh:maxCount       1 ;
+        sh:name           "actual total cost" ;
+        sh:order          "2"^^xsd:decimal ;
+        sh:path           wftech:actualTotalCost .
+
+edg:System-developmentBudget
+        rdf:type          sh:PropertyShape ;
+        dash:reifiableBy  wftech:ApplicationCost ;
+        sh:datatype       xsd:string ;
+        sh:description    "The amount of funds allocated for development" ;
+        sh:group          wftech:FiscalYearCostsPropertyGroup ;
+        sh:maxCount       1 ;
+        sh:name           "development budget" ;
+        sh:order          "1"^^xsd:decimal ;
+        sh:path           wftech:developmentBudget .
+
+edg:SoftwareExecutable-runsOn
+        rdf:type  sh:PropertyShape ;
+        sh:path   edg:runsOn .
+
+edg:System-costAvoidance
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:boolean ;
+        sh:group     wftech:ProjectManagementPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "cost avoidance - efficiency and/or workload reductions" ;
+        sh:order     "5"^^xsd:decimal ;
+        sh:path      wftech:costAvoidance .
+
+wftech:OperatingSystemDetailsPropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Operating System Details" ;
+        sh:order    "1"^^xsd:decimal .
+
+edg:System-investmentManagingPartnerAgency
+        rdf:type     sh:PropertyShape ;
+        sh:group     edg:EnterpriseContextGroup ;
+        sh:name      "investment managing partner agency" ;
+        sh:nodeKind  sh:IRI ;
+        sh:order     "231"^^xsd:decimal ;
+        sh:path      wftech:investmentManagingPartnerAgency .
+
+ontologyprojects:Ontology
+        rdfs:subClassOf  teamwork:Vocabulary .
+
+edg:System-investmentImplementationDate
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:date ;
+        sh:group     wftech:ProjectManagementPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "investment implementation (O&M) date" ;
+        sh:order     "8"^^xsd:decimal ;
+        sh:path      wftech:investmentImplementationDate .
+
+edg:System  sh:property  edg:System-missionCriticalityLifeAndProperty , edg:System-developmentBudget , edg:System-supportBudget , edg:System-customerQuantity , edg:System-costAvoidance , edg:System-receivesDataFromOtherSystems , edg:System-reportingPlatform , edg:System-ROIBudgetSavings , edg:System-failureToFundConsequences , edg:System-providesDataToOtherSystems , edg:System-partOfCohesiveStrategy , edg:System-applicationPlatform , edg:System-investmentScope , edg:System-investmentImplementationDate , edg:System-investmentManagingPartnerAgency , edg:System-tier , edg:System-userQuantity , edg:System-availabilityRequirement , edg:System-budgetComment , edg:System-multiBureauBenefit , edg:System-projectManager , edg:System-mandatedInvestment , edg:System-actualTotalCost , edg:System-missionCriticalityEmergencyResponseCapability , edg:System-operatingSystem .
+
+edg:System-missionCriticalityLifeAndProperty
+        rdf:type     sh:PropertyShape ;
+        sh:group     wftech:ProjectManagementPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "mission criticality - life and property" ;
+        sh:nodeKind  sh:IRI ;
+        sh:order     "2"^^xsd:decimal ;
+        sh:path      wftech:missionCriticalityLifeAndProperty .
+
+edg:System-investmentScope
+        rdf:type     sh:PropertyShape ;
+        sh:group     edg:EnterpriseContextGroup ;
+        sh:name      "investment scope" ;
+        sh:nodeKind  sh:IRI ;
+        sh:order     "231"^^xsd:decimal ;
+        sh:path      wftech:investmentScope .
+
+edg:Server  rdfs:comment  "A piece of computer hardware or software that provides functionality for other programs or devices, called \"clients\". This architecture is called the client–server model." .
+
+edg:System-ROIBudgetSavings
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:boolean ;
+        sh:group     wftech:ProjectManagementPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "return on investment (ROI) - budget savings" ;
+        sh:order     "4"^^xsd:decimal ;
+        sh:path      wftech:ROIBudgetSavings .
+
+edg:System-operatingSystem
+        rdf:type          sh:PropertyShape ;
+        dash:reifiableBy  wftech:OperatingSystem ;
+        sh:class          wftech:OperatingSystem ;
+        sh:group          edg:TechnicalContextGroup ;
+        sh:maxCount       1 ;
+        sh:name           "operating system" ;
+        sh:nodeKind       sh:IRI ;
+        sh:order          120.5 ;
+        sh:path           wftech:operatingSystem .
+
+edg:System-receivesDataFromOtherSystems
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:boolean ;
+        sh:group     edg:EnterpriseContextGroup ;
+        sh:maxCount  1 ;
+        sh:name      "receives data from other systems" ;
+        sh:order     "233"^^xsd:decimal ;
+        sh:path      wftech:receivesDataFromOtherSystems .
+
+teamwork:Vocabulary  rdfs:subClassOf  owl:Ontology .
+
+wftech:ProjectManagementPropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Project Management" ;
+        sh:order    "91"^^xsd:decimal .
+
+edg:System-userQuantity
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     xsd:integer ;
+        sh:description  "The number of users that access the system" ;
+        sh:group        edg:EnterpriseContextGroup ;
+        sh:maxCount     1 ;
+        sh:name         "number of users that access the system" ;
+        sh:order        "231"^^xsd:decimal ;
+        sh:path         wftech:userQuantity .
+
+edg:System-projectManager
+        rdf:type     sh:PropertyShape ;
+        sh:class     edg:Person ;
+        sh:group     wftech:ProjectManagementPropertyGroup ;
+        sh:name      "project manager" ;
+        sh:nodeKind  sh:IRI ;
+        sh:order     "0"^^xsd:decimal ;
+        sh:path      wftech:projectManager .
+
+edg:System-failureToFundConsequences
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  rdf:HTML ;
+        sh:group     wftech:ProjectManagementPropertyGroup ;
+        sh:name      "failure to fund consequences" ;
+        sh:order     "1"^^xsd:decimal ;
+        sh:path      wftech:failureToFundConsequences .
+
+edg:InternalSystem  sh:property  edg:InternalSystem-responsibleCommittee .
+
+edg:System-customerQuantity
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:integer ;
+        sh:group     edg:EnterpriseContextGroup ;
+        sh:maxCount  1 ;
+        sh:name      "number of customers" ;
+        sh:order     "232"^^xsd:decimal ;
+        sh:path      wftech:customerQuantity .
+
+edg:System-supportBudget
+        rdf:type          sh:PropertyShape ;
+        dash:reifiableBy  wftech:ApplicationCost ;
+        sh:group          wftech:FiscalYearCostsPropertyGroup ;
+        sh:maxCount       1 ;
+        sh:name           "support budget" ;
+        sh:nodeKind       sh:Literal ;
+        sh:order          "1"^^xsd:decimal ;
+        sh:path           wftech:supportBudget .
+
+edg:SoftwareService  rdfs:comment  "In the contexts of software architecture, service-orientation and service-oriented architecture, the term service refers to a software functionality or a set of software functionalities with a purpose that different clients can reuse for different purposes, together with the policies that should control its usage." .

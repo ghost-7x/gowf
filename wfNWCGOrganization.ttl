@@ -1,0 +1,162 @@
+@prefix afn:                  <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix arg:                  <http://spinrdf.org/arg#> .
+@prefix corpus:               <http://topbraid.org/corpus#> .
+@prefix corpusprojects:       <http://topbraid.org/corpus-projects#> .
+@prefix crosswalk:            <http://topbraid.org/crosswalk#> .
+@prefix crosswalk.spin:       <http://topbraid.org/crosswalk.spin#> .
+@prefix crosswalkapp:         <http://topbraid.org/swa/crosswalkapp#> .
+@prefix crosswalkprojects:    <http://teamwork.topbraidlive.org/crosswalkprojects#> .
+@prefix dash:                 <http://datashapes.org/dash#> .
+@prefix datagraph:            <http://teamwork.topbraidlive.org/datagraph/datagraphprojects#> .
+@prefix dc:                   <http://purl.org/dc/elements/1.1/> .
+@prefix dcam:                 <http://purl.org/dc/dcam/> .
+@prefix dct:                  <http://purl.org/dc/terms/> .
+@prefix debug-swa:            <http://debug.topbraidlive.org/1.0/swa/> .
+@prefix dtype:                <http://www.linkedmodel.org/schema/dtype#> .
+@prefix edg:                  <http://edg.topbraid.solutions/model/> .
+@prefix edg.v:                <http://edg.topbraid.solutions/view/> .
+@prefix evnconstraints:       <http://topbraid.org/spin/evnconstraints#> .
+@prefix fn:                   <http://www.w3.org/2005/xpath-functions#> .
+@prefix foaf:                 <http://xmlns.com/foaf/0.1/> .
+@prefix geo:                  <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix governance:           <http://topbraid.org/teamworkgovernance.ui#> .
+@prefix graphql:              <http://datashapes.org/graphql#> .
+@prefix html:                 <http://uispin.org/html#> .
+@prefix jfn:                  <java:org.apache.jena.sparql.function.library.> .
+@prefix lib-importer:         <http://edg.topbraid.solutions/importer/lib#> .
+@prefix list:                 <http://jena.apache.org/ARQ/list#> .
+@prefix metadata:             <http://topbraid.org/metadata#> .
+@prefix metash:               <http://datashapes.org/metash#> .
+@prefix nlp:                  <http://topbraid.org/nlp#> .
+@prefix nwcg_org:             <http://nwcg.gov/model/nwcg_org#> .
+@prefix ontologyprojects:     <http://teamwork.topbraidlive.org/ontologyprojects#> .
+@prefix org:                  <http://www.w3.org/ns/org#> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix owlrl:                <http://topbraid.org/spin/owlrl#> .
+@prefix pf:                   <http://jena.hpl.hp.com/ARQ/property#> .
+@prefix prov:                 <http://www.w3.org/ns/prov#> .
+@prefix quantity:             <http://qudt.org/vocab/quantity/> .
+@prefix qudt:                 <http://qudt.org/schema/qudt/> .
+@prefix raci:                 <http://topbraid.org/raci#> .
+@prefix rdf:                  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdm:                  <http://rdm.topbraidlive.org/rdm/> .
+@prefix rdmfact:              <http://topbraid.org/rdmfact#> .
+@prefix rdmprojects:          <http://rdm.topbraidlive.org/rdmprojects#> .
+@prefix s3:                   <http://topbraid.org/s3#> .
+@prefix safindex:             <http://topbraid.org/safindex#> .
+@prefix scheduler:            <http://topbraid.org/scheduler#> .
+@prefix search:               <http://topbraid.org/search#> .
+@prefix sh:                   <http://www.w3.org/ns/shacl#> .
+@prefix sharepoint-termstore: <http://teamwork.topbraidlive.org/taxonomy/sharepoint-termstore#> .
+@prefix sioc:                 <http://rdfs.org/sioc/ns#> .
+@prefix skos:                 <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosspin:             <http://topbraid.org/spin/skosspin#> .
+@prefix skostemplate:         <http://topbraid.org/spin/skostemplates#> .
+@prefix skosxl:               <http://www.w3.org/2008/05/skos-xl#> .
+@prefix sm:                   <http://topbraid.org/sparqlmotion#> .
+@prefix smf:                  <http://topbraid.org/sparqlmotionfunctions#> .
+@prefix sml:                  <http://topbraid.org/sparqlmotionlib#> .
+@prefix sp:                   <http://spinrdf.org/sp#> .
+@prefix sparql:               <http://datashapes.org/sparql#> .
+@prefix spif:                 <http://spinrdf.org/spif#> .
+@prefix spin:                 <http://spinrdf.org/spin#> .
+@prefix spinmap:              <http://spinrdf.org/spinmap#> .
+@prefix spinmapl:             <http://topbraid.org/spin/spinmapl#> .
+@prefix spl:                  <http://spinrdf.org/spl#> .
+@prefix spr:                  <http://spinrdf.org/spr#> .
+@prefix spra:                 <http://spinrdf.org/spra#> .
+@prefix swa:                  <http://topbraid.org/swa#> .
+@prefix swaclasses:           <http://topbraid.org/swaclasses#> .
+@prefix swash:                <http://topbraid.org/swash#> .
+@prefix swauml:               <http://topbraid.org/swauml#> .
+@prefix swon:                 <http://uispin.org/swon#> .
+@prefix tables:               <http://topbraid.org/tables#> .
+@prefix tablesmap:            <http://topbraid.org/spin/tablesmap#> .
+@prefix taggerprojects:       <http://evn.topbraidlive.org/taggerprojects#> .
+@prefix tasks:                <http://topbraid.org/tasks#> .
+@prefix taxonomies:           <http://evn.topbraidlive.org/evnprojects#> .
+@prefix tbgeo:                <http://topbraid.org/tbgeo#> .
+@prefix tbladmin:             <http://server.topbraidlive.org/system-applications/tbladmin#> .
+@prefix teamwork:             <http://topbraid.org/teamwork#> .
+@prefix teamworkconstraints:  <http://topbraid.org/teamworkconstraints#> .
+@prefix teamworks3:           <http://teamwork.topbraidlive.org/ui/teamworks3#> .
+@prefix teamworkupdate:       <http://teamworkAPI.topbraid.com/teamworkUpdate#> .
+@prefix textindex:            <http://topbraid.org/textindex#> .
+@prefix tops:                 <http://www.topbraid.org/tops#> .
+@prefix tosh:                 <http://topbraid.org/tosh#> .
+@prefix tosh.ui:              <http://topbraid.org/tosh.ui#> .
+@prefix tracker:              <http://teamwork.topbraidlive.org/ui/tracker#> .
+@prefix ui:                   <http://uispin.org/ui#> .
+@prefix uix:                  <http://topbraidlive.org/uix#> .
+@prefix unit:                 <http://qudt.org/vocab/unit/> .
+@prefix vaem:                 <http://www.linkedmodel.org/schema/vaem#> .
+@prefix voag:                 <http://voag.linkedmodel.org/voag/> .
+@prefix vs:                   <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix wot:                  <http://xmlns.com/wot/0.1/> .
+@prefix xsd:                  <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:x-evn-master:nwcg_org>
+        rdf:type              owl:Ontology , teamwork:Vocabulary , ontologyprojects:Ontology ;
+        rdfs:comment          "A model describing the make-up of the NWCG organizational structure." ;
+        rdfs:label            "WF Schema - NWCG Organization" ;
+        edg:subjectArea       <urn:x-tb-governance:WF> ;
+        metadata:status       metadata:UnderDevelopmentStatus ;
+        swa:defaultNamespace  "http://nwcg.gov/model/nwcg_org#" ;
+        teamwork:rootClass    edg:Organization ;
+        owl:imports           <http://edg.topbraid.solutions/1.0/schema/core> , <http://datashapes.org/graphql> , <http://topbraid.org/teamworkconstraints> .
+
+nwcg_org:Unit  rdf:type  edg:AssetClass , sh:NodeShape ;
+        rdfs:comment     "A long-standing body of subject matter experts representing a subset of an NWCG subcommittee’s functional or business area. Meets objectives stated in its mission statement.\n\nEstablished by and report to subcommittees." ;
+        rdfs:label       "Unit" ;
+        rdfs:subClassOf  edg:Organization ;
+        edg:acronym      "UNIT" .
+
+nwcg_org:Committee  rdf:type  edg:AssetClass , sh:NodeShape ;
+        rdfs:comment     "A long-standing body of subject matter experts representing one of the primary NWCG functional or business areas. Develops and maintains NWCG standards and associated support materials. Meets objectives stated in its mission statement.  May establish a subcommittee structure as workload requires.\n\nEstablished by and report to the NWCG Executive Board." ;
+        rdfs:label       "Committee" ;
+        rdfs:subClassOf  edg:Organization ;
+        edg:acronym      "CMTE" .
+
+ontologyprojects:Ontology
+        rdfs:subClassOf  teamwork:Vocabulary .
+
+teamwork:Vocabulary  rdfs:subClassOf  owl:Ontology .
+
+nwcg_org:Subcommittee
+        rdf:type         edg:AssetClass , sh:NodeShape ;
+        rdfs:comment     "A long-standing body of subject matter experts representing a subset of an NWCG committee’s functional or business area. Meets objectives stated in its mission statement. May establish a unit  structure as workload requires.\n\nEstablished by and report to a parent committee." ;
+        rdfs:label       "Subcommitee" , "Subcommittee" ;
+        rdfs:subClassOf  edg:Organization ;
+        edg:acronym      "SC" .
+
+nwcg_org:CourseSteeringCommittee
+        rdf:type         edg:AssetClass , sh:NodeShape ;
+        rdfs:comment     "A long-standing body of subject matter experts responsible for oversight and maintenance of a national level course, or a geographic area delivered course maintained by a single cadre. Meets objectives stated in its mission statement.\n\nEstablished by and reports to the parent committee or their designated subgroup." ;
+        rdfs:label       "Course Steering Committee" ;
+        rdfs:subClassOf  edg:Organization ;
+        edg:acronym      "CSCMTE" .
+
+nwcg_org:TaskTeam  rdf:type  edg:AssetClass , sh:NodeShape ;
+        rdfs:comment     "A limited-term body of subject matter experts formed via a tasking memorandum to accomplish a specific, time-bounded, undertaking for the tasking entity.\n\nEstablished by and report to any NWCG established group." ;
+        rdfs:label       "Task Team" ;
+        rdfs:subClassOf  edg:Organization ;
+        edg:acronym      "TT" .
+
+nwcg_org:ExecutiveBoard
+        rdf:type         edg:AssetClass , sh:NodeShape ;
+        rdfs:label       "Executive Board" ;
+        rdfs:subClassOf  edg:Organization ;
+        edg:acronym      "EB" .
+
+nwcg_org:CurriculumManagementUnit
+        rdf:type         edg:AssetClass , sh:NodeShape ;
+        rdfs:label       "Curriculum Management Unit" ;
+        rdfs:subClassOf  edg:Organization ;
+        edg:acronym      "CMU" .
+
+nwcg_org:Board  rdf:type  edg:AssetClass , sh:NodeShape ;
+        rdfs:comment     "A long-standing body of subject matter experts organized to establish performance criteria,  evaluation processes, business requirements, and operational standards in specific NWCG business areas (e.g., airtankers, incident reporting, position naming).\n\nEstablished by and report to the Executive Board, committees, or subcommittees." ;
+        rdfs:label       "Board" ;
+        rdfs:subClassOf  edg:Organization ;
+        edg:acronym      "BD" .

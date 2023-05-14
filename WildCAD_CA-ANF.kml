@@ -1,0 +1,631 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://earth.google.com/kml/2.2'>
+<Document>
+   <Name>WildCAD</Name>
+   <Description>Open WildCAD Incidents for CA-ANF: Angeles ECC</Description>
+   <Style id='stationStyle'>
+        <IconStyle id='stationIcon'>
+            <Icon>
+                <href>http://maps.google.com/mapfiles/kml/pal2/icon2.png</href>
+            </Icon>
+        </IconStyle>
+   </Style>
+   <Style id='LightningStyle'>
+        <IconStyle id='LightningIcon'>
+            <Icon>
+                <href>http://maps.google.com/mapfiles/kml/pal4/icon52.png</href>
+            </Icon>
+        </IconStyle>
+   </Style>
+   <Placemark>
+      <name>ANF-2982</name>
+      <description><![CDATA[AIRCRAFT RECOVERY  09/06/2022 12:19
+                   Miscellaneous
+                   MT BALDY ROAD NEAR POWER PLANT  
+      ]]></description>
+      <Point>
+         <coordinates>-117.674,34.2121,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>ANF-2981</name>
+      <description><![CDATA[FIVE 09/06/2022 10:52
+                   Wildfire
+                   NB S/O TEMPLIN  SO# 95...RD# 69...P5P1W1 - 0501
+      ]]></description>
+      <Point>
+         <coordinates>-118.6777,34.5619,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>ANF-2971</name>
+      <description><![CDATA[ID-STF-000193 ROSS FORK 09/05/2022 17:12
+                   Resource Order
+                     
+      ]]></description>
+      <Point>
+         <coordinates>-118.1192,34.1686,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>ANF-2958</name>
+      <description><![CDATA[CA-YNP-000066 ASPEN 09/05/2022 11:19
+                   Resource Order
+                     
+      ]]></description>
+      <Point>
+         <coordinates>-118.1192,34.1686,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>ANF-2948</name>
+      <description><![CDATA[FILMING - 9/7 - 9/8 09/04/2022 19:14
+                   Miscellaneous
+                   ROWHER FLAT OHV AND TEXAS CANYON  
+      ]]></description>
+      <Point>
+         <coordinates>-118.3835,34.5249,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>ANF-2937</name>
+      <description><![CDATA[AIRCRAFT DOWN 09/04/2022 08:03
+                   Aircraft Down
+                   MT BALDY DAM AND  VILLAGE  
+      ]]></description>
+      <Point>
+         <coordinates>-117.6385,34.2538,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>ANF-2888</name>
+      <description><![CDATA[ID-NCF-000662 LYNX MEADOW 08/31/2022 14:58
+                   Resource Order
+                     
+      ]]></description>
+      <Point>
+         <coordinates>-118.629,34.5142,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>ANF-2884</name>
+      <description><![CDATA[ROUTE 08/31/2022 12:00
+                   Wildfire
+                   NB 5 N/O 1/4 MILE OF LAKE HUGHES RD  SO# 92... RD# 66...PNP1F0-1522
+      ]]></description>
+      <Point>
+         <coordinates>-118.6433,34.5194,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>ANF-2870</name>
+      <description><![CDATA[GULCH 08/29/2022 11:26
+                   Wildfire
+                   HWY 39 MM 22  SO #91...RD #12...P5P1DZ - 0501
+      ]]></description>
+      <Point>
+         <coordinates>-117.8589,34.2167,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>ANF-2810</name>
+      <description><![CDATA[EAST 08/25/2022 13:39
+                   Wildfire
+                   HWY 39/ EAST FORK RD  S.O.#90...R.D.#11...P5P05B-0501
+      ]]></description>
+      <Point>
+         <coordinates>-117.8549,34.2401,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>10AMAYCYN</name>
+      <description>May Canyon
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-118.4511,34.3446,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>10LITLWC</name>
+      <description>Little Tujunga Work Center
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-118.365,34.2949,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>11ACRST</name>
+      <description>Angeles Crest
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-118.1767,34.2283,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>11OAKGRV</name>
+      <description>Oak Grove
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-118.1767,34.2,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>12OKFLT</name>
+      <description>Oak Flat
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-118.7183,34.595,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>13BIGT</name>
+      <description>Big Tujunga
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-118.2283,34.2867,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>14ALAMO</name>
+      <description>Los Alamos
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-118.8283,34.6983,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>15ASAWMILL</name>
+      <description>Sawmill
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-118.542,34.6908,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>15ATHREEPT</name>
+      <description>Three Points
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-118.5989,34.7346,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>15GRNVL</name>
+      <description>Green Valley
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-118.3833,34.6383,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>15LKHUG</name>
+      <description>Lake Hughes
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-118.4367,34.6817,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>16PROSPECT</name>
+      <description>Prospect Cyn
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-118.5343,34.6303,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>16RDMTN</name>
+      <description>Red Mtn
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-118.5583,34.565,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>16SNFRN</name>
+      <description>San Francisquito
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-118.5267,34.5333,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>17ROWHER</name>
+      <description>Rowher Flat
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-118.3868,34.5237,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>17TXCYN</name>
+      <description>Texas Cyn
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-118.4567,34.505,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>19ANFRK</name>
+      <description>North Fork
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-118.2467,34.3883,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>19BRDIV</name>
+      <description>Bear Divide
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-118.3867,34.36,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>20ANFSO</name>
+      <description>ANF HQ
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-118.0367,34.1417,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>20CHFLT</name>
+      <description>Chantry Flat
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-118.02,34.2,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>21AMORRIS</name>
+      <description>Morris
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-117.9079,34.1793,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>21DLTON</name>
+      <description>Dalton
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-117.845,34.1567,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>21GLDRA</name>
+      <description>Glendora DO 
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-117.8617,34.1417,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>22RNCON</name>
+      <description>Rincon
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-117.8617,34.2283,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>23ESFRK</name>
+      <description>East Fork
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-117.7567,34.2283,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>24CRYSTAL</name>
+      <description>Crystal Lake
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-117.8278,34.3314,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>25AMTBALDY</name>
+      <description>MT. Baldy
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-117.626,34.2687,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>25LRSAN</name>
+      <description>Lower San Antonio
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-117.67,34.1717,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>26SDMASTEC</name>
+      <description>San Dimas Tech
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-117.7931,34.1128,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>27MARSHAL</name>
+      <description>Marshall Cyn
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-117.8004,34.1267,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>27SNDIM</name>
+      <description>San Dimas
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-117.7567,34.1717,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>31MILLCRK</name>
+      <description>Mill Creek
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-118.09,34.3883,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>32MNTCR</name>
+      <description>Monte Cristo
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-118.1233,34.33,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>33ACTON</name>
+      <description>Acton
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-118.2067,34.4872,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>33AGUA</name>
+      <description>Agua Dulce
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-118.2868,34.517,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>33MACTON</name>
+      <description>ACTON
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-118.1963,34.4981,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>33PALMDALE</name>
+      <description>Palmdale 
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-118.1431,34.605,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>33SOLED</name>
+      <description>Soledad
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-118.3105,34.4391,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>34CLCRK</name>
+      <description>Clear Creek
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-118.1583,34.2733,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>35CHILAO</name>
+      <description>Chilao
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-118.0017,34.33,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>36RDBOX</name>
+      <description>Red Box
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-118.1067,34.2583,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>36SHCUT</name>
+      <description>Short Cut
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-118.0367,34.2733,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>37ALTRCK</name>
+      <description>Little Rock
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-118.02,34.475,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>37VALMO</name>
+      <description>Valyermo
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-117.845,34.4467,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>38BIGPN</name>
+      <description>Big Pines
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-117.6867,34.3733,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>39PINON</name>
+      <description>Pinon Hills
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-117.6474,34.4405,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>73PARMT</name>
+      <description>NPS PARAMOUNT RANCH
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-118.7562,34.11548,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>BRACKETFLD</name>
+      <description>BRACKEY FIELD AIRPORT
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-117.7821,34.0915,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>HEAPS</name>
+      <description>Heaps Peak Helibase H-534
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-117.15,34.2333,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>PRADO</name>
+      <description>Prado Helibase H-305
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-117.68,33.98,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>WJF</name>
+      <description>Fox Field
+                   
+      </description>
+      <styleUrl>#stationStyle</styleUrl>
+      <Point>
+         <coordinates>-118.2086,34.74094,0</coordinates>
+      </Point>
+   </Placemark>
+</Document>
+</kml>

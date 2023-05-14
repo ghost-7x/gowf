@@ -1,0 +1,169 @@
+@prefix afn:                  <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix arg:                  <http://spinrdf.org/arg#> .
+@prefix corpus:               <http://topbraid.org/corpus#> .
+@prefix crosswalk:            <http://topbraid.org/crosswalk#> .
+@prefix crosswalk.spin:       <http://topbraid.org/crosswalk.spin#> .
+@prefix crosswalkapp:         <http://topbraid.org/swa/crosswalkapp#> .
+@prefix crosswalkprojects:    <http://teamwork.topbraidlive.org/crosswalkprojects#> .
+@prefix dash:                 <http://datashapes.org/dash#> .
+@prefix dc:                   <http://purl.org/dc/elements/1.1/> .
+@prefix dct:                  <http://purl.org/dc/terms/> .
+@prefix debug-swa:            <http://debug.topbraidlive.org/1.0/swa/> .
+@prefix edg:                  <http://edg.topbraid.solutions/model/> .
+@prefix eventmod:             <http://nwcg.gov/model/event#> .
+@prefix evnconstraints:       <http://topbraid.org/spin/evnconstraints#> .
+@prefix fn:                   <http://www.w3.org/2005/xpath-functions#> .
+@prefix governance:           <http://topbraid.org/teamworkgovernance.ui#> .
+@prefix graphql:              <http://datashapes.org/graphql#> .
+@prefix html:                 <http://uispin.org/html#> .
+@prefix jfn:                  <java:org.apache.jena.sparql.function.library.> .
+@prefix lib-importer:         <http://edg.topbraid.solutions/importer/lib#> .
+@prefix list:                 <http://jena.apache.org/ARQ/list#> .
+@prefix metadata:             <http://topbraid.org/metadata#> .
+@prefix nlp:                  <http://topbraid.org/nlp#> .
+@prefix ontologyprojects:     <http://teamwork.topbraidlive.org/ontologyprojects#> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix owlrl:                <http://topbraid.org/spin/owlrl#> .
+@prefix pf:                   <http://jena.hpl.hp.com/ARQ/property#> .
+@prefix rdf:                  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdmprojects:          <http://rdm.topbraidlive.org/rdmprojects#> .
+@prefix safindex:             <http://topbraid.org/safindex#> .
+@prefix scheduler:            <http://topbraid.org/scheduler#> .
+@prefix sh:                   <http://www.w3.org/ns/shacl#> .
+@prefix sharepoint-termstore: <http://teamwork.topbraidlive.org/taxonomy/sharepoint-termstore#> .
+@prefix skos:                 <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosspin:             <http://topbraid.org/spin/skosspin#> .
+@prefix skostemplate:         <http://topbraid.org/spin/skostemplates#> .
+@prefix skosxl:               <http://www.w3.org/2008/05/skos-xl#> .
+@prefix sm:                   <http://topbraid.org/sparqlmotion#> .
+@prefix smf:                  <http://topbraid.org/sparqlmotionfunctions#> .
+@prefix sml:                  <http://topbraid.org/sparqlmotionlib#> .
+@prefix sp:                   <http://spinrdf.org/sp#> .
+@prefix spif:                 <http://spinrdf.org/spif#> .
+@prefix spin:                 <http://spinrdf.org/spin#> .
+@prefix spinmap:              <http://spinrdf.org/spinmap#> .
+@prefix spinmapl:             <http://topbraid.org/spin/spinmapl#> .
+@prefix spl:                  <http://spinrdf.org/spl#> .
+@prefix spr:                  <http://spinrdf.org/spr#> .
+@prefix spra:                 <http://spinrdf.org/spra#> .
+@prefix swa:                  <http://topbraid.org/swa#> .
+@prefix swaclasses:           <http://topbraid.org/swaclasses#> .
+@prefix swauml:               <http://topbraid.org/swauml#> .
+@prefix swon:                 <http://uispin.org/swon#> .
+@prefix tables:               <http://topbraid.org/tables#> .
+@prefix tablesmap:            <http://topbraid.org/spin/tablesmap#> .
+@prefix tasks:                <http://topbraid.org/tasks#> .
+@prefix tbgeo:                <http://topbraid.org/tbgeo#> .
+@prefix tbladmin:             <http://server.topbraidlive.org/system-applications/tbladmin#> .
+@prefix teamwork:             <http://topbraid.org/teamwork#> .
+@prefix teamworkconstraints:  <http://topbraid.org/teamworkconstraints#> .
+@prefix teamworks3:           <http://teamwork.topbraidlive.org/ui/teamworks3#> .
+@prefix teamworkupdate:       <http://teamworkAPI.topbraid.com/teamworkUpdate#> .
+@prefix textindex:            <http://topbraid.org/textindex#> .
+@prefix tops:                 <http://www.topbraid.org/tops#> .
+@prefix tosh:                 <http://topbraid.org/tosh#> .
+@prefix tosh.ui:              <http://topbraid.org/tosh.ui#> .
+@prefix tracker:              <http://teamwork.topbraidlive.org/ui/tracker#> .
+@prefix ui:                   <http://uispin.org/ui#> .
+@prefix uix:                  <http://topbraidlive.org/uix#> .
+@prefix xsd:                  <http://www.w3.org/2001/XMLSchema#> .
+
+eventmod:EventCategory-type
+        rdf:type      sh:PropertyShape ;
+        graphql:name  "types" ;
+        sh:class      rdfs:Class ;
+        sh:group      eventmod:EventCategoryDetailsPropertyGroup ;
+        sh:name       "types" ;
+        sh:order      "1"^^xsd:decimal ;
+        sh:path       rdf:type .
+
+eventmod:EventCategory-eventCategoryCode
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:string ;
+        sh:group     eventmod:EventCategoryDetailsPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "event category code" ;
+        sh:order     "2"^^xsd:decimal ;
+        sh:path      eventmod:eventCategoryCode .
+
+eventmod:EventKind-eventKindCode
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     xsd:string ;
+        sh:description  "A code used to identify the event kind." ;
+        sh:group        eventmod:EventKindDetailsPropertyGroup ;
+        sh:maxCount     1 ;
+        sh:name         "event kind code" ;
+        sh:order        "2"^^xsd:decimal ;
+        sh:path         eventmod:eventKindCode .
+
+ontologyprojects:Ontology
+        rdfs:subClassOf  teamwork:Vocabulary .
+
+<urn:x-evn-master:eventmod>
+        rdf:type              teamwork:Vocabulary , owl:Ontology , ontologyprojects:Ontology ;
+        rdfs:comment          "A model to describe wildland fire events." ;
+        rdfs:label            "WF Schema - Event" ;
+        edg:subjectArea       <urn:x-tb-governance:WF> ;
+        metadata:status       metadata:UnderDevelopmentStatus ;
+        swa:defaultNamespace  "http://nwcg.gov/model/event#" ;
+        owl:imports           <http://topbraid.org/teamworkconstraints> , <http://datashapes.org/graphql> .
+
+eventmod:EventKind-type
+        rdf:type      sh:PropertyShape ;
+        graphql:name  "types" ;
+        sh:class      rdfs:Class ;
+        sh:group      eventmod:EventKindDetailsPropertyGroup ;
+        sh:name       "types" ;
+        sh:order      "1"^^xsd:decimal ;
+        sh:path       rdf:type .
+
+eventmod:EventCategory
+        rdf:type         sh:NodeShape , owl:Class ;
+        rdfs:comment     "A code and description that identifies the types of incidents and planned events to which the interagency wildland fire community responds. The Event Category is a sub-group of the Event Kind code and description. The Event Kind provides a general, high-level description. The Event Category further breaks down the Event Kind into more specific event categories." ;
+        rdfs:label       "Event Category" ;
+        rdfs:subClassOf  owl:Thing ;
+        sh:property      eventmod:EventCategory-type , eventmod:EventCategory-label , eventmod:EventCategory-eventCategoryCode .
+
+eventmod:EventCategory-label
+        rdf:type         sh:PropertyShape ;
+        dash:singleLine  true ;
+        graphql:name     "labels" ;
+        sh:group         eventmod:EventCategoryDetailsPropertyGroup ;
+        sh:name          "labels" ;
+        sh:or            dash:StringOrLangString ;
+        sh:order         "0"^^xsd:decimal ;
+        sh:path          rdfs:label .
+
+teamwork:Vocabulary  rdfs:subClassOf  owl:Ontology .
+
+eventmod:EventKind-label
+        rdf:type         sh:PropertyShape ;
+        dash:singleLine  true ;
+        graphql:name     "labels" ;
+        sh:group         eventmod:EventKindDetailsPropertyGroup ;
+        sh:name          "labels" ;
+        sh:or            dash:StringOrLangString ;
+        sh:order         "0"^^xsd:decimal ;
+        sh:path          rdfs:label .
+
+eventmod:Event  rdf:type  sh:NodeShape , owl:Class ;
+        rdfs:comment     "A generic term that relates to both planned and unplanned response activities by the interagency wildland fire community." ;
+        rdfs:label       "Event" ;
+        rdfs:subClassOf  owl:Thing .
+
+eventmod:EventKind  rdf:type  sh:NodeShape , owl:Class ;
+        rdfs:comment     "A general, high-level code and description of the types of incidents and planned events to which the interagency wildland fire community responds." ;
+        rdfs:label       "Event Kind" ;
+        rdfs:subClassOf  owl:Thing ;
+        sh:property      eventmod:EventKind-type , eventmod:EventKind-label , eventmod:EventKind-eventKindCode .
+
+eventmod:EventKindDetailsPropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Event Kind Details" ;
+        sh:order    "1"^^xsd:decimal .
+
+eventmod:EventCategoryDetailsPropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Event Category Details" ;
+        sh:order    "0"^^xsd:decimal .

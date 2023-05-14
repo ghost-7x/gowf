@@ -1,0 +1,418 @@
+@prefix afn:                  <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix arg:                  <http://spinrdf.org/arg#> .
+@prefix business_rules:       <http://nwcg.gov/model/business_rule#> .
+@prefix corpus:               <http://topbraid.org/corpus#> .
+@prefix corpusprojects:       <http://topbraid.org/corpus-projects#> .
+@prefix crosswalk:            <http://topbraid.org/crosswalk#> .
+@prefix crosswalk.spin:       <http://topbraid.org/crosswalk.spin#> .
+@prefix crosswalkapp:         <http://topbraid.org/swa/crosswalkapp#> .
+@prefix crosswalkprojects:    <http://teamwork.topbraidlive.org/crosswalkprojects#> .
+@prefix dash:                 <http://datashapes.org/dash#> .
+@prefix dataenum:             <http://nwcg.gov/enum/data#> .
+@prefix datagraph:            <http://teamwork.topbraidlive.org/datagraph/datagraphprojects#> .
+@prefix datastd:              <http://nwcg.gov/model/standard#> .
+@prefix datatype:             <http://qudt.org/vocab/datatype/> .
+@prefix dc:                   <http://purl.org/dc/elements/1.1/> .
+@prefix dcam:                 <http://purl.org/dc/dcam/> .
+@prefix dct:                  <http://purl.org/dc/terms/> .
+@prefix debug-swa:            <http://debug.topbraidlive.org/1.0/swa/> .
+@prefix dtype:                <http://www.linkedmodel.org/schema/dtype#> .
+@prefix edg:                  <http://edg.topbraid.solutions/model/> .
+@prefix edg.v:                <http://edg.topbraid.solutions/view/> .
+@prefix evnconstraints:       <http://topbraid.org/spin/evnconstraints#> .
+@prefix fn:                   <http://www.w3.org/2005/xpath-functions#> .
+@prefix foaf:                 <http://xmlns.com/foaf/0.1/> .
+@prefix geo:                  <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix governance:           <http://topbraid.org/teamworkgovernance.ui#> .
+@prefix graphql:              <http://datashapes.org/graphql#> .
+@prefix html:                 <http://uispin.org/html#> .
+@prefix jfn:                  <java:org.apache.jena.sparql.function.library.> .
+@prefix layer:                <http://nwcg.gov/model/referenceLayer#> .
+@prefix lib-importer:         <http://edg.topbraid.solutions/importer/lib#> .
+@prefix list:                 <http://jena.apache.org/ARQ/list#> .
+@prefix metadata:             <http://topbraid.org/metadata#> .
+@prefix metash:               <http://datashapes.org/metash#> .
+@prefix nlp:                  <http://topbraid.org/nlp#> .
+@prefix ontologyprojects:     <http://teamwork.topbraidlive.org/ontologyprojects#> .
+@prefix org:                  <http://www.w3.org/ns/org#> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix owlrl:                <http://topbraid.org/spin/owlrl#> .
+@prefix pf:                   <http://jena.hpl.hp.com/ARQ/property#> .
+@prefix prov:                 <http://www.w3.org/ns/prov#> .
+@prefix quantity:             <http://qudt.org/vocab/quantity/> .
+@prefix quantitykind:         <http://qudt.org/vocab/quantitykind/> .
+@prefix qudt:                 <http://qudt.org/schema/qudt/> .
+@prefix qudt.type:            <http://qudt.org/vocab/type/> .
+@prefix raci:                 <http://topbraid.org/raci#> .
+@prefix rdf:                  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdm:                  <http://rdm.topbraidlive.org/rdm/> .
+@prefix rdmfact:              <http://topbraid.org/rdmfact#> .
+@prefix rdmprojects:          <http://rdm.topbraidlive.org/rdmprojects#> .
+@prefix s3:                   <http://topbraid.org/s3#> .
+@prefix safindex:             <http://topbraid.org/safindex#> .
+@prefix scheduler:            <http://topbraid.org/scheduler#> .
+@prefix search:               <http://topbraid.org/search#> .
+@prefix sh:                   <http://www.w3.org/ns/shacl#> .
+@prefix sharepoint-termstore: <http://teamwork.topbraidlive.org/taxonomy/sharepoint-termstore#> .
+@prefix sioc:                 <http://rdfs.org/sioc/ns#> .
+@prefix skos:                 <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosspin:             <http://topbraid.org/spin/skosspin#> .
+@prefix skostemplate:         <http://topbraid.org/spin/skostemplates#> .
+@prefix skosxl:               <http://www.w3.org/2008/05/skos-xl#> .
+@prefix sm:                   <http://topbraid.org/sparqlmotion#> .
+@prefix smf:                  <http://topbraid.org/sparqlmotionfunctions#> .
+@prefix sml:                  <http://topbraid.org/sparqlmotionlib#> .
+@prefix softwareprojects:     <http://teamwork.topbraidlive.org/software/softwareprojects#> .
+@prefix sp:                   <http://spinrdf.org/sp#> .
+@prefix sparql:               <http://datashapes.org/sparql#> .
+@prefix spif:                 <http://spinrdf.org/spif#> .
+@prefix spin:                 <http://spinrdf.org/spin#> .
+@prefix spinmap:              <http://spinrdf.org/spinmap#> .
+@prefix spinmapl:             <http://topbraid.org/spin/spinmapl#> .
+@prefix spl:                  <http://spinrdf.org/spl#> .
+@prefix spr:                  <http://spinrdf.org/spr#> .
+@prefix spra:                 <http://spinrdf.org/spra#> .
+@prefix swa:                  <http://topbraid.org/swa#> .
+@prefix swaclasses:           <http://topbraid.org/swaclasses#> .
+@prefix swash:                <http://topbraid.org/swash#> .
+@prefix swauml:               <http://topbraid.org/swauml#> .
+@prefix swon:                 <http://uispin.org/swon#> .
+@prefix tables:               <http://topbraid.org/tables#> .
+@prefix tablesmap:            <http://topbraid.org/spin/tablesmap#> .
+@prefix taggerprojects:       <http://evn.topbraidlive.org/taggerprojects#> .
+@prefix tasks:                <http://topbraid.org/tasks#> .
+@prefix taxonomies:           <http://evn.topbraidlive.org/evnprojects#> .
+@prefix tbgeo:                <http://topbraid.org/tbgeo#> .
+@prefix tbladmin:             <http://server.topbraidlive.org/system-applications/tbladmin#> .
+@prefix teamwork:             <http://topbraid.org/teamwork#> .
+@prefix teamworkconstraints:  <http://topbraid.org/teamworkconstraints#> .
+@prefix teamworks3:           <http://teamwork.topbraidlive.org/ui/teamworks3#> .
+@prefix teamworkupdate:       <http://teamworkAPI.topbraid.com/teamworkUpdate#> .
+@prefix textindex:            <http://topbraid.org/textindex#> .
+@prefix tops:                 <http://www.topbraid.org/tops#> .
+@prefix tosh:                 <http://topbraid.org/tosh#> .
+@prefix tosh.ui:              <http://topbraid.org/tosh.ui#> .
+@prefix tracker:              <http://teamwork.topbraidlive.org/ui/tracker#> .
+@prefix ui:                   <http://uispin.org/ui#> .
+@prefix uix:                  <http://topbraidlive.org/uix#> .
+@prefix unit:                 <http://qudt.org/vocab/unit/> .
+@prefix vaem:                 <http://www.linkedmodel.org/schema/vaem#> .
+@prefix voag:                 <http://voag.linkedmodel.org/voag/> .
+@prefix vs:                   <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix wfglos:               <http://nwcg.gov/model/glossary_extension#> .
+@prefix wfitenum:             <http://nwcg.gov/enum/wfit#> .
+@prefix wot:                  <http://xmlns.com/wot/0.1/> .
+@prefix xsd:                  <http://www.w3.org/2001/XMLSchema#> .
+
+wfglos:GeospatialTerm-coreAttribute
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     xsd:boolean ;
+        sh:description  "Attributes that are required in all geospatial data layer standards are referred to as core. This property indicates whether or not the attribute is core." ;
+        sh:group        wfglos:AttributeSpecificsPropertyGroup ;
+        sh:maxCount     1 ;
+        sh:name         "core attribute" ;
+        sh:order        "2"^^xsd:decimal ;
+        sh:path         wfglos:coreAttribute .
+
+wfglos:DataStandardTerm-dataEntry
+        rdf:type          sh:PropertyShape ;
+        dash:reifiableBy  wfglos:dataEntryGuidelines ;
+        sh:description    "Recommendations around the entry of data." ;
+        sh:group          edg:GlossaryTermRulesGroup ;
+        sh:name           "data entry guidelines - remove" ;
+        sh:nodeKind       sh:Literal ;
+        sh:order          "101"^^xsd:decimal ;
+        sh:path           wfglos:dataEntry .
+
+wfglos:GeospatialTerm-alternateName
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     xsd:string ;
+        sh:description  "This is the alternate name for the attribute name (standard name). " ;
+        sh:group        wfglos:AttributeSpecificsPropertyGroup ;
+        sh:name         "alternate name" ;
+        sh:order        "1"^^xsd:decimal ;
+        sh:path         wfglos:alternateName .
+
+edg:GlossaryTerm-keyStakeholder
+        rdf:type        sh:PropertyShape ;
+        sh:class        edg:Organization ;
+        sh:description  "A committee or subgroup that has a critical stake in the definition of a term." ;
+        sh:group        edg:TraceableGroup ;
+        sh:name         "key stakeholder" ;
+        sh:order        "61"^^xsd:decimal ;
+        sh:path         wfglos:keyStakeholder .
+
+wfglos:GeospatialTerm
+        rdf:type         edg:AssetClass , sh:NodeShape ;
+        rdfs:comment     "A term specifically related to NWCG geospatial attributes." ;
+        rdfs:label       "Geospatial Term" ;
+        rdfs:subClassOf  edg:BusinessTerm ;
+        sh:property      wfglos:GeospatialTerm-usedByLayer , wfglos:GeospatialTerm-attributeName , wfglos:GeospatialTerm-coreAttribute , wfglos:GeospatialTerm-alternateName .
+
+wfglos:DataStandardTerm-dataExchangeStandards
+        rdf:type  sh:PropertyShape ;
+        sh:class  edg:DataValueRule ;
+        sh:group  edg:GlossaryTermRulesGroup ;
+        sh:name   "data exchange standards" ;
+        sh:order  "101"^^xsd:decimal ;
+        sh:path   wfglos:dataExchangeStandards .
+
+edg:GlossaryTerm-dataRequiredForBusinessActivity
+        sh:name  "data required for business activity" .
+
+<urn:x-evn-master:glos>
+        rdf:type              owl:Ontology ;
+        rdfs:comment          "A model extending the EDG Glossary Schema for use by NWCG." ;
+        rdfs:label            "WF Schema - Glossary" ;
+        edg:subjectArea       <urn:x-tb-governance:WF> ;
+        metadata:status       metadata:UnderDevelopmentStatus ;
+        swa:defaultNamespace  "http://nwcg.gov/model/glos#" ;
+        teamwork:rootClass    edg:GlossaryViewpoint ;
+        owl:imports           <http://edg.topbraid.solutions/1.0/schema/glossary> , <http://datashapes.org/graphql> .
+
+edg:BusinessTerm  sh:property  edg:BusinessTerm-sensitivityLevel , edg:BusinessTerm-businessPractices , edg:BusinessTerm-businessRule .
+
+wfglos:dataExchangeStandards-exchangeRule
+        rdf:type        sh:PropertyShape ;
+        sh:class        business_rules:BusinessRule ;
+        sh:description  "Business rules governing the exchange of data." ;
+        sh:group        edg:GlossaryTermRulesGroup ;
+        sh:name         "exchange rule" ;
+        sh:order        "101"^^xsd:decimal ;
+        sh:path         wfglos:exchangeRule .
+
+wfglos:GeospatialTerm-usedByLayer
+        rdf:type        sh:PropertyShape ;
+        sh:class        datastd:GeospatialDataLayerStandard ;
+        sh:description  "Identifies the geospatial layers using this attribute." ;
+        sh:group        edg:TraceableGroup ;
+        sh:name         "used by layer standard" ;
+        sh:order        "101"^^xsd:decimal ;
+        sh:path         [ sh:inversePath  datastd:attribute ] .
+
+edg:BusinessTerm-businessRule
+        rdf:type  sh:PropertyShape ;
+        sh:class  business_rules:BusinessRule ;
+        sh:group  wfglos:BusinessRulesPropertyGroup ;
+        sh:name   "business rule" ;
+        sh:order  "0"^^xsd:decimal ;
+        sh:path   wfglos:businessRule .
+
+edg:GlossaryTerm-proposedDefinition
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     rdf:HTML ;
+        sh:description  "A definition that has been recommended by the community and accepted by the steward. A proposed definition will go out for review before becoming Approved." ;
+        sh:group        edg:NarratablePropertiesGroup ;
+        sh:maxCount     1 ;
+        sh:name         "proposed definition" ;
+        sh:order        "42"^^xsd:decimal ;
+        sh:path         edg:GlossaryTerm-proposedDefinition .
+
+wfglos:GeospatialTerm-attributeName
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     xsd:string ;
+        sh:description  "This is called \"standard name\" in the NWCG Data Layer Standards." ;
+        sh:group        wfglos:AttributeSpecificsPropertyGroup ;
+        sh:maxCount     1 ;
+        sh:name         "attribute name" ;
+        sh:order        "0"^^xsd:decimal ;
+        sh:path         wfglos:attributeName .
+
+wfglos:dataEntryGuidelines
+        rdf:type      sh:NodeShape ;
+        rdfs:comment  "Recommended but not mandatory." ;
+        rdfs:label    "Data entry guidelines" ;
+        sh:node       edg:DataValueRuleShape ;
+        sh:property   wfglos:dataEntryGuidelines-dataEntryRule , wfglos:dataEntryGuidelines-entryExample , wfglos:dataEntryGuidelines-entryFormat .
+
+<urn:x-evn-master:wfglos>
+        rdf:type              owl:Ontology , ontologyprojects:Ontology , teamwork:Vocabulary ;
+        rdfs:comment          "An extension of the base EDG glossary model for use by Wildland Fire." ;
+        rdfs:label            "WF Schema - Glossary Extension" ;
+        graphql:publicClass   wfglos:DataStandardTerm , wfglos:GeospatialTerm ;
+        edg:subjectArea       <urn:x-tb-governance:WF> ;
+        dc:description        "<div>6/6/2022<br />Removing:&nbsp;\n<ul>\n<li class=\"LiteralViewer\"><a title=\"http://nwcg.gov/model/glossary_extension#dataEntry\">wfglos:dataEntry</a></li>\n<li class=\"LiteralViewer\"><a title=\"http://nwcg.gov/model/glossary_extension#dataExchange\">wfglos:dataExchange</a></li>\n</ul>\nAs referenced in Data Standard Term. Not deleting from EDG entirely in case we decide to reimplement at a later date.</div>"^^rdf:HTML ;
+        metadata:status       metadata:UnderDevelopmentStatus ;
+        swa:defaultNamespace  "http://nwcg.gov/model/glossary_extension#" ;
+        teamwork:rootClass    edg:GlossaryViewpoint ;
+        owl:imports           <urn:x-evn-master:business_rules> , <http://topbraid.org/teamworkconstraints> , <urn:x-evn-master:datastd> , <urn:x-evn-master:dataenum> , <http://datashapes.org/graphql> , <http://edg.topbraid.solutions/1.0/schema/glossary> .
+
+edg:BusinessTerm-scopeNote
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     rdf:HTML ;
+        sh:description  "An example, further explanation, or usage guidance in support of the definition." ;
+        sh:group        edg:NarratablePropertiesGroup ;
+        sh:name         "definition extension" ;
+        sh:order        "41"^^xsd:decimal ;
+        sh:path         skos:scopeNote .
+
+wfglos:AttributeSpecificsPropertyGroup
+        rdf:type      sh:PropertyGroup ;
+        rdfs:comment  "Data specific to the term as a geospatial attribute." ;
+        rdfs:label    "Attribute Specifics" ;
+        sh:order      "351"^^xsd:decimal .
+
+wfglos:dataEntryGuidelines-dataEntryRule
+        rdf:type  sh:PropertyShape ;
+        sh:class  business_rules:BusinessRule ;
+        sh:group  edg:GlossaryTermRulesGroup ;
+        sh:name   "data entry rule" ;
+        sh:order  "102"^^xsd:decimal ;
+        sh:path   wfglos:dataEntryRule .
+
+edg:GlossaryTerm-reviewPeriod
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     xsd:string ;
+        sh:description  "Identifies the month and year the term is open for comment. This field will only be populated during the time the term is available for feedback to facilitate filtering." ;
+        sh:group        edg:StatusAspectGroup ;
+        sh:maxCount     1 ;
+        sh:name         "review period" ;
+        sh:order        "201"^^xsd:decimal ;
+        sh:path         <http://nwcg.gov/model/glos#reviewPeriod> .
+
+wfglos:dataExchangeStandards
+        rdf:type      sh:NodeShape ;
+        rdfs:comment  "Represent the standard for representation of data files for data interchange." ;
+        rdfs:label    "Data exchange standards" ;
+        sh:node       edg:DataValueRuleShape ;
+        sh:property   wfglos:dataExchangeStandards-exchangeRule , wfglos:dataExchangeStandards-rawExample , wfglos:dataExchangeStandards-rawFormat .
+
+wfglos:DataStandardTerm-dataExchange
+        rdf:type          sh:PropertyShape ;
+        dash:reifiableBy  wfglos:dataExchangeStandards ;
+        sh:description    "The rules around the exchange of the raw data." ;
+        sh:group          edg:GlossaryTermRulesGroup ;
+        sh:name           "data exchange standards - remove" ;
+        sh:nodeKind       sh:Literal ;
+        sh:order          "101"^^xsd:decimal ;
+        sh:path           wfglos:dataExchange .
+
+wfglos:dataEntryGuidelines-entryExample
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     xsd:string ;
+        sh:description  "Example(s) fo valid data entry and descriptor, if appropriate." ;
+        sh:group        edg:ValueTypePropertyGroup ;
+        sh:name         "example" ;
+        sh:order        "3"^^xsd:decimal ;
+        sh:path         wfglos:entryExample .
+
+edg:BusinessTerm-sensitivityLevel
+        rdf:type  sh:PropertyShape ;
+        sh:class  dataenum:dataSensitivityLevel ;
+        sh:group  wfglos:BusinessRulesPropertyGroup ;
+        sh:name   "sensitivity level" ;
+        sh:order  "2"^^xsd:decimal ;
+        sh:path   wfglos:sensitivityLevel .
+
+edg:CustomEnumeratedValue
+        edg:isGadget  true .
+
+edg:GlossaryTerm-archiveDate
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:date ;
+        sh:group     edg:StatusAspectGroup ;
+        sh:maxCount  1 ;
+        sh:name      "archive date" ;
+        sh:order     "201"^^xsd:decimal ;
+        sh:path      edg:archiveDate .
+
+ontologyprojects:Ontology
+        rdfs:subClassOf  teamwork:Vocabulary .
+
+wfglos:DataStandardTerm-dataEntryGuidelines
+        rdf:type  sh:PropertyShape ;
+        sh:class  edg:DataValueRule ;
+        sh:group  edg:GlossaryTermRulesGroup ;
+        sh:name   "data entry guidelines" ;
+        sh:order  "101"^^xsd:decimal ;
+        sh:path   wfglos:dataEntryGuidelines .
+
+wfglos:BusinessRulesPropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Business Rules" ;
+        sh:order    10.5 .
+
+edg:GlossaryTerm-steward
+        rdf:type  sh:PropertyShape ;
+        sh:class  edg:Organization ;
+        sh:group  edg:TraceableGroup ;
+        sh:name   "steward" ;
+        sh:order  "61"^^xsd:decimal ;
+        sh:path   wfglos:steward .
+
+<http://nwcg.gov/model/glos#RulesPropertyGroup>
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Rules" ;
+        sh:order    "351"^^xsd:decimal .
+
+wfglos:dataExchangeStandards-rawExample
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     xsd:string ;
+        sh:description  "Example(s) of valid raw data and descriptor, if appropriate." ;
+        sh:group        edg:ValueTypePropertyGroup ;
+        sh:name         "example" ;
+        sh:order        "3"^^xsd:decimal ;
+        sh:path         wfglos:rawExample .
+
+edg:DataValueRuleShape-caseSensitivity
+        rdf:type        sh:PropertyShape ;
+        sh:class        dataenum:caseSensitivity ;
+        sh:description  "A specification of whether or not the data is to be upper, lower, or mixed case." ;
+        sh:group        edg:ValueTypePropertyGroup ;
+        sh:name         "case sensitivity" ;
+        sh:nodeKind     sh:IRI ;
+        sh:order        "1"^^xsd:decimal ;
+        sh:path         wfglos:caseSensitivity .
+
+wfglos:DataStandardTerm-dataDisplayRules
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  rdf:HTML ;
+        sh:group     edg:GlossaryTermRulesGroup ;
+        sh:name      "data display rules" ;
+        sh:order     "101"^^xsd:decimal ;
+        sh:path      wfglos:dataDisplayRules .
+
+wfglos:dataEntryGuidelines-entryFormat
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     xsd:string ;
+        sh:description  "The way the data should be displayed to the users." ;
+        sh:group        edg:ValueTypePropertyGroup ;
+        sh:name         "format" ;
+        sh:order        "2"^^xsd:decimal ;
+        sh:path         wfglos:entryFormat .
+
+wfglos:DataStandardTerm
+        rdf:type         edg:AssetClass , sh:NodeShape ;
+        rdfs:comment     "The term familiar to the wildland fire community when talking about business terms." ;
+        rdfs:label       "Data Standard Term" ;
+        rdfs:subClassOf  edg:BusinessTerm ;
+        sh:property      wfglos:DataStandardTerm-dataExchangeStandards , wfglos:DataStandardTerm-dataDisplayRules , wfglos:DataStandardTerm-dataEntryGuidelines , wfglos:dataExchangeStandards-exchangeRule .
+
+edg:GlossaryTerm  sh:property  edg:GlossaryTerm-reviewPeriod , edg:GlossaryTerm-archiveDate , edg:GlossaryTerm-proposedDefinition , edg:BusinessTerm-scopeNote , edg:GlossaryTerm-keyStakeholder , edg:GlossaryTerm-steward .
+
+teamwork:Vocabulary  rdfs:subClassOf  owl:Ontology .
+
+edg:GlossaryTerm-requirement
+        sh:name  "requirement" .
+
+wfglos:dataExchangeStandards-rawFormat
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     xsd:string ;
+        sh:description  "A specification of the way the raw data should be arranged." ;
+        sh:group        edg:ValueTypePropertyGroup ;
+        sh:name         "format" ;
+        sh:order        "2"^^xsd:decimal ;
+        sh:path         wfglos:rawFormat .
+
+edg:BusinessTerm-businessPractices
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     rdf:HTML ;
+        sh:description  "Recommended business practices related to a specific glossary term. Are not considered business rules as they are only recommendations." ;
+        sh:group        wfglos:BusinessRulesPropertyGroup ;
+        sh:name         "business practices" ;
+        sh:order        "1"^^xsd:decimal ;
+        sh:path         wfglos:businessPractices .
+
+edg:DataValueRuleShape
+        sh:property  edg:DataValueRuleShape-caseSensitivity .

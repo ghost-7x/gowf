@@ -1,0 +1,1633 @@
+@prefix afn:                  <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix arg:                  <http://spinrdf.org/arg#> .
+@prefix corpus:               <http://topbraid.org/corpus#> .
+@prefix corpusprojects:       <http://topbraid.org/corpus-projects#> .
+@prefix crosswalk:            <http://topbraid.org/crosswalk#> .
+@prefix crosswalk.spin:       <http://topbraid.org/crosswalk.spin#> .
+@prefix crosswalkapp:         <http://topbraid.org/swa/crosswalkapp#> .
+@prefix crosswalkprojects:    <http://teamwork.topbraidlive.org/crosswalkprojects#> .
+@prefix dash:                 <http://datashapes.org/dash#> .
+@prefix datagraph:            <http://teamwork.topbraidlive.org/datagraph/datagraphprojects#> .
+@prefix datatype:             <http://qudt.org/vocab/datatype/> .
+@prefix dc:                   <http://purl.org/dc/elements/1.1/> .
+@prefix dcam:                 <http://purl.org/dc/dcam/> .
+@prefix dct:                  <http://purl.org/dc/terms/> .
+@prefix debug-swa:            <http://debug.topbraidlive.org/1.0/swa/> .
+@prefix dtype:                <http://www.linkedmodel.org/schema/dtype#> .
+@prefix edg:                  <http://edg.topbraid.solutions/model/> .
+@prefix edg.v:                <http://edg.topbraid.solutions/view/> .
+@prefix evnconstraints:       <http://topbraid.org/spin/evnconstraints#> .
+@prefix fn:                   <http://www.w3.org/2005/xpath-functions#> .
+@prefix foaf:                 <http://xmlns.com/foaf/0.1/> .
+@prefix geo:                  <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix governance:           <http://topbraid.org/teamworkgovernance.ui#> .
+@prefix graphql:              <http://datashapes.org/graphql#> .
+@prefix html:                 <http://uispin.org/html#> .
+@prefix ipenum:               <http://nwcg.gov/enum/incidentPosition/> .
+@prefix jfn:                  <java:org.apache.jena.sparql.function.library.> .
+@prefix lib-importer:         <http://edg.topbraid.solutions/importer/lib#> .
+@prefix list:                 <http://jena.apache.org/ARQ/list#> .
+@prefix metadata:             <http://topbraid.org/metadata#> .
+@prefix metash:               <http://datashapes.org/metash#> .
+@prefix nlp:                  <http://topbraid.org/nlp#> .
+@prefix nwcginfo:             <http://nwcg.gov/model/informationAssetExtension#> .
+@prefix nwcgposlib:           <http://nwcg.gov/ref/position/> .
+@prefix ontologyprojects:     <http://teamwork.topbraidlive.org/ontologyprojects#> .
+@prefix org:                  <http://www.w3.org/ns/org#> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix owlrl:                <http://topbraid.org/spin/owlrl#> .
+@prefix pf:                   <http://jena.hpl.hp.com/ARQ/property#> .
+@prefix prov:                 <http://www.w3.org/ns/prov#> .
+@prefix quantity:             <http://qudt.org/vocab/quantity/> .
+@prefix quantitykind:         <http://qudt.org/vocab/quantitykind/> .
+@prefix qudt:                 <http://qudt.org/schema/qudt/> .
+@prefix qudt.type:            <http://qudt.org/vocab/type/> .
+@prefix raci:                 <http://topbraid.org/raci#> .
+@prefix rdf:                  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdm:                  <http://rdm.topbraidlive.org/rdm/> .
+@prefix rdmfact:              <http://topbraid.org/rdmfact#> .
+@prefix rdmprojects:          <http://rdm.topbraidlive.org/rdmprojects#> .
+@prefix s3:                   <http://topbraid.org/s3#> .
+@prefix safindex:             <http://topbraid.org/safindex#> .
+@prefix scheduler:            <http://topbraid.org/scheduler#> .
+@prefix search:               <http://topbraid.org/search#> .
+@prefix sh:                   <http://www.w3.org/ns/shacl#> .
+@prefix sharepoint-termstore: <http://teamwork.topbraidlive.org/taxonomy/sharepoint-termstore#> .
+@prefix sioc:                 <http://rdfs.org/sioc/ns#> .
+@prefix skos:                 <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosshapes:           <http://topbraid.org/skos.shapes#> .
+@prefix skosspin:             <http://topbraid.org/spin/skosspin#> .
+@prefix skostemplate:         <http://topbraid.org/spin/skostemplates#> .
+@prefix skosxl:               <http://www.w3.org/2008/05/skos-xl#> .
+@prefix sm:                   <http://topbraid.org/sparqlmotion#> .
+@prefix smf:                  <http://topbraid.org/sparqlmotionfunctions#> .
+@prefix sml:                  <http://topbraid.org/sparqlmotionlib#> .
+@prefix softwareprojects:     <http://teamwork.topbraidlive.org/software/softwareprojects#> .
+@prefix sp:                   <http://spinrdf.org/sp#> .
+@prefix sparql:               <http://datashapes.org/sparql#> .
+@prefix spif:                 <http://spinrdf.org/spif#> .
+@prefix spin:                 <http://spinrdf.org/spin#> .
+@prefix spinmap:              <http://spinrdf.org/spinmap#> .
+@prefix spinmapl:             <http://topbraid.org/spin/spinmapl#> .
+@prefix spl:                  <http://spinrdf.org/spl#> .
+@prefix spr:                  <http://spinrdf.org/spr#> .
+@prefix spra:                 <http://spinrdf.org/spra#> .
+@prefix swa:                  <http://topbraid.org/swa#> .
+@prefix swaclasses:           <http://topbraid.org/swaclasses#> .
+@prefix swash:                <http://topbraid.org/swash#> .
+@prefix swauml:               <http://topbraid.org/swauml#> .
+@prefix swon:                 <http://uispin.org/swon#> .
+@prefix tables:               <http://topbraid.org/tables#> .
+@prefix tablesmap:            <http://topbraid.org/spin/tablesmap#> .
+@prefix taggerprojects:       <http://evn.topbraidlive.org/taggerprojects#> .
+@prefix tasks:                <http://topbraid.org/tasks#> .
+@prefix taxonomies:           <http://evn.topbraidlive.org/evnprojects#> .
+@prefix tbgeo:                <http://topbraid.org/tbgeo#> .
+@prefix tbladmin:             <http://server.topbraidlive.org/system-applications/tbladmin#> .
+@prefix teamwork:             <http://topbraid.org/teamwork#> .
+@prefix teamworkconstraints:  <http://topbraid.org/teamworkconstraints#> .
+@prefix teamworks3:           <http://teamwork.topbraidlive.org/ui/teamworks3#> .
+@prefix teamworkupdate:       <http://teamworkAPI.topbraid.com/teamworkUpdate#> .
+@prefix textindex:            <http://topbraid.org/textindex#> .
+@prefix tops:                 <http://www.topbraid.org/tops#> .
+@prefix tosh:                 <http://topbraid.org/tosh#> .
+@prefix tosh.ui:              <http://topbraid.org/tosh.ui#> .
+@prefix tracker:              <http://teamwork.topbraidlive.org/ui/tracker#> .
+@prefix ui:                   <http://uispin.org/ui#> .
+@prefix uix:                  <http://topbraidlive.org/uix#> .
+@prefix unit:                 <http://qudt.org/vocab/unit/> .
+@prefix vaem:                 <http://www.linkedmodel.org/schema/vaem#> .
+@prefix voag:                 <http://voag.linkedmodel.org/voag/> .
+@prefix vs:                   <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix wfpos:                <http://nwcg.gov/model/incidentPosition#> .
+@prefix wot:                  <http://xmlns.com/wot/0.1/> .
+@prefix xsd:                  <http://www.w3.org/2001/XMLSchema#> .
+
+wfpos:IncidentPositionViewpoint
+        rdf:type         edg:ViewpointClass ;
+        rdfs:label       "Incident Position Viewpoint" ;
+        rdfs:subClassOf  edg:Viewpoint ;
+        dash:abstract    true .
+
+wfpos:Experience-relatedPosition
+        rdf:type        sh:PropertyShape ;
+        sh:class        wfpos:IncidentPosition ;
+        sh:description  "Identifies positions using the experience statement" ;
+        sh:group        wfpos:StatementDetailsPropertyGroup ;
+        sh:name         "related position" ;
+        sh:order        "1"^^xsd:decimal ;
+        sh:path         wfpos:relatedPosition .
+
+wfpos:DevelopmentPriorityPropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Development Priority" ;
+        sh:order    "2"^^xsd:decimal .
+
+wfpos:PositionQualificationStandard-physicalFitnessLevel
+        rdf:type        sh:PropertyShape ;
+        sh:class        ipenum:PhysicalFitnessLevel ;
+        sh:description  "Required Physical Fitness Level based on Enumeration IP Physical Fitness (arduous, moderate, light, none)" ;
+        sh:group        wfpos:TrainingAndExperiencePropertyGroup ;
+        sh:maxCount     1 ;
+        sh:name         "physical fitness level" ;
+        sh:order        "5"^^xsd:decimal ;
+        sh:path         wfpos:physicalFitnessLevel .
+
+wfpos:TaskBook-taskBookRequired
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     xsd:boolean ;
+        sh:description  "A true response indicates the task book is required by the position. A false or null value indicate the task book is relevant to the position, but not required for qualification." ;
+        sh:group        wfpos:TaskBookDetailsPropertyGroup ;
+        sh:maxCount     1 ;
+        sh:name         "task book required" ;
+        sh:order        "1"^^xsd:decimal ;
+        sh:path         wfpos:taskBookRequired .
+
+wfpos:IncidentPositionDescription-prepareMobilizeDutyStatement
+        rdf:type  sh:PropertyShape ;
+        sh:class  wfpos:Responsibility ;
+        sh:group  wfpos:PrepareAndMobilizePropertyGroup ;
+        sh:name   "duty statement(s)" ;
+        sh:order  "0"^^xsd:decimal ;
+        sh:path   wfpos:prepareMobilizeDutyStatement .
+
+wfpos:PositionSpecificDutiesPropertyGroup
+        rdf:type      sh:PropertyGroup ;
+        rdfs:comment  "Duties and responsibilities specific to a position." ;
+        rdfs:label    "Perform Position-Specific Duties" ;
+        sh:order      "4"^^xsd:decimal .
+
+wfpos:PositionQualificationStandard
+        rdf:type         edg:AssetClass , owl:Class , sh:NodeShape ;
+        rdfs:comment     "Establishes minimum position qualification standards for training, experience, physical fitness, and currency for national mobilization to wildland fire incidents." ;
+        rdfs:label       "Position Qualification Standard" ;
+        rdfs:subClassOf  wfpos:IncidentPositionViewpoint ;
+        edg:acronym      "QUAL" ;
+        sh:property      wfpos:PositionQualificationStandard-taskBook , edg:Identifiable-type , wfpos:PositionQualificationStandard-qualificationRequirementFor , wfpos:PositionQualificationStandard-physicalFitnessLevel , wfpos:PositionQualificationStandard-requiredPositionExperience , wfpos:PositionQualificationStandard-qualificationNotes , wfpos:PositionQualificationStandard-requiredTraining , wfpos:PositionQualificationStandard-changeNote , wfpos:PositionQualificationStandard-keyStakeholder , wfpos:PositionQualificationStandard-incidentTypeEndorsement , edg:StatusAspect-status , wfpos:PositionQualificationStandard-primaryCommittee , wfpos:PositionQualificationStandard-lastModifiedReviewed , edg:Identifiable-label , wfpos:PositionQualificationStandard-year , wfpos:PositionQualificationStandard-otherTraining , wfpos:PositionQualificationStandard-positionFunctionalArea , wfpos:PositionQualificationStandard-steward .
+
+wfpos:ResponsibilityStatementAnalysis-performance
+        rdf:type  sh:PropertyShape ;
+        sh:class  wfpos:Responsibility ;
+        sh:group  wfpos:TrainingDesignProcessPropertyGroup ;
+        sh:name   "performance" ;
+        sh:order  "2"^^xsd:decimal ;
+        sh:path   [ sh:inversePath  wfpos:dutyResponsibilityStatement ] .
+
+wfpos:PositionSMEView
+        rdf:type                sh:NodeShape ;
+        rdfs:comment            "An alternate view created to assist with limiting the fields available for an incident position Subject Matter Expert to use when completing the various pieces of the Performance Support Analysis Tool (PSAT)." ;
+        rdfs:label              "Position SME View" ;
+        dash:applicableToClass  wfpos:ResponsibilityStatementAnalysis ;
+        sh:property             wfpos:ResponsibilityStatementAnalysis-sequenceOrder , wfpos:ResponsibilityStatementAnalysis-qualityOfPerformanceStandard , wfpos:ResponsibilityStatementAnalysis-dutyResponsibilityStatement , wfpos:ResponsibilityStatementAnalysis-existingKnowledgeExperience , wfpos:ResponsibilityStatementAnalysis-standardSourceNotes , wfpos:ResponsibilityStatementAnalysis-consequenceOfError , wfpos:ResponsibilityStatementAnalysis-remarksAboutDutyStatement , wfpos:ResponsibilityStatementAnalysis-difficulty , wfpos:ResponsibilityStatementAnalysis-standardSource , wfpos:ResponsibilityStatementAnalysis-dutyStatementUniqueness , wfpos:ResponsibilityStatementAnalysis-position , wfpos:ResponsibilityStatementAnalysis-commentsAboutStandard , wfpos:ResponsibilityStatementAnalysis-statementCategory , wfpos:ResponsibilityStatementAnalysis-frequency .
+
+wfpos:ResponsibilityStatementAnalysis-existingMaterialsLocation
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     rdf:HTML ;
+        sh:description  "A free type field indicating where in a specific asset the training for the statement may be found." ;
+        sh:group        wfpos:TrainingDesignProcessPropertyGroup ;
+        sh:name         "existing materials location" ;
+        sh:order        8.25 ;
+        sh:path         wfpos:existingMaterialsLocation .
+
+wfpos:IncidentPositionDescription-relevantFormsDocuments
+        rdf:type  sh:PropertyShape ;
+        sh:class  edg:InformationAsset ;
+        sh:group  wfpos:DocumentPropertyGroup ;
+        sh:name   "relevant forms and documents" ;
+        sh:order  "1"^^xsd:decimal ;
+        sh:path   wfpos:relevantFormsDocuments .
+
+wfpos:ResponsibilityStatementAnalysis-standardSource
+        rdf:type        sh:PropertyShape ;
+        sh:class        edg:InformationAsset ;
+        sh:description  "Specific Location of Performance Standard (e.g. NWCG Standards for Helicopter Operations)" ;
+        sh:group        wfpos:StandardDetailsPropertyGroup ;
+        sh:name         "standard source" ;
+        sh:order        "0"^^xsd:decimal ;
+        sh:path         wfpos:standardSource .
+
+wfpos:PositionTraining-training
+        rdf:type  sh:PropertyShape ;
+        sh:class  nwcginfo:Training ;
+        sh:group  wfpos:TrainingStatementsPropertyGroup ;
+        sh:name   "training" ;
+        sh:path   wfpos:training .
+
+wfpos:IncidentPositionDescription-communicateWith
+        rdf:type  sh:PropertyShape ;
+        sh:class  ipenum:CommunicationConnections ;
+        sh:group  wfpos:CommunicateCoordinatePropertyGroup ;
+        sh:name   "communicate with" ;
+        sh:order  "1"^^xsd:decimal ;
+        sh:path   wfpos:communicateWith .
+
+wfpos:ResponsibilityStatementAnalysis-includeInPostionTaskBook
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:boolean ;
+        sh:group     wfpos:TrainingDesignProcessPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "include in postion task book" ;
+        sh:order     8.0078125 ;
+        sh:path      wfpos:includeInPostionTaskBook .
+
+wfpos:DemobilizePropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Demobilize" ;
+        sh:order    4.984375 .
+
+wfpos:ResponsibilityStatementAnalysis-label
+        rdf:type         sh:PropertyShape ;
+        dash:singleLine  true ;
+        graphql:name     "labels" ;
+        sh:group         wfpos:StandardsAndPositionAnalysisPropertyGroup ;
+        sh:name          "statement item number" ;
+        sh:or            dash:StringOrLangString ;
+        sh:order         "0"^^xsd:decimal ;
+        sh:path          rdfs:label .
+
+wfpos:IncidentPosition-modificationDate
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:date ;
+        sh:group     edg:StatusAspectGroup ;
+        sh:name      "modification date" ;
+        sh:order     "51"^^xsd:decimal ;
+        sh:path      wfpos:modificationDate .
+
+wfpos:TaskBook  rdf:type  sh:NodeShape , owl:Class ;
+        rdfs:label       "Position Task Book Qualification" ;
+        rdfs:subClassOf  wfpos:IncidentPositionViewpoint ;
+        sh:class         nwcginfo:positionTaskbook ;
+        sh:property      wfpos:TaskBook-taskBookRequired .
+
+wfpos:PerformanceSupportRecommendation-evaluationOption
+        rdf:type  sh:PropertyShape ;
+        sh:class  ipenum:EvaluationMethod ;
+        sh:group  wfpos:PerformanceSupportRecommendationPropertyGroup ;
+        sh:name   "evaluation option" ;
+        sh:order  "6"^^xsd:decimal ;
+        sh:path   wfpos:evaluationOption .
+
+wfpos:ResponsibilityStatementAnalysis-remarksAboutDutyStatement
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     rdf:HTML ;
+        sh:description  "Remarks about Duty/Responsibility (i.e. wording, validity,  duty/responsibility likes and dislikes)" ;
+        sh:group        wfpos:StandardsAndPositionAnalysisPropertyGroup ;
+        sh:name         "remarks about duty statement" ;
+        sh:order        "5"^^xsd:decimal ;
+        sh:path         wfpos:remarksAboutDutyStatement .
+
+wfpos:PerformanceSupportToolPropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Performance Support Tool" ;
+        sh:order    "1"^^xsd:decimal .
+
+wfpos:IncidentPosition-positionRequirement
+        rdf:type     sh:PropertyShape ;
+        sh:group     edg:TraceableGroup ;
+        sh:maxCount  1 ;
+        sh:name      "position requirement" ;
+        sh:nodeKind  sh:IRI ;
+        sh:order     "1"^^xsd:decimal ;
+        sh:path      wfpos:positionRequirement .
+
+wfpos:ResponsibilityStatementAnalysis-domainLevel
+        rdf:type     sh:PropertyShape ;
+        sh:class     ipenum:DutyDomainLevel ;
+        sh:group     wfpos:TrainingDesignProcessPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "domain level" ;
+        sh:order     "8"^^xsd:decimal ;
+        sh:path      wfpos:domainLevel .
+
+wfpos:ResponsibilityStatementAnalysis-qualityOfPerformanceStandard
+        rdf:type        sh:PropertyShape ;
+        sh:class        ipenum:QualityOfPerformanceStandard ;
+        sh:description  "Is the standard 1) Current & Accurate, 2) Non-existent, or 3) Outdated and/or Needs Improvement? This is your chance to identify how well you think the current standard supports the responsibility statement." ;
+        sh:group        wfpos:StandardDetailsPropertyGroup ;
+        sh:name         "quality and development of performance standard" ;
+        sh:order        "2"^^xsd:decimal ;
+        sh:path         wfpos:qualityOfPerformanceStandard .
+
+wfpos:IncidentPositionDescription-demobilizeDutyStatement
+        rdf:type  sh:PropertyShape ;
+        sh:class  wfpos:Responsibility ;
+        sh:group  wfpos:DemobilizePropertyGroup ;
+        sh:name   "duty statement(s)" ;
+        sh:order  "0"^^xsd:decimal ;
+        sh:path   wfpos:demobilizeDutyStatement .
+
+wfpos:PerformanceSupportReviewAndRecommendationPropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Performance Support Review and Recommendation (PSRR)" ;
+        sh:order    "4"^^xsd:decimal .
+
+wfpos:ResponsibilityStatementAnalysis-evaluationComments
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  rdf:HTML ;
+        sh:group     wfpos:TrainingDesignProcessPropertyGroup ;
+        sh:name      "evaluation comments" ;
+        sh:order     8.03125 ;
+        sh:path      wfpos:evaluationComments .
+
+wfpos:ResponsibilityStatementAnalysis-condition
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  rdf:HTML ;
+        sh:group     wfpos:TrainingDesignProcessPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "condition" ;
+        sh:order     "3"^^xsd:decimal ;
+        sh:path      wfpos:condition .
+
+wfpos:Experience-label
+        rdf:type         sh:PropertyShape ;
+        dash:singleLine  true ;
+        graphql:name     "labels" ;
+        sh:group         wfpos:StatementDetailsPropertyGroup ;
+        sh:name          "experience statement" ;
+        sh:or            dash:StringOrLangString ;
+        sh:order         "0"^^xsd:decimal ;
+        sh:path          rdfs:label .
+
+wfpos:PriorityScalePropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Priority Scale" ;
+        sh:order    "1"^^xsd:decimal .
+
+wfpos:PositionTraining
+        rdf:type     sh:NodeShape ;
+        rdfs:label   "Position training" ;
+        sh:property  wfpos:PositionTraining-label , wfpos:PositionTraining-training , skos:Concept-note .
+
+wfpos:IncidentPositionDescription-DocumentDutyStatement
+        rdf:type  sh:PropertyShape ;
+        sh:class  wfpos:Responsibility ;
+        sh:group  wfpos:DocumentPropertyGroup ;
+        sh:name   "duty statement(s)" ;
+        sh:order  "0"^^xsd:decimal ;
+        sh:path   wfpos:DocumentDutyStatement .
+
+wfpos:ResponsibilityStatementAnalysis-difficulty
+        rdf:type        sh:PropertyShape ;
+        sh:class        ipenum:PositionDutyDifficulty ;
+        sh:description  "How hard is it for the position to perform the responsibility? Is it Complex and therefor requires judgement, synthesis, and context building from the individual? Or is Moderate and merely requires regular practice, study or a refresher? Perhaps it is Simple and requires minimal direction or practice. This property captures how difficult the statement is to perform from the SME's perspective." ;
+        sh:group        wfpos:DifficultyImportanceFrequencySurveyPropertyGroup ;
+        sh:maxCount     1 ;
+        sh:name         "difficulty" ;
+        sh:order        "1"^^xsd:decimal ;
+        sh:path         wfpos:difficulty .
+
+wfpos:PerformanceSupportRecommendation-MaxValue
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:decimal ;
+        sh:group     wfpos:PriorityScalePropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "Max Value" ;
+        sh:order     "1"^^xsd:decimal ;
+        sh:path      wfpos:MaxValue .
+
+wfpos:DocumentPropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Document" ;
+        sh:order    4.96875 .
+
+wfpos:IncidentPositionDescription-suggestedKitItems
+        rdf:type        sh:PropertyShape ;
+        sh:class        xsd:anyURI ;
+        sh:description  "Items an individual should consider for their kit when mobilizing for an assignment." ;
+        sh:group        wfpos:PrepareAndMobilizePropertyGroup ;
+        sh:name         "suggested kit items" ;
+        sh:order        "2"^^xsd:decimal ;
+        sh:path         wfpos:suggestedKitItems .
+
+wfpos:PositionQualificationStandard-primaryCommittee
+        rdf:type  sh:PropertyShape ;
+        sh:class  edg:Organization ;
+        sh:group  edg:GovernancePropertyGroup ;
+        sh:name   "primary committee" ;
+        sh:order  "0"^^xsd:decimal ;
+        sh:path   wfpos:primaryCommittee .
+
+wfpos:TrainingAndExperiencePropertyGroup
+        rdf:type      sh:PropertyGroup ;
+        rdfs:comment  "Collects data related to a position's required training or experience that leads to qualification." ;
+        rdfs:label    "Training and Experience" ;
+        sh:order      "6"^^xsd:decimal .
+
+wfpos:DOI-duties  rdf:type  sh:PropertyShape ;
+        sh:datatype  rdf:HTML ;
+        sh:group     edg:IdentifiersGroup ;
+        sh:maxCount  1 ;
+        sh:name      "duties" ;
+        sh:order     12.1 ;
+        sh:path      wfpos:duties .
+
+wfpos:PositionQualificationStandard-changeNote
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     rdf:HTML ;
+        sh:description  "A note about modifications to the position requirement. Alternatively to using this field, you can enter log messages when making changes." ;
+        sh:group        edg:NarratablePropertiesGroup ;
+        sh:name         "change note" ;
+        sh:order        "0"^^xsd:decimal ;
+        sh:path         skos:changeNote .
+
+wfpos:TrainingDesignProcessPropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Training Design Process" ;
+        sh:order    "6"^^xsd:decimal .
+
+wfpos:ResponsibilityStatementAnalysis-onAssignmentTools
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     rdf:HTML ;
+        sh:description  "Should this be a controlled vocabulary? What sorts of values will be here?" ;
+        sh:group        wfpos:TrainingDesignProcessPropertyGroup ;
+        sh:name         "on assignment tools" ;
+        sh:order        "0"^^xsd:decimal ;
+        sh:path         wfpos:onAssignmentTools .
+
+wfpos:ResponsibilityStatementAnalysis-estimatedTimeToCompletion
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     xsd:decimal ;
+        sh:description  "An approximate length of time in hours that it is expected for a training specialist to develop the performance support tools and media for the position duty statement." ;
+        sh:group        wfpos:MaterialsAndWorkEffortPropertyGroup ;
+        sh:name         "estimated length or user time to completion (hours)" ;
+        sh:order        "2"^^xsd:decimal ;
+        sh:path         wfpos:estimatedTimeToCompletion .
+
+wfpos:ResponsibilityStatementAnalysis-sequenceOrder
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     xsd:string ;
+        sh:description  "The order a statement is listed within the Incident Position Description. Was originally used to suggest an order of flow between statements." ;
+        sh:group        wfpos:StandardsAndPositionAnalysisPropertyGroup ;
+        sh:maxCount     1 ;
+        sh:name         "sequence order" ;
+        sh:order        "1"^^xsd:decimal ;
+        sh:path         wfpos:sequenceOrder .
+
+wfpos:IncidentPosition-functionalArea
+        rdf:type     sh:PropertyShape ;
+        sh:class     ipenum:FunctionalArea ;
+        sh:group     edg:TraceableGroup ;
+        sh:maxCount  1 ;
+        sh:name      "functional area" ;
+        sh:order     "-1"^^xsd:decimal ;
+        sh:path      wfpos:functionalArea .
+
+skos:Concept-note  sh:description  "Information detailing any edits made to the position code and title information." ;
+        sh:name         "note" .
+
+wfpos:PerformWUIDutiesPropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Perform Wildland Urban Interface (WUI) Duties" ;
+        sh:order    4.75 .
+
+wfpos:DOI-endorsementByKindDiscipline
+        rdf:type  sh:PropertyShape ;
+        sh:class  ipenum:KindOrDisciplineEndorsement ;
+        sh:group  wfpos:EndorsementsPropertyGroup ;
+        sh:name   "endorsement by kind or discipline" ;
+        sh:order  "1"^^xsd:decimal ;
+        sh:path   wfpos:endorsementByKindDiscipline .
+
+wfpos:ResponsibilityStatementAnalysis-learningObjectiveNumber
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:integer ;
+        sh:group     wfpos:TrainingDesignProcessPropertyGroup ;
+        sh:name      "learning objective number" ;
+        sh:order     "5"^^xsd:decimal ;
+        sh:path      wfpos:learningObjectiveNumber .
+
+wfpos:ResponsibilityStatementAnalysis-criteria
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  rdf:HTML ;
+        sh:group     wfpos:TrainingDesignProcessPropertyGroup ;
+        sh:name      "criteria" ;
+        sh:order     "4"^^xsd:decimal ;
+        sh:path      wfpos:criteria .
+
+wfpos:ResponsibilityStatementAnalysis-materialsName
+        rdf:type        sh:PropertyShape ;
+        sh:class        edg:InformationAsset ;
+        sh:description  "The name of the information asset existing to support training for the responsibility statement." ;
+        sh:group        wfpos:TrainingDesignProcessPropertyGroup ;
+        sh:name         "materials name" ;
+        sh:order        8.1640625 ;
+        sh:path         wfpos:materialsName .
+
+wfpos:ResponsibilityStatementAnalysis-learningObjective
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  rdf:HTML ;
+        sh:group     wfpos:TrainingDesignProcessPropertyGroup ;
+        sh:name      "learning objective(s)" ;
+        sh:order     "6"^^xsd:decimal ;
+        sh:path      wfpos:learningObjective .
+
+wfpos:ResponsibilityStatementAnalysis-finalRecommendation
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     rdf:HTML ;
+        sh:description  "Based on SME input of initial DIF Survey recommendations and collaborative discussion with NWCG staff." ;
+        sh:group        wfpos:PerformanceSupportReviewAndRecommendationPropertyGroup ;
+        sh:name         "final recommendation of performance support needs" ;
+        sh:order        "2"^^xsd:decimal ;
+        sh:path         wfpos:finalRecommendation .
+
+wfpos:DOI-positionCategory
+        rdf:type     sh:PropertyShape ;
+        sh:class     ipenum:Category ;
+        sh:group     edg:EnterpriseContextGroup ;
+        sh:maxCount  1 ;
+        sh:name      "position category" ;
+        sh:order     "1"^^xsd:decimal ;
+        sh:path      wfpos:positionCategory .
+
+wfpos:PositionQualificationStandard-currencyMaintainedBy
+        rdf:type        sh:PropertyShape ;
+        sh:class        wfpos:IncidentPosition ;
+        sh:description  "The position listed maintains currency for this position." ;
+        sh:group        wfpos:MaintainingPositionCurrencyPropertyGroup ;
+        sh:name         "currency maintained by" ;
+        sh:order        "0"^^xsd:decimal ;
+        sh:path         [ sh:inversePath  wfpos:maintainsCurrencyFor ] .
+
+wfpos:PositionDetailsPropertyGroup
+        rdf:type      sh:PropertyGroup ;
+        rdfs:comment  "Properties related to the position described by the position description." ;
+        rdfs:label    "Position Details" ;
+        sh:order      "0"^^xsd:decimal .
+
+wfpos:PositionQualificationStandard-requiredTraining
+        rdf:type          sh:PropertyShape ;
+        dash:reifiableBy  wfpos:PositionTraining ;
+        sh:datatype       xsd:string ;
+        sh:group          wfpos:TrainingAndExperiencePropertyGroup ;
+        sh:name           "required training" ;
+        sh:order          "1"^^xsd:decimal ;
+        sh:path           wfpos:requiredTraining .
+
+wfpos:PositionTraining-label
+        rdf:type         sh:PropertyShape ;
+        dash:singleLine  true ;
+        graphql:name     "labels" ;
+        sh:group         wfpos:TrainingStatementsPropertyGroup ;
+        sh:name          "label" ;
+        sh:or            dash:StringOrLangString ;
+        sh:order         "1"^^xsd:decimal ;
+        sh:path          rdfs:label .
+
+wfpos:IncidentPosition-label
+        rdf:type         sh:PropertyShape ;
+        dash:singleLine  true ;
+        graphql:name     "labels" ;
+        sh:group         edg:IdentifiersGroup ;
+        sh:name          "position code and title" ;
+        sh:or            dash:StringOrLangString ;
+        sh:order         "-2"^^xsd:decimal ;
+        sh:path          rdfs:label .
+
+wfpos:IncidentPositionDescription-positionSpecificDutyStatement
+        rdf:type  sh:PropertyShape ;
+        sh:class  wfpos:Responsibility ;
+        sh:group  wfpos:PositionSpecificDutiesPropertyGroup ;
+        sh:name   "duty statement(s)" ;
+        sh:order  "0"^^xsd:decimal ;
+        sh:path   wfpos:positionSpecificDutyStatement .
+
+<urn:x-evn-master:wfpos>
+        rdf:type                      ontologyprojects:Ontology , teamwork:Vocabulary , owl:Ontology ;
+        rdfs:comment                  " A model to describe incident positions." ;
+        rdfs:label                    "WF Schema - Incident Positions" ;
+        dash:generateClass            ipenum:Media , ipenum:DutyConsequenceOfError , ipenum:PerformanceSupportTool , ipenum:PositionDutyFrequency , wfpos:PerformanceSupportRecommendation , ipenum:PositionDutyDifficulty , ipenum:PositionPriorKnowledge ;
+        dash:generatePrefixClasses    "ipenum" , "wfpos" ;
+        dash:generatePrefixConstants  "wfpos" , "ipenum" ;
+        graphql:publicClass           wfpos:PositionQualificationStandard , wfpos:IncidentPositionViewpoint , owl:Thing , wfpos:IncidentPositionStandard , wfpos:Experience , wfpos:IncidentPosition , ipenum:ENUM-ResponsibilityStatementCategory , wfpos:Responsibility ;
+        edg:subjectArea               <urn:x-tb-governance:WF> ;
+        metadata:status               metadata:UnderDevelopmentStatus ;
+        metadata:version              "1.0" ;
+        swa:defaultNamespace          "http://nwcg.gov/model/incidentPosition#" ;
+        teamwork:rootClass            wfpos:IncidentPositionViewpoint ;
+        owl:imports                   <http://edg.topbraid.solutions/1.0/schema/core> , <urn:x-evn-master:edg_enumerations_singleton> , <urn:x-evn-master:ipenum> , <http://topbraid.org/teamworkconstraints> , <urn:x-evn-master:nwcginfo> , <http://datashapes.org/graphql> , <http://topbraid.org/skos.shapes> .
+
+wfpos:DeliveryApproach-positionPerformanceSupportTool
+        rdf:type  sh:PropertyShape ;
+        sh:class  ipenum:PerformanceSupportTool ;
+        sh:group  wfpos:DeliveryApproachPropertyGroup ;
+        sh:name   "position performance support tool" ;
+        sh:order  "0"^^xsd:decimal ;
+        sh:path   wfpos:positionPerformanceSupportTool .
+
+wfpos:PerformanceSupportRecommendation-trainingNotes
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  rdf:HTML ;
+        sh:group     wfpos:PerformanceSupportRecommendationPropertyGroup ;
+        sh:name      "training notes" ;
+        sh:order     "7"^^xsd:decimal ;
+        sh:path      wfpos:trainingNotes .
+
+wfpos:PositionQualificationStandard-positionFunctionalArea
+        rdf:type        sh:PropertyShape ;
+        sh:class        ipenum:FunctionalArea ;
+        sh:description  "The functional area the position belongs to." ;
+        sh:group        edg:EnterpriseContextGroup ;
+        sh:maxCount     1 ;
+        sh:name         "position functional area" ;
+        sh:order        "0"^^xsd:decimal ;
+        sh:path         wfpos:positionFunctionalArea .
+
+teamwork:Vocabulary  rdfs:subClassOf  owl:Ontology .
+
+wfpos:TrainingStrategyPropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Training Strategy" ;
+        sh:order    "1"^^xsd:decimal .
+
+wfpos:ResponsibilityStatementAnalysis-materialsComments
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  rdf:HTML ;
+        sh:group     wfpos:TrainingDesignProcessPropertyGroup ;
+        sh:name      "materials comments" ;
+        sh:order     "9"^^xsd:decimal ;
+        sh:path      wfpos:materialsComments .
+
+wfpos:IncidentPositionDescription-buildTeamDutyStatement
+        rdf:type  sh:PropertyShape ;
+        sh:class  wfpos:Responsibility ;
+        sh:group  wfpos:BuildTheTeamPropertyGroup ;
+        sh:name   "duty statement(s)" ;
+        sh:order  "0"^^xsd:decimal ;
+        sh:path   wfpos:buildTeamDutyStatement .
+
+wfpos:ManageRiskPropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Manage Risk" ;
+        sh:order    4.9375 .
+
+wfpos:NWCG  rdf:type     edg:AssetClass , sh:NodeShape , owl:Class ;
+        rdfs:comment     "Establishes minimum NWCG position qualification standards for training, experience, physical fitness, and currency for national mobilization to wildland fire incidents." ;
+        rdfs:label       "NWCG Position Qualification Standard" ;
+        rdfs:subClassOf  wfpos:PositionQualificationStandard ;
+        edg:acronym      "QUAL" ;
+        sh:property      wfpos:NWCG-lastModifiedReviewed .
+
+wfpos:Responsibility-relatedPositionDescription
+        rdf:type  sh:PropertyShape ;
+        sh:class  wfpos:IncidentPositionDescription ;
+        sh:group  edg:TraceableGroup ;
+        sh:name   "related position description(s)" ;
+        sh:order  "0"^^xsd:decimal ;
+        sh:path   wfpos:relatedPositionDescription .
+
+wfpos:MaterialsAndWorkEffortPropertyGroup
+        rdf:type      sh:PropertyGroup ;
+        rdfs:comment  "This section will be filled out by NWCG training staff." ;
+        rdfs:label    "Materials and Work Effort (M&WE)" ;
+        sh:order      "5"^^xsd:decimal .
+
+wfpos:PerformanceSupportRecommendation-do
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:boolean ;
+        sh:group     wfpos:PerformanceSupportRecommendationPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "do" ;
+        sh:order     "5"^^xsd:decimal ;
+        sh:path      wfpos:do .
+
+wfpos:Responsibility-label
+        rdf:type         sh:PropertyShape ;
+        dash:singleLine  true ;
+        graphql:name     "labels" ;
+        sh:group         wfpos:StatementDetailsPropertyGroup ;
+        sh:name          "responsibility statement" ;
+        sh:or            dash:StringOrLangString ;
+        sh:order         "0"^^xsd:decimal ;
+        sh:path          rdfs:label .
+
+wfpos:ResponsibilityStatementAnalysis-developmentPriority
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     xsd:decimal ;
+        sh:description  "Development priority looks at how a SME answered the questions in the DIF Survey and from those answers provides a numerical value denoting where standards development lies in the list of priorities.\n\nFrequency + Complex + Consequence of Error -(3*Existing Knowledge/Experience) = Development Priority" ;
+        sh:group        wfpos:StandardsDevelopmentPropertyGroup ;
+        sh:name         "development priority" ;
+        sh:order        "0"^^xsd:decimal ;
+        sh:path         wfpos:developmentPriority ;
+        sh:values       [ dash:js  "let frequencyV = focusNode.frequency.frequencyValue\r\nlet difficultyV = focusNode.difficulty.difficultyValue\r\nlet consequenceOfErrorV = focusNode.consequenceOfError.consequenceOfErrorValue\r\nlet developmentPriority = (frequencyV + difficultyV + consequenceOfErrorV) - (3 * focusNode.existingKnowledgeExperience.priorKnowledgeValue)\r\ndevelopmentPriority" ] .
+
+wfpos:MaintainingPositionCurrencyPropertyGroup
+        rdf:type      sh:PropertyGroup ;
+        rdfs:comment  "Documents position's that maintain currency for this position or those positions that this position maintains currency for." ;
+        rdfs:label    "Maintaining Position Currency" ;
+        sh:order      "19"^^xsd:decimal .
+
+wfpos:ResponsibilityStatementAnalysis-evaluationOption
+        rdf:type  sh:PropertyShape ;
+        sh:class  ipenum:EvaluationMethod ;
+        sh:group  wfpos:TrainingDesignProcessPropertyGroup ;
+        sh:name   "evaluation option" ;
+        sh:order  8.0029296875 ;
+        sh:path   wfpos:evaluationOption .
+
+wfpos:IncidentPositionStandardPropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Incident Position Standard" ;
+        sh:order    "1"^^xsd:decimal .
+
+wfpos:PositionQualificationStandard-incidentTypeEndorsement
+        rdf:type     sh:PropertyShape ;
+        sh:group     wfpos:EndorsementsPropertyGroup ;
+        sh:name      "incident type endorsement" ;
+        sh:nodeKind  sh:IRI ;
+        sh:order     "0"^^xsd:decimal ;
+        sh:path      wfpos:incidentTypeEndorsement .
+
+wfpos:PerformanceSupportRecommendation-trainingStrategy
+        rdf:type  sh:PropertyShape ;
+        sh:class  ipenum:TrainingStrategy ;
+        sh:group  wfpos:PerformanceSupportRecommendationPropertyGroup ;
+        sh:name   "training strategy" ;
+        sh:order  "1"^^xsd:decimal ;
+        sh:path   wfpos:trainingStrategy .
+
+wfpos:PositionQualificationStandard-qualificationNotes
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     rdf:HTML ;
+        sh:description  "Any information that needs to be captured to expand on other information collected in the requirement standard." ;
+        sh:group        edg:IdentifiersGroup ;
+        sh:name         "qualification notes" ;
+        sh:order        11.1 ;
+        sh:path         wfpos:qualificationNotes .
+
+wfpos:ResponsibilityStatementAnalysis-commentsAboutStandard
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     rdf:HTML ;
+        sh:description  "Any additional information elaborating on the standard." ;
+        sh:group        wfpos:StandardDetailsPropertyGroup ;
+        sh:name         "comments about standard" ;
+        sh:order        "1"^^xsd:decimal ;
+        sh:path         wfpos:commentsAboutStandard .
+
+wfpos:IncidentPositionDescription-performFirelineDutyStatement
+        rdf:type  sh:PropertyShape ;
+        sh:class  wfpos:Responsibility ;
+        sh:group  wfpos:PerformFirelineDutiesPropertyGroup ;
+        sh:name   "duty statement(s)" ;
+        sh:order  "0"^^xsd:decimal ;
+        sh:path   wfpos:performFirelineDutyStatement .
+
+wfpos:DeliveryApproach-positionTraining
+        rdf:type  sh:PropertyShape ;
+        sh:class  ipenum:Training ;
+        sh:group  wfpos:DeliveryApproachPropertyGroup ;
+        sh:name   "position training" ;
+        sh:order  "-1"^^xsd:decimal ;
+        sh:path   wfpos:positionTraining .
+
+wfpos:DeliveryApproach
+        rdf:type         edg:ViewpointClass , sh:NodeShape ;
+        rdfs:comment     "A description of what to provide a position related to NWCG training and materials." ;
+        rdfs:label       "Delivery Approach" ;
+        rdfs:subClassOf  wfpos:IncidentPositionViewpoint ;
+        sh:property      wfpos:DeliveryApproach-type , wfpos:DeliveryApproach-label , wfpos:DeliveryApproach-positionPerformanceSupportTool , wfpos:DeliveryApproach-positionTraining .
+
+wfpos:IncidentPositionDescription-positionDescription
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:string ;
+        sh:group     edg:IdentifiersGroup ;
+        sh:name      "position description" ;
+        sh:order     "11"^^xsd:decimal ;
+        sh:path      wfpos:positionDescription .
+
+wfpos:ResponsibilityStatementAnalysis-frequency
+        rdf:type        sh:PropertyShape ;
+        sh:class        ipenum:PositionDutyFrequency ;
+        sh:description  "How often is the responsibility statement realized by the position? Options are: 1) Occasionally, 2) Often/regularly, or 3) Rarely." ;
+        sh:group        wfpos:DifficultyImportanceFrequencySurveyPropertyGroup ;
+        sh:maxCount     1 ;
+        sh:name         "frequency" ;
+        sh:order        "0"^^xsd:decimal ;
+        sh:path         wfpos:frequency .
+
+wfpos:IncidentPositionStandard-resourcesToCompleteTask
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  rdf:HTML ;
+        sh:group     wfpos:IncidentPositionStandardPropertyGroup ;
+        sh:name      "resources to complete task" ;
+        sh:order     "4"^^xsd:decimal ;
+        sh:path      wfpos:resourcesToCompleteTask .
+
+wfpos:IncidentPositionDescription-equipmentReadiness
+        rdf:type        sh:PropertyShape ;
+        sh:class        ipenum:EquipmentReadiness ;
+        sh:description  "A list of equipment fulfilling the readiness responsibility for a given position." ;
+        sh:group        wfpos:PrepareAndMobilizePropertyGroup ;
+        sh:name         "equipment readiness includes" ;
+        sh:order        "1"^^xsd:decimal ;
+        sh:path         wfpos:equipmentReadiness .
+
+wfpos:ResponsibilityStatementAnalysis-dutyResponsibilityStatement
+        rdf:type        sh:PropertyShape ;
+        sh:class        wfpos:Responsibility ;
+        sh:description  "A sentence or two describing something a position must be competent in to fulfill their duties." ;
+        sh:group        wfpos:StandardsAndPositionAnalysisPropertyGroup ;
+        sh:maxCount     1 ;
+        sh:minCount     1 ;
+        sh:name         "duty responsibility statement" ;
+        sh:order        "2"^^xsd:decimal ;
+        sh:path         wfpos:dutyResponsibilityStatement .
+
+wfpos:PerformanceSupportRecommendation-label
+        rdf:type         sh:PropertyShape ;
+        dash:singleLine  true ;
+        graphql:name     "labels" ;
+        sh:name          "labels" ;
+        sh:or            dash:StringOrLangString ;
+        sh:path          rdfs:label .
+
+wfpos:PositionQualificationStandard-qualificationRequirementFor
+        rdf:type          sh:PropertyShape ;
+        dash:reifiableBy  wfpos:PositionCurrency ;
+        sh:class          wfpos:IncidentPosition ;
+        sh:description    "Identifies the incident position the qualification requirement pertains to." ;
+        sh:group          edg:IdentifiersGroup ;
+        sh:maxCount       1 ;
+        sh:minCount       1 ;
+        sh:name           "qualification requirement for" ;
+        sh:order          "11"^^xsd:decimal ;
+        sh:path           wfpos:qualificationRequirementFor .
+
+wfpos:IncidentPosition-positionCode
+        rdf:type       sh:PropertyShape ;
+        dash:uriStart  "http://nwcg.gov/model/incidentPosition#" ;
+        sh:datatype    xsd:string ;
+        sh:group       edg:IdentifiersGroup ;
+        sh:maxCount    1 ;
+        sh:minCount    1 ;
+        sh:name        "position code" ;
+        sh:order       "-1"^^xsd:decimal ;
+        sh:path        wfpos:positionCode .
+
+wfpos:CommunicateCoordinatePropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Communicate and Coordinate" ;
+        sh:order    4.875 .
+
+wfpos:Experience  rdf:type  sh:NodeShape , owl:Class ;
+        rdfs:comment     "A statement describing experience to qualify an individual for an incident position." ;
+        rdfs:label       "Experience" ;
+        rdfs:subClassOf  wfpos:IncidentPositionViewpoint ;
+        sh:property      wfpos:Experience-relatedPosition , wfpos:Experience-label , edg:Identifiable-type .
+
+wfpos:ResponsibilityStatementAnalysis-recommendedPerformanceSupportMaterialNotes
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  rdf:HTML ;
+        sh:group     wfpos:TrainingDesignProcessPropertyGroup ;
+        sh:name      "recommended performance support material notes" ;
+        sh:order     8.000213623046875 ;
+        sh:path      wfpos:recommendedPerformanceSupportMaterialNotes .
+
+wfpos:ResponsibilityStatementAnalysis-difSurveyFormula
+        rdf:type        sh:PropertyShape ;
+        sh:class        wfpos:PerformanceSupportRecommendation ;
+        sh:description  "Automatically calculated based on the Development Priority value." ;
+        sh:group        wfpos:PerformanceSupportReviewAndRecommendationPropertyGroup ;
+        sh:name         "initial recommendation of performance support needs" ;
+        sh:order        "1"^^xsd:decimal ;
+        sh:path         wfpos:difSurveyFormula ;
+        sh:values       [ dash:js  "let devP = focusNode.developmentPriority.valueOf(\"dtype:literal\")\r\nlet initialRecommendation = null\r\nif (devP >= -9 && devP <= 0) {\r\n                initialRecommendation = graph.namedNode(\"http://nwcg.gov/data/psat/Level1Recommendation\")\r\n                } else if (devP > 0 && devP <= 3) {\r\n             initialRecommendation = graph.namedNode(\"http://nwcg.gov/data/psat/Level2Recommendation\")\r\n} else if (devP > 3 && devP <= 4.5) {\r\n    initialRecommendation = graph.namedNode(\"http://nwcg.gov/data/psat/Level3Recommendation\")\r\n} else if (devP > 4.5 && devP <= 6) {\r\n    initialRecommendation = graph.namedNode(\"http://nwcg.gov/data/psat/Level4Recommendation\")\r\n} else if (devP > 6 && devP <= 7.5) {\r\n    initialRecommendation = graph.namedNode(\"http://nwcg.gov/data/psat/Level5Recommendation\")\r\n}\r\ninitialRecommendation" ] .
+
+wfpos:ResponsibilityStatementAnalysis-tell
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:boolean ;
+        sh:group     wfpos:TrainingDesignProcessPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "tell" ;
+        sh:order     8.000244140625 ;
+        sh:path      wfpos:tell .
+
+wfpos:ResponsibilityStatementAnalysis-evaluationLocation
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  rdf:HTML ;
+        sh:group     wfpos:TrainingDesignProcessPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "evaluation location" ;
+        sh:order     8.00390625 ;
+        sh:path      wfpos:evaluationLocation .
+
+wfpos:ResponsibilityStatementAnalysis-workEffortCalculation
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     xsd:decimal ;
+        sh:description  "Hours per 1 assigned resource. A calculated value based on the performance support materials and media identified to support the positon duty statement. Each material/media type has a set number of hours associated with it for developing a product." ;
+        sh:group        wfpos:MaterialsAndWorkEffortPropertyGroup ;
+        sh:name         "work effort calculation" ;
+        sh:order        "3"^^xsd:decimal ;
+        sh:path         wfpos:workEffortCalculation ;
+        sh:values       [ dash:js  "let mediaValue = 0\r\nfocusNode.media.forEach(media => mediaValue += media.mediaDevelopmentHours)\r\nlet performanceSupportMaterialValue = 0\r\nfocusNode.performanceSupportMaterials.forEach(material => performanceSupportMaterialValue += material.developmentHours)\r\nlet workEffort = (mediaValue + performanceSupportMaterialValue) * focusNode.estimatedTimeToCompletion\r\nworkEffort" ] .
+
+wfpos:IncidentPosition-positionDescription
+        rdf:type     sh:PropertyShape ;
+        sh:group     edg:TraceableGroup ;
+        sh:maxCount  1 ;
+        sh:name      "position description" ;
+        sh:nodeKind  sh:IRI ;
+        sh:order     "0"^^xsd:decimal ;
+        sh:path      wfpos:positionDescription .
+
+wfpos:IncidentPosition-irwinCapabilityTypeID
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:string ;
+        sh:group     edg:TraceableGroup ;
+        sh:maxCount  1 ;
+        sh:name      "irwin capability type ID" ;
+        sh:order     "2"^^xsd:decimal ;
+        sh:path      wfpos:irwinCapabilityTypeID .
+
+wfpos:ResponsibilityStatementAnalysis-show
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:boolean ;
+        sh:group     wfpos:TrainingDesignProcessPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "show" ;
+        sh:order     8.00048828125 ;
+        sh:path      wfpos:show .
+
+wfpos:StandardsAndPositionAnalysisPropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Standards and Position Analysis (SPA)" ;
+        sh:order    "0"^^xsd:decimal .
+
+wfpos:PerformanceSupportRecommendationPropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Performance Support Recommendation" ;
+        sh:order    "3"^^xsd:decimal .
+
+ontologyprojects:Ontology
+        rdfs:subClassOf  teamwork:Vocabulary .
+
+wfpos:PrepareAndMobilizePropertyGroup
+        rdf:type      sh:PropertyGroup ;
+        rdfs:comment  "Groups statements focused on preparing for an assignment and mobilizing to an incident." ;
+        rdfs:label    "Prepare and Mobilize" ;
+        sh:order      "1"^^xsd:decimal .
+
+wfpos:ResponsibilityStatementAnalysis-existingMaterials
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     xsd:boolean ;
+        sh:description  "Indicates whether there are already materials supporting the responsibility statement. If the response is true, then additional information will be captured in subsequent fields." ;
+        sh:group        wfpos:TrainingDesignProcessPropertyGroup ;
+        sh:maxCount     1 ;
+        sh:name         "existing materials" ;
+        sh:order        8.078125 ;
+        sh:path         wfpos:existingMaterials .
+
+wfpos:IncidentPositionStandard-howToAccomplishTask
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  rdf:HTML ;
+        sh:group     wfpos:IncidentPositionStandardPropertyGroup ;
+        sh:name      "how to accomplish task" ;
+        sh:order     "5"^^xsd:decimal ;
+        sh:path      wfpos:howToAccomplishTask .
+
+wfpos:ResponsibilityStatementAnalysis-consequenceOfError
+        rdf:type        sh:PropertyShape ;
+        sh:class        ipenum:DutyConsequenceOfError ;
+        sh:description  "What is the result when the responsibility is not performed up to the standard? Is the effect 1) Moderate, 2) Negligible, or 3) Severe? It is recommended that Severe is selected only in the event where the result would affect personnel safety." ;
+        sh:group        wfpos:DifficultyImportanceFrequencySurveyPropertyGroup ;
+        sh:maxCount     1 ;
+        sh:name         "consequence of error" ;
+        sh:order        "2"^^xsd:decimal ;
+        sh:path         wfpos:consequenceOfError .
+
+wfpos:IncidentPosition-positionTitle
+        rdf:type      sh:PropertyShape ;
+        sh:datatype   xsd:string ;
+        sh:group      edg:IdentifiersGroup ;
+        sh:maxCount   1 ;
+        sh:maxLength  45 ;
+        sh:minCount   1 ;
+        sh:minLength  1 ;
+        sh:name       "position title" ;
+        sh:path       wfpos:positionTitle .
+
+wfpos:CommonDutiesPropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Common Position Duties" ;
+        sh:order    4.5 .
+
+wfpos:ResponsibilityStatementAnalysis
+        rdf:type         owl:Class , sh:NodeShape ;
+        rdfs:label       "Responsibility Statement Analysis (PSAT)" ;
+        rdfs:subClassOf  wfpos:IncidentPositionViewpoint ;
+        sh:property      wfpos:ResponsibilityStatementAnalysis-recommendedPerformanceSupportMaterialNotes , wfpos:ResponsibilityStatementAnalysis-dutyResponsibilityStatement , wfpos:ResponsibilityStatementAnalysis-commentsAboutStandard , wfpos:ResponsibilityStatementAnalysis-developmentOfPerformanceStandard , wfpos:ResponsibilityStatementAnalysis-learningObjectiveNumber , wfpos:ResponsibilityStatementAnalysis-materialsComments , wfpos:ResponsibilityStatementAnalysis-recommendedTrainingStrategyNotes , wfpos:ResponsibilityStatementAnalysis-existingMaterialsLocation , wfpos:ResponsibilityStatementAnalysis-finalRecommendation , wfpos:ResponsibilityStatementAnalysis-condition , wfpos:ResponsibilityStatementAnalysis-recommendedPerformanceSupportMaterials , wfpos:ResponsibilityStatementAnalysis-statementCategory , wfpos:ResponsibilityStatementAnalysis-difficulty , wfpos:ResponsibilityStatementAnalysis-media , wfpos:ResponsibilityStatementAnalysis-existingMaterials , wfpos:ResponsibilityStatementAnalysis-learningObjective , wfpos:ResponsibilityStatementAnalysis-includeInPostionTaskBook , wfpos:ResponsibilityStatementAnalysis-performanceSupportMaterials , wfpos:ResponsibilityStatementAnalysis-consequenceOfError , wfpos:ResponsibilityStatementAnalysis-materialsName , wfpos:ResponsibilityStatementAnalysis-criteria , wfpos:ResponsibilityStatementAnalysis-label , wfpos:ResponsibilityStatementAnalysis-workEffortCalculation , wfpos:ResponsibilityStatementAnalysis-domainLevel , wfpos:ResponsibilityStatementAnalysis-onAssignmentTools , wfpos:ResponsibilityStatementAnalysis-developmentPriority , wfpos:ResponsibilityStatementAnalysis-tell , wfpos:ResponsibilityStatementAnalysis-remarksAboutDutyStatement , wfpos:ResponsibilityStatementAnalysis-dutyStatementUniqueness , wfpos:ResponsibilityStatementAnalysis-standardAndSatisfactoryOnAssignmentPerformance , wfpos:ResponsibilityStatementAnalysis-show , wfpos:ResponsibilityStatementAnalysis-standardSourceNotes , wfpos:ResponsibilityStatementAnalysis-sequenceOrder , wfpos:ResponsibilityStatementAnalysis-evaluationOptionNotes , wfpos:ResponsibilityStatementAnalysis-performance , wfpos:ResponsibilityStatementAnalysis-qualityOfPerformanceStandard , wfpos:ResponsibilityStatementAnalysis-performanceObjectiveNumber , wfpos:ResponsibilityStatementAnalysis-positionTaskBookCode , wfpos:ResponsibilityStatementAnalysis-difSurveyFormula , wfpos:ResponsibilityStatementAnalysis-evaluationOption , wfpos:ResponsibilityStatementAnalysis-evaluationLocation , wfpos:ResponsibilityStatementAnalysis-recommendedTrainingStrategy , wfpos:ResponsibilityStatementAnalysis-position , wfpos:ResponsibilityStatementAnalysis-estimatedTimeToCompletion , wfpos:ResponsibilityStatementAnalysis-evaluationComments , wfpos:ResponsibilityStatementAnalysis-learningDomain , wfpos:ResponsibilityStatementAnalysis-existingKnowledgeExperience , wfpos:ResponsibilityStatementAnalysis-do , wfpos:ResponsibilityStatementAnalysis-standardSource , wfpos:ResponsibilityStatementAnalysis-existingMaterialsDecision , wfpos:ResponsibilityStatementAnalysis-frequency .
+
+wfpos:PositionQualificationStandard-year
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     xsd:integer ;
+        sh:description  "The calendar year(s) for which this qualification standard is applicable." ;
+        sh:group        edg:StatusAspectGroup ;
+        sh:maxLength    4 ;
+        sh:minLength    4 ;
+        sh:name         "year" ;
+        sh:order        "11"^^xsd:decimal ;
+        sh:path         wfpos:year .
+
+wfpos:Responsibility  rdf:type  sh:NodeShape , owl:Class ;
+        rdfs:comment     "A statement describing an essential duty or responsibility for an incident position." ;
+        rdfs:label       "Responsibility" ;
+        rdfs:subClassOf  wfpos:IncidentPositionViewpoint ;
+        sh:property      wfpos:Responsibility-label , wfpos:Responsibility-relatedPosition , edg:Identifiable-type , skos:Concept-note , wfpos:Responsibility-relatedPositionDescription .
+
+wfpos:ResponsibilityStatementAnalysis-existingKnowledgeExperience
+        rdf:type        sh:PropertyShape ;
+        sh:class        ipenum:PositionPriorKnowledge ;
+        sh:description  "What knowledge does a person need to have prior to performing the responsibility? Some positions require no prior experience, while on the other end a person might need enough prior knowledge to do the job." ;
+        sh:group        wfpos:DifficultyImportanceFrequencySurveyPropertyGroup ;
+        sh:maxCount     1 ;
+        sh:name         "existing knowledge/experience" ;
+        sh:order        "3"^^xsd:decimal ;
+        sh:path         wfpos:existingKnowledgeExperience .
+
+wfpos:ResponsibilityStatementAnalysis-position
+        rdf:type        sh:PropertyShape ;
+        sh:class        wfpos:IncidentPosition ;
+        sh:description  "Link to the incident position the responsibility statement is being evaluated for." ;
+        sh:group        wfpos:PerformanceSupportAnalysisPropertyGroup ;
+        sh:name         "position" ;
+        sh:order        "0"^^xsd:decimal ;
+        sh:path         wfpos:position .
+
+wfpos:RequiredSatisfactoryPerformanceOptionsPropertyGroup
+        rdf:type      sh:PropertyGroup ;
+        rdfs:comment  "Identifies multiple paths to becoming qualified for a position." ;
+        rdfs:label    "Required Satisfactory Performance Options (pick one)" ;
+        sh:order      6.1 .
+
+wfpos:ResponsibilityStatementAnalysis-dutyStatementUniqueness
+        rdf:type        sh:PropertyShape ;
+        sh:class        ipenum:DutyStatementUniqueness ;
+        sh:description  "A responsibility may be considered Functional, Position (specific), or Universal." ;
+        sh:group        wfpos:StandardsAndPositionAnalysisPropertyGroup ;
+        sh:maxCount     1 ;
+        sh:name         "duty statement uniqueness" ;
+        sh:order        "3"^^xsd:decimal ;
+        sh:path         wfpos:dutyStatementUniqueness .
+
+wfpos:DOI  rdf:type      owl:Class , sh:NodeShape , edg:AssetClass ;
+        rdfs:comment     "Establishes minimum position qualification standards for training, experience, physical fitness, and currency for DOI-specific incident positions." ;
+        rdfs:label       "DOI Position Qualification Standard" ;
+        rdfs:subClassOf  wfpos:PositionQualificationStandard ;
+        edg:acronym      "QUAL" ;
+        sh:property      wfpos:DOI-duties , wfpos:DOI-positionCategory , wfpos:DOI-endorsementByKindDiscipline .
+
+wfpos:IncidentPositionDescription-leadSuperviseDirectDutyStatement
+        rdf:type  sh:PropertyShape ;
+        sh:class  wfpos:Responsibility ;
+        sh:group  wfpos:LeadSuperviseDirectPropertyGroup ;
+        sh:name   "duty statement(s)" ;
+        sh:order  "0"^^xsd:decimal ;
+        sh:path   wfpos:leadSuperviseDirectDutyStatement .
+
+wfpos:PositionQualificationStandard-steward
+        rdf:type  sh:PropertyShape ;
+        sh:class  edg:Organization ;
+        sh:group  edg:GovernancePropertyGroup ;
+        sh:name   "steward" ;
+        sh:order  "1"^^xsd:decimal ;
+        sh:path   wfpos:steward .
+
+wfpos:ResponsibilityStatementAnalysis-recommendedTrainingStrategyNotes
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  rdf:HTML ;
+        sh:group     wfpos:TrainingDesignProcessPropertyGroup ;
+        sh:name      "recommended training strategy notes" ;
+        sh:order     8.000152587890625 ;
+        sh:path      wfpos:recommendedTrainingStrategyNotes .
+
+wfpos:ResponsibilityStatementAnalysis-statementCategory
+        rdf:type        sh:PropertyShape ;
+        sh:class        ipenum:ENUM-ResponsibilityStatementCategory ;
+        sh:description  "A method of grouping like statements under a common umbrella term or phrase. Examples include Build the Team, Communicate and Coordinate, Demobilize, and Document. All categories are available in the drop down." ;
+        sh:group        wfpos:StandardsAndPositionAnalysisPropertyGroup ;
+        sh:maxCount     1 ;
+        sh:name         "statement category" ;
+        sh:order        0.5 ;
+        sh:path         wfpos:statementCategory .
+
+wfpos:PerformanceSupportRecommendation-performanceSupportTool
+        rdf:type  sh:PropertyShape ;
+        sh:class  ipenum:PerformanceSupportTool ;
+        sh:group  wfpos:PerformanceSupportRecommendationPropertyGroup ;
+        sh:name   "performance support tool" ;
+        sh:order  "2"^^xsd:decimal ;
+        sh:path   wfpos:performanceSupportTool .
+
+wfpos:IncidentPositionDescription-wuiDutyStatement
+        rdf:type  sh:PropertyShape ;
+        sh:class  wfpos:Responsibility ;
+        sh:group  wfpos:PerformWUIDutiesPropertyGroup ;
+        sh:name   "duty statement(s)" ;
+        sh:order  "0"^^xsd:decimal ;
+        sh:path   wfpos:wuiDutyStatement .
+
+wfpos:ResponsibilityStatementAnalysis-recommendedPerformanceSupportMaterials
+        rdf:type  sh:PropertyShape ;
+        sh:class  ipenum:PerformanceSupportTool ;
+        sh:group  wfpos:TrainingDesignProcessPropertyGroup ;
+        sh:name   "recommended performance support materials" ;
+        sh:order  8.00018310546875 ;
+        sh:path   wfpos:recommendedPerformanceSupportMaterials .
+
+wfpos:IncidentPositionCurrency
+        rdf:type         sh:NodeShape , owl:Class ;
+        rdfs:comment     "Describes what keeps a position qualification current." ;
+        rdfs:label       "Incident Position Currency" ;
+        rdfs:subClassOf  wfpos:IncidentPositionViewpoint ;
+        sh:property      wfpos:IncidentPositionCurrency-incidentPosition , wfpos:PositionQualificationStandard-currencyMaintainedBy , wfpos:PositionQualificationStandard-maintainsCurrencyFor .
+
+wfpos:IncidentPositionStandard
+        rdf:type         edg:ViewpointClass , sh:NodeShape ;
+        rdfs:label       "Incident Position Standard" ;
+        rdfs:subClassOf  wfpos:IncidentPositionViewpoint ;
+        sh:property      wfpos:IncidentPositionStandard-howToAccomplishTask , wfpos:IncidentPositionStandard-resourcesToCompleteTask , wfpos:IncidentPositionStandard-whenToStartTask .
+
+wfpos:TrainingStatementsPropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Training Statements" ;
+        sh:order    "3"^^xsd:decimal .
+
+wfpos:TrainingStrategy
+        rdf:type         edg:ViewpointClass , sh:NodeShape ;
+        rdfs:comment     "The method for delivering training." ;
+        rdfs:label       "Training Strategy" ;
+        rdfs:subClassOf  wfpos:IncidentPositionViewpoint ;
+        sh:property      wfpos:TrainingStrategy-positionTrainingStrategy , wfpos:TrainingStrategy-type , wfpos:TrainingStrategy-label .
+
+wfpos:IncidentPositionDescription-descriptionFor
+        rdf:type        sh:PropertyShape ;
+        sh:class        wfpos:IncidentPosition ;
+        sh:description  "Identifies the incident position this position description is describing." ;
+        sh:group        wfpos:PositionDetailsPropertyGroup ;
+        sh:maxCount     1 ;
+        sh:name         "position description for" ;
+        sh:path         wfpos:descriptionFor .
+
+wfpos:FED  rdf:type      edg:AssetClass , sh:NodeShape , owl:Class ;
+        rdfs:comment     "Establishes minimum position qualification standards specific to each federal agency for training, experience, physical fitness, and currency for national mobilization to wildland fire incidents." ;
+        rdfs:label       "Federal Supplemental Position Qualification Standard" ;
+        rdfs:subClassOf  wfpos:NWCG ;
+        edg:acronym      "QUAL" .
+
+wfpos:PositionExperience
+        rdf:type      sh:NodeShape ;
+        rdfs:comment  "A shape describing a collection of position statements making up one path towards qualification." ;
+        rdfs:label    "Position experience" ;
+        sh:property   wfpos:PositionExperience-label , wfpos:PositionExperience-experienceStatement , skos:Concept-note .
+
+wfpos:ResponsibilityStatementAnalysis-standardSourceNotes
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     rdf:HTML ;
+        sh:description  "Currently a free text field identifying where a standard may be found. One would expect the value to be a publication (hence the field standard source, which is a relationship to an actual document)." ;
+        sh:group        wfpos:StandardDetailsPropertyGroup ;
+        sh:name         "specific location of performance standard" ;
+        sh:order        0.5 ;
+        sh:path         wfpos:standardSourceNotes .
+
+wfpos:ResponsibilityStatementAnalysis-do
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:boolean ;
+        sh:group     wfpos:TrainingDesignProcessPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "do" ;
+        sh:order     8.0009765625 ;
+        sh:path      wfpos:do .
+
+wfpos:PositionQualificationStandard-requiredPositionExperience
+        rdf:type          sh:PropertyShape ;
+        dash:reifiableBy  wfpos:PositionExperience ;
+        sh:datatype       xsd:string ;
+        sh:group          wfpos:RequiredSatisfactoryPerformanceOptionsPropertyGroup ;
+        sh:name           "required position experience" ;
+        sh:order          "-1"^^xsd:decimal ;
+        sh:path           wfpos:requiredPositionExperience .
+
+wfpos:ResponsibilityStatementAnalysis-positionTaskBookCode
+        rdf:type  sh:PropertyShape ;
+        sh:class  ipenum:TaskBookAssignmentType ;
+        sh:group  wfpos:TrainingDesignProcessPropertyGroup ;
+        sh:name   "position task book code" ;
+        sh:order  8.015625 ;
+        sh:path   wfpos:positionTaskBookCode .
+
+wfpos:PositionExperience-experienceStatement
+        rdf:type  sh:PropertyShape ;
+        sh:class  wfpos:Experience ;
+        sh:group  wfpos:ExperienceStatementsPropertyGroup ;
+        sh:name   "experience statement(s)" ;
+        sh:order  "0"^^xsd:decimal ;
+        sh:path   wfpos:experienceStatement .
+
+wfpos:EndorsementsPropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Endorsements" ;
+        sh:order    8.1 .
+
+wfpos:Responsibility-relatedPosition
+        rdf:type  sh:PropertyShape ;
+        sh:class  wfpos:IncidentPosition ;
+        sh:group  edg:TraceableGroup ;
+        sh:name   "related position(s)" ;
+        sh:order  "1"^^xsd:decimal ;
+        sh:path   wfpos:relatedPosition .
+
+wfpos:ResponsibilityStatementAnalysis-standardAndSatisfactoryOnAssignmentPerformance
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  rdf:HTML ;
+        sh:group     wfpos:TrainingDesignProcessPropertyGroup ;
+        sh:name      "standard and satisfactory on assignment performance" ;
+        sh:order     8.001953125 ;
+        sh:path      wfpos:standardAndSatisfactoryOnAssignmentPerformance .
+
+wfpos:IncidentPositionStandard-whenToStartTask
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  rdf:HTML ;
+        sh:group     wfpos:IncidentPositionStandardPropertyGroup ;
+        sh:name      "when to start task" ;
+        sh:order     "3"^^xsd:decimal ;
+        sh:path      wfpos:whenToStartTask .
+
+wfpos:StandardsDevelopmentPropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Standards Development" ;
+        sh:order    "3"^^xsd:decimal .
+
+wfpos:PositionQualificationStandard-maintainsCurrencyFor
+        rdf:type  sh:PropertyShape ;
+        sh:class  wfpos:IncidentPosition ;
+        sh:group  wfpos:MaintainingPositionCurrencyPropertyGroup ;
+        sh:name   "maintains currency for" ;
+        sh:order  "1"^^xsd:decimal ;
+        sh:path   wfpos:maintainsCurrencyFor .
+
+wfpos:PerformanceSupportRecommendation-type
+        rdf:type      sh:PropertyShape ;
+        graphql:name  "types" ;
+        sh:class      rdfs:Class ;
+        sh:name       "types" ;
+        sh:path       rdf:type .
+
+wfpos:PerformanceSupportRecommendation
+        rdf:type         owl:Class , sh:NodeShape ;
+        rdfs:comment     "Includes Performance Support Tool, Delivery Approach, Training Strategy and Evaluation Option." ;
+        rdfs:label       "Performance Support Recommendation" ;
+        rdfs:subClassOf  wfpos:IncidentPositionViewpoint ;
+        sh:property      wfpos:PerformanceSupportRecommendation-performanceSupportTool , wfpos:PerformanceSupportRecommendation-MinValue , wfpos:PerformanceSupportRecommendation-do , wfpos:PerformanceSupportRecommendation-show , wfpos:PerformanceSupportRecommendation-label , wfpos:PerformanceSupportRecommendation-tell , wfpos:PerformanceSupportRecommendation-trainingStrategy , wfpos:PerformanceSupportRecommendation-MaxValue , wfpos:PerformanceSupportRecommendation-deliveryApproach , wfpos:PerformanceSupportRecommendation-evaluationOption , wfpos:PerformanceSupportRecommendation-type , wfpos:PerformanceSupportRecommendation-trainingNotes .
+
+wfpos:ExperienceStatementsPropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Experience Statements" ;
+        sh:order    "3"^^xsd:decimal .
+
+wfpos:PerformanceSupportRecommendation-tell
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:boolean ;
+        sh:group     wfpos:PerformanceSupportRecommendationPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "tell" ;
+        sh:order     "3"^^xsd:decimal ;
+        sh:path      wfpos:tell .
+
+wfpos:PerformanceSupportRecommendation-deliveryApproach
+        rdf:type     sh:PropertyShape ;
+        sh:class     wfpos:DeliveryApproach ;
+        sh:group     wfpos:PerformanceSupportRecommendationPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "delivery approach" ;
+        sh:order     "0"^^xsd:decimal ;
+        sh:path      wfpos:deliveryApproach .
+
+wfpos:PerformanceSupportRecommendation-show
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:boolean ;
+        sh:group     wfpos:PerformanceSupportRecommendationPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "show" ;
+        sh:order     "4"^^xsd:decimal ;
+        sh:path      wfpos:show .
+
+wfpos:PositionExperience-label
+        rdf:type         sh:PropertyShape ;
+        dash:singleLine  true ;
+        graphql:name     "labels" ;
+        sh:group         wfpos:ExperienceStatementsPropertyGroup ;
+        sh:name          "label" ;
+        sh:or            dash:StringOrLangString ;
+        sh:order         "1"^^xsd:decimal ;
+        sh:path          rdfs:label .
+
+wfpos:ResponsibilityStatementAnalysis-performanceSupportMaterials
+        rdf:type        sh:PropertyShape ;
+        sh:class        ipenum:PerformanceSupportTool ;
+        sh:description  "A list of publications or tools recommended to support the standard and responsibility statement. Each material has identified development hours. This is used as part of the formula for work effort calculation." ;
+        sh:group        wfpos:MaterialsAndWorkEffortPropertyGroup ;
+        sh:name         "performance support materials" ;
+        sh:order        "0"^^xsd:decimal ;
+        sh:path         wfpos:performanceSupportMaterials .
+
+wfpos:IncidentPositionDescription
+        rdf:type         edg:ViewpointClass , sh:NodeShape , edg:AssetClass ;
+        rdfs:comment     "Incident Position Descriptions:\nProvide the single authoritative source for the essential duties and responsibilities for each NWCG position.\nEnsure connection between the position and established operational standards.\nBuild consistency (organization, nomenclature, terminology) internal to each position and across the inventory of positions.\nPrevent unnecessary duplication of duties across positions.\nHelp identify performance support needs such as job aids, training courses, and position task books." ;
+        rdfs:label       "Incident Position Description" ;
+        rdfs:subClassOf  wfpos:IncidentPositionViewpoint ;
+        edg:acronym      "IPD" ;
+        sh:property      wfpos:IncidentPositionDescription-performFirelineDutyStatement , wfpos:IncidentPositionDescription-CommonDutyStatement , wfpos:IncidentPositionDescription-equipmentReadiness , wfpos:IncidentPositionDescription-positionSummary , wfpos:IncidentPositionDescription-suggestedKitItems , wfpos:IncidentPositionDescription-wuiDutyStatement , wfpos:IncidentPositionDescription-positionDescription , wfpos:IncidentPositionDescription-relevantFormsDocuments , edg:Identifiable-type , wfpos:IncidentPositionDescription-DocumentDutyStatement , wfpos:IncidentPositionDescription-positionSpecificDutyStatement , edg:Identifiable-label , wfpos:IncidentPositionDescription-demobilizeDutyStatement , wfpos:IncidentPositionDescription-leadSuperviseDirectDutyStatement , wfpos:IncidentPositionDescription-prepareMobilizeDutyStatement , wfpos:IncidentPositionDescription-manageRiskDutyStatement , wfpos:IncidentPositionDescription-communicateWith , wfpos:IncidentPositionDescription-communicateCoordinateDutyStatement , wfpos:IncidentPositionDescription-descriptionFor , wfpos:IncidentPositionDescription-buildTeamDutyStatement .
+
+wfpos:PositionQualificationStandard-lastModifiedReviewed
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:date ;
+        sh:group     edg:StatusAspectGroup ;
+        sh:maxCount  1 ;
+        sh:name      "last modified/reviewed" ;
+        sh:order     "11"^^xsd:decimal ;
+        sh:path      wfpos:lastModifiedReviewed .
+
+wfpos:IncidentPositionDescription-positionSummary
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     rdf:HTML ;
+        sh:description  "A brief description of the position." ;
+        sh:group        wfpos:PositionDetailsPropertyGroup ;
+        sh:maxCount     1 ;
+        sh:name         "position summary" ;
+        sh:order        "1"^^xsd:decimal ;
+        sh:path         wfpos:positionSummary .
+
+wfpos:IncidentPositionDescription-communicateCoordinateDutyStatement
+        rdf:type  sh:PropertyShape ;
+        sh:class  wfpos:Responsibility ;
+        sh:group  wfpos:CommunicateCoordinatePropertyGroup ;
+        sh:name   "duty statement(s)" ;
+        sh:order  "0"^^xsd:decimal ;
+        sh:path   wfpos:communicateCoordinateDutyStatement .
+
+wfpos:TaskBookDetailsPropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Task Book Details" ;
+        sh:order    "0"^^xsd:decimal .
+
+wfpos:BuildTheTeamPropertyGroup
+        rdf:type      sh:PropertyGroup ;
+        rdfs:comment  "Groups statements focused on building your team." ;
+        rdfs:label    "Build the Team" ;
+        sh:order      "2"^^xsd:decimal .
+
+edg:StatusAspect-lastModified
+        sh:description  "Specifies a date after which a change has been made." ;
+        sh:or           ( [ sh:datatype  xsd:date ]
+                          [ sh:datatype  xsd:dateTime ]
+                        ) .
+
+wfpos:StandardDetailsPropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Standard Details" ;
+        sh:order    "1"^^xsd:decimal .
+
+wfpos:ResponsibilityStatementAnalysis-recommendedTrainingStrategy
+        rdf:type  sh:PropertyShape ;
+        sh:class  wfpos:TrainingStrategy ;
+        sh:group  wfpos:TrainingDesignProcessPropertyGroup ;
+        sh:name   "recommended training strategy" ;
+        sh:order  8.0001220703125 ;
+        sh:path   wfpos:recommendedTrainingStrategy .
+
+wfpos:LeadSuperviseDirectPropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Lead, Supervise, Direct" ;
+        sh:order    "3"^^xsd:decimal .
+
+wfpos:PerformanceSupportAnalysisPropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Performance Support Analysis" ;
+        sh:order    "-1"^^xsd:decimal .
+
+wfpos:NWCG-lastModifiedReviewed
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:date ;
+        sh:group     edg:StatusAspectGroup ;
+        sh:name      "last modified/reviewed" ;
+        sh:order     "11"^^xsd:decimal ;
+        sh:path      wfpos:lastModifiedReviewed .
+
+wfpos:IncidentPositionDescription-manageRiskDutyStatement
+        rdf:type  sh:PropertyShape ;
+        sh:class  wfpos:Responsibility ;
+        sh:group  wfpos:ManageRiskPropertyGroup ;
+        sh:name   "duty statement(s)" ;
+        sh:order  "0"^^xsd:decimal ;
+        sh:path   wfpos:manageRiskDutyStatement .
+
+wfpos:PositionQualificationStandard-taskBook
+        rdf:type          sh:PropertyShape ;
+        dash:reifiableBy  wfpos:TaskBook ;
+        sh:class          nwcginfo:positionTaskbook ;
+        sh:group          wfpos:TrainingAndExperiencePropertyGroup ;
+        sh:maxCount       1 ;
+        sh:name           "task book" ;
+        sh:order          "2"^^xsd:decimal ;
+        sh:path           wfpos:taskBook .
+
+wfpos:StatementDetailsPropertyGroup
+        rdf:type      sh:PropertyGroup ;
+        rdfs:comment  "A collection of properties describing a specific statement about a position." ;
+        rdfs:label    "Statement Details" ;
+        sh:order      "3"^^xsd:decimal .
+
+wfpos:ResponsibilityStatementAnalysis-performanceObjectiveNumber
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:integer ;
+        sh:group     wfpos:TrainingDesignProcessPropertyGroup ;
+        sh:name      "performance objective number" ;
+        sh:order     "1"^^xsd:decimal ;
+        sh:path      wfpos:performanceObjectiveNumber .
+
+wfpos:IncidentPositionDescription-CommonDutyStatement
+        rdf:type  sh:PropertyShape ;
+        sh:class  wfpos:Responsibility ;
+        sh:group  wfpos:CommonDutiesPropertyGroup ;
+        sh:name   "duty statement(s)" ;
+        sh:order  "0"^^xsd:decimal ;
+        sh:path   wfpos:CommonDutyStatement .
+
+wfpos:PositionCurrency-currencyMaintainedBy
+        rdf:type  sh:PropertyShape ;
+        sh:class  wfpos:IncidentPosition ;
+        sh:group  wfpos:MaintainingPositionCurrencyPropertyGroup ;
+        sh:name   "currency maintained by" ;
+        sh:order  "1"^^xsd:decimal ;
+        sh:path   [ sh:inversePath  wfpos:maintainsCurrencyFor ] .
+
+wfpos:DeliveryApproach-label
+        rdf:type         sh:PropertyShape ;
+        dash:singleLine  true ;
+        graphql:name     "labels" ;
+        sh:name          "labels" ;
+        sh:or            dash:StringOrLangString ;
+        sh:path          rdfs:label .
+
+wfpos:ResponsibilityStatementAnalysis-developmentOfPerformanceStandard
+        rdf:type     sh:PropertyShape ;
+        dash:hidden  true ;
+        sh:class     ipenum:DevelopmentOfPositionPerformanceStandard ;
+        sh:group     wfpos:StandardDetailsPropertyGroup ;
+        sh:name      "development of performance standard" ;
+        sh:order     "3"^^xsd:decimal ;
+        sh:path      wfpos:developmentOfPerformanceStandard .
+
+wfpos:ResponsibilityStatementAnalysis-evaluationOptionNotes
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  rdf:HTML ;
+        sh:group     wfpos:TrainingDesignProcessPropertyGroup ;
+        sh:name      "evaluation option notes" ;
+        sh:order     8.00341796875 ;
+        sh:path      wfpos:evaluationOptionNotes .
+
+wfpos:DifficultyImportanceFrequencySurveyPropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Difficulty, Importance, Frequency (DIF) Survey" ;
+        sh:order    "2"^^xsd:decimal .
+
+wfpos:PositionCurrency-maintainsCurrencyFor
+        rdf:type  sh:PropertyShape ;
+        sh:class  wfpos:IncidentPosition ;
+        sh:group  wfpos:MaintainingPositionCurrencyPropertyGroup ;
+        sh:name   "maintains currency for" ;
+        sh:order  "0"^^xsd:decimal ;
+        sh:path   wfpos:maintainsCurrencyFor .
+
+wfpos:ResponsibilityStatementAnalysis-media
+        rdf:type        sh:PropertyShape ;
+        sh:class        ipenum:Media ;
+        sh:description  "A list of media types recommended to support the standard and responsibility statement. Each item has identified development hours. This is used as part of the formula for work effort calculation." ;
+        sh:group        wfpos:MaterialsAndWorkEffortPropertyGroup ;
+        sh:name         "media" ;
+        sh:order        "1"^^xsd:decimal ;
+        sh:path         wfpos:media .
+
+wfpos:IncidentPositionCurrency-incidentPosition
+        rdf:type  sh:PropertyShape ;
+        sh:class  wfpos:IncidentPosition ;
+        sh:group  wfpos:MaintainingPositionCurrencyPropertyGroup ;
+        sh:name   "incident position" ;
+        sh:order  "-1"^^xsd:decimal ;
+        sh:path   wfpos:incidentPosition .
+
+wfpos:ResponsibilityStatementAnalysis-existingMaterialsDecision
+        rdf:type  sh:PropertyShape ;
+        sh:class  ipenum:ENUM-ExistingMaterialsDecision ;
+        sh:group  wfpos:TrainingDesignProcessPropertyGroup ;
+        sh:name   "existing materials decision" ;
+        sh:order  8.5 ;
+        sh:path   wfpos:existingMaterialsDecision .
+
+wfpos:TrainingStrategy-type
+        rdf:type      sh:PropertyShape ;
+        graphql:name  "types" ;
+        sh:class      rdfs:Class ;
+        sh:group      wfpos:TrainingStrategyPropertyGroup ;
+        sh:name       "types" ;
+        sh:order      0.5 ;
+        sh:path       rdf:type .
+
+wfpos:PerformanceSupportRecommendation-MinValue
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:decimal ;
+        sh:group     wfpos:PriorityScalePropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "Min Value" ;
+        sh:order     "0"^^xsd:decimal ;
+        sh:path      wfpos:MinValue .
+
+wfpos:DeliveryApproachPropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Delivery Approach" ;
+        sh:order    "1"^^xsd:decimal .
+
+wfpos:TrainingStrategy-label
+        rdf:type         sh:PropertyShape ;
+        dash:singleLine  true ;
+        graphql:name     "labels" ;
+        sh:group         wfpos:TrainingStrategyPropertyGroup ;
+        sh:name          "labels" ;
+        sh:or            dash:StringOrLangString ;
+        sh:order         "0"^^xsd:decimal ;
+        sh:path          rdfs:label .
+
+wfpos:IncidentPosition-positionDescriptionNote
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  rdf:HTML ;
+        sh:group     edg:NarratablePropertiesGroup ;
+        sh:maxCount  1 ;
+        sh:name      "position description" ;
+        sh:order     "1"^^xsd:decimal ;
+        sh:path      wfpos:positionDescriptionNote .
+
+wfpos:TrainingStrategy-positionTrainingStrategy
+        rdf:type  sh:PropertyShape ;
+        sh:class  ipenum:TrainingStrategy ;
+        sh:group  wfpos:TrainingStrategyPropertyGroup ;
+        sh:name   "position training strategy" ;
+        sh:order  "1"^^xsd:decimal ;
+        sh:path   wfpos:positionTrainingStrategy .
+
+wfpos:PositionQualificationStandard-otherTraining
+        rdf:type          sh:PropertyShape ;
+        dash:reifiableBy  wfpos:PositionTraining ;
+        sh:datatype       xsd:string ;
+        sh:description    "Other training which supports development of knowledge and skills" ;
+        sh:group          wfpos:TrainingAndExperiencePropertyGroup ;
+        sh:name           "other training" ;
+        sh:order          "6"^^xsd:decimal ;
+        sh:path           wfpos:otherTraining .
+
+wfpos:PositionQualificationStandard-keyStakeholder
+        rdf:type  sh:PropertyShape ;
+        sh:class  edg:Organization ;
+        sh:group  edg:GovernancePropertyGroup ;
+        sh:name   "key stakeholder(s)" ;
+        sh:order  "2"^^xsd:decimal ;
+        sh:path   wfpos:keyStakeholder .
+
+wfpos:IncidentPosition-changeNote
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  rdf:HTML ;
+        sh:group     edg:NarratablePropertiesGroup ;
+        sh:name      "change note" ;
+        sh:order     "0"^^xsd:decimal ;
+        sh:path      wfpos:changeNote .
+
+wfpos:IncidentPosition
+        rdf:type         sh:NodeShape , owl:Class ;
+        rdfs:label       "Incident Position" ;
+        rdfs:subClassOf  wfpos:IncidentPositionViewpoint ;
+        sh:property      wfpos:PositionQualificationStandard-currencyMaintainedBy , wfpos:IncidentPosition-positionTitle , wfpos:IncidentPosition-changeNote , wfpos:IncidentPosition-positionRequirement , wfpos:IncidentPosition-irwinCapabilityTypeID , wfpos:PositionQualificationStandard-maintainsCurrencyFor , wfpos:IncidentPosition-positionDescriptionNote , wfpos:IncidentPosition-modificationDate , wfpos:IncidentPosition-positionCode , wfpos:IncidentPosition-positionDescription , edg:StatusAspect-effectiveStartDate , wfpos:IncidentPosition-functionalArea , edg:StatusAspect-status , wfpos:IncidentPosition-label .
+
+wfpos:ResponsibilityStatementAnalysis-learningDomain
+        rdf:type     sh:PropertyShape ;
+        sh:class     ipenum:ENUM-PositionLearningDomain ;
+        sh:group     wfpos:TrainingDesignProcessPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "learning domain" ;
+        sh:order     "7"^^xsd:decimal ;
+        sh:path      wfpos:learningDomain .
+
+wfpos:PerformFirelineDutiesPropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Perform Fireline Duties" ;
+        sh:order    4.625 .
+
+wfpos:DeliveryApproach-type
+        rdf:type      sh:PropertyShape ;
+        graphql:name  "types" ;
+        sh:class      rdfs:Class ;
+        sh:name       "types" ;
+        sh:path       rdf:type .
+
+wfpos:PositionCurrency
+        rdf:type     sh:NodeShape ;
+        rdfs:label   "Position currency" ;
+        sh:property  wfpos:PositionCurrency-currencyMaintainedBy , wfpos:PositionCurrency-maintainsCurrencyFor .

@@ -1,0 +1,559 @@
+@prefix afn:                  <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix arg:                  <http://spinrdf.org/arg#> .
+@prefix business_rules:       <http://nwcg.gov/model/business_rule#> .
+@prefix corpus:               <http://topbraid.org/corpus#> .
+@prefix corpusprojects:       <http://topbraid.org/corpus-projects#> .
+@prefix crosswalk:            <http://topbraid.org/crosswalk#> .
+@prefix crosswalk.spin:       <http://topbraid.org/crosswalk.spin#> .
+@prefix crosswalkapp:         <http://topbraid.org/swa/crosswalkapp#> .
+@prefix crosswalkprojects:    <http://teamwork.topbraidlive.org/crosswalkprojects#> .
+@prefix dash:                 <http://datashapes.org/dash#> .
+@prefix dataenum:             <http://nwcg.gov/enum/data#> .
+@prefix datagraph:            <http://teamwork.topbraidlive.org/datagraph/datagraphprojects#> .
+@prefix datastd:              <http://nwcg.gov/model/standard#> .
+@prefix datatype:             <http://qudt.org/vocab/datatype/> .
+@prefix dc:                   <http://purl.org/dc/elements/1.1/> .
+@prefix dcam:                 <http://purl.org/dc/dcam/> .
+@prefix dct:                  <http://purl.org/dc/terms/> .
+@prefix debug-swa:            <http://debug.topbraidlive.org/1.0/swa/> .
+@prefix dtype:                <http://www.linkedmodel.org/schema/dtype#> .
+@prefix edg:                  <http://edg.topbraid.solutions/model/> .
+@prefix edg.v:                <http://edg.topbraid.solutions/view/> .
+@prefix evnconstraints:       <http://topbraid.org/spin/evnconstraints#> .
+@prefix fn:                   <http://www.w3.org/2005/xpath-functions#> .
+@prefix foaf:                 <http://xmlns.com/foaf/0.1/> .
+@prefix geo:                  <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix governance:           <http://topbraid.org/teamworkgovernance.ui#> .
+@prefix graphql:              <http://datashapes.org/graphql#> .
+@prefix html:                 <http://uispin.org/html#> .
+@prefix jfn:                  <java:org.apache.jena.sparql.function.library.> .
+@prefix layer:                <http://nwcg.gov/model/referenceLayer#> .
+@prefix lib-importer:         <http://edg.topbraid.solutions/importer/lib#> .
+@prefix list:                 <http://jena.apache.org/ARQ/list#> .
+@prefix metadata:             <http://topbraid.org/metadata#> .
+@prefix metash:               <http://datashapes.org/metash#> .
+@prefix nlp:                  <http://topbraid.org/nlp#> .
+@prefix ontologyprojects:     <http://teamwork.topbraidlive.org/ontologyprojects#> .
+@prefix org:                  <http://www.w3.org/ns/org#> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix owlrl:                <http://topbraid.org/spin/owlrl#> .
+@prefix pf:                   <http://jena.hpl.hp.com/ARQ/property#> .
+@prefix prov:                 <http://www.w3.org/ns/prov#> .
+@prefix quantity:             <http://qudt.org/vocab/quantity/> .
+@prefix quantitykind:         <http://qudt.org/vocab/quantitykind/> .
+@prefix qudt:                 <http://qudt.org/schema/qudt/> .
+@prefix qudt.type:            <http://qudt.org/vocab/type/> .
+@prefix raci:                 <http://topbraid.org/raci#> .
+@prefix rdf:                  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdm:                  <http://rdm.topbraidlive.org/rdm/> .
+@prefix rdmfact:              <http://topbraid.org/rdmfact#> .
+@prefix rdmprojects:          <http://rdm.topbraidlive.org/rdmprojects#> .
+@prefix s3:                   <http://topbraid.org/s3#> .
+@prefix safindex:             <http://topbraid.org/safindex#> .
+@prefix scheduler:            <http://topbraid.org/scheduler#> .
+@prefix search:               <http://topbraid.org/search#> .
+@prefix sh:                   <http://www.w3.org/ns/shacl#> .
+@prefix sharepoint-termstore: <http://teamwork.topbraidlive.org/taxonomy/sharepoint-termstore#> .
+@prefix sioc:                 <http://rdfs.org/sioc/ns#> .
+@prefix skos:                 <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosspin:             <http://topbraid.org/spin/skosspin#> .
+@prefix skostemplate:         <http://topbraid.org/spin/skostemplates#> .
+@prefix skosxl:               <http://www.w3.org/2008/05/skos-xl#> .
+@prefix sm:                   <http://topbraid.org/sparqlmotion#> .
+@prefix smf:                  <http://topbraid.org/sparqlmotionfunctions#> .
+@prefix sml:                  <http://topbraid.org/sparqlmotionlib#> .
+@prefix softwareprojects:     <http://teamwork.topbraidlive.org/software/softwareprojects#> .
+@prefix sp:                   <http://spinrdf.org/sp#> .
+@prefix sparql:               <http://datashapes.org/sparql#> .
+@prefix spif:                 <http://spinrdf.org/spif#> .
+@prefix spin:                 <http://spinrdf.org/spin#> .
+@prefix spinmap:              <http://spinrdf.org/spinmap#> .
+@prefix spinmapl:             <http://topbraid.org/spin/spinmapl#> .
+@prefix spl:                  <http://spinrdf.org/spl#> .
+@prefix spr:                  <http://spinrdf.org/spr#> .
+@prefix spra:                 <http://spinrdf.org/spra#> .
+@prefix swa:                  <http://topbraid.org/swa#> .
+@prefix swaclasses:           <http://topbraid.org/swaclasses#> .
+@prefix swash:                <http://topbraid.org/swash#> .
+@prefix swauml:               <http://topbraid.org/swauml#> .
+@prefix swon:                 <http://uispin.org/swon#> .
+@prefix tables:               <http://topbraid.org/tables#> .
+@prefix tablesmap:            <http://topbraid.org/spin/tablesmap#> .
+@prefix taggerprojects:       <http://evn.topbraidlive.org/taggerprojects#> .
+@prefix tasks:                <http://topbraid.org/tasks#> .
+@prefix taxonomies:           <http://evn.topbraidlive.org/evnprojects#> .
+@prefix tbgeo:                <http://topbraid.org/tbgeo#> .
+@prefix tbladmin:             <http://server.topbraidlive.org/system-applications/tbladmin#> .
+@prefix teamwork:             <http://topbraid.org/teamwork#> .
+@prefix teamworkconstraints:  <http://topbraid.org/teamworkconstraints#> .
+@prefix teamworks3:           <http://teamwork.topbraidlive.org/ui/teamworks3#> .
+@prefix teamworkupdate:       <http://teamworkAPI.topbraid.com/teamworkUpdate#> .
+@prefix textindex:            <http://topbraid.org/textindex#> .
+@prefix tops:                 <http://www.topbraid.org/tops#> .
+@prefix tosh:                 <http://topbraid.org/tosh#> .
+@prefix tosh.ui:              <http://topbraid.org/tosh.ui#> .
+@prefix tracker:              <http://teamwork.topbraidlive.org/ui/tracker#> .
+@prefix ui:                   <http://uispin.org/ui#> .
+@prefix uix:                  <http://topbraidlive.org/uix#> .
+@prefix unit:                 <http://qudt.org/vocab/unit/> .
+@prefix vaem:                 <http://www.linkedmodel.org/schema/vaem#> .
+@prefix voag:                 <http://voag.linkedmodel.org/voag/> .
+@prefix vs:                   <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix wfglos:               <http://nwcg.gov/model/glossary_extension#> .
+@prefix wfitenum:             <http://nwcg.gov/enum/wfit#> .
+@prefix wot:                  <http://xmlns.com/wot/0.1/> .
+@prefix xsd:                  <http://www.w3.org/2001/XMLSchema#> .
+
+datastd:DataStandard-type
+        rdf:type      sh:PropertyShape ;
+        graphql:name  "types" ;
+        sh:class      rdfs:Class ;
+        sh:group      edg:IdentifiersGroup ;
+        sh:name       "type" ;
+        sh:order      "1"^^xsd:decimal ;
+        sh:path       rdf:type .
+
+datastd:ExchangedResourceDataElement-tempRequiredToAddResource
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:string ;
+        sh:group     datastd:ExchangeDocumentationPropertyGroup ;
+        sh:name      "temp required to add resource" ;
+        sh:order     "11"^^xsd:decimal ;
+        sh:path      datastd:tempRequiredToAddResource .
+
+datastd:ExchangedDataElement-apiDatatype
+        rdf:type  sh:PropertyShape ;
+        sh:class  edg:Datatype ;
+        sh:group  datastd:ExchangeDocumentationPropertyGroup ;
+        sh:name   "api datatype" ;
+        sh:order  "3"^^xsd:decimal ;
+        sh:path   datastd:apiDatatype .
+
+datastd:ExchangedDataElement-requiredForUpdate
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     xsd:boolean ;
+        sh:description  "Data element required when updating a record." ;
+        sh:group        datastd:ExchangeDocumentationPropertyGroup ;
+        sh:maxCount     1 ;
+        sh:name         "required for update" ;
+        sh:order        "4"^^xsd:decimal ;
+        sh:path         datastd:requiredForUpdate .
+
+datastd:ExchangedResourceDataElement-tempApplicableToResource
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:string ;
+        sh:group     datastd:ExchangeDocumentationPropertyGroup ;
+        sh:name      "temp applicable to resource" ;
+        sh:order     "12"^^xsd:decimal ;
+        sh:path      datastd:tempApplicableToResource .
+
+datastd:DataStandard-steward
+        rdf:type  sh:PropertyShape ;
+        sh:class  edg:Organization ;
+        sh:group  edg:TraceableGroup ;
+        sh:name   "steward" ;
+        sh:order  "0"^^xsd:decimal ;
+        sh:path   datastd:steward .
+
+datastd:ExchangedDataElement-datasetDate
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:date ;
+        sh:group     datastd:SourceLayerDetailsPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "dataset date" ;
+        sh:order     0.75 ;
+        sh:path      datastd:datasetDate .
+
+datastd:GeospatialDataLayerStandard-verticalPositionalAccuracy
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     rdf:HTML ;
+        sh:description  "Insert vertical spatial reference information here" ;
+        sh:group        datastd:LayerDocumentationPropertyGroup ;
+        sh:name         "vertical positional accuracy" ;
+        sh:order        "5"^^xsd:decimal ;
+        sh:path         datastd:verticalPositionalAccuracy .
+
+datastd:ExchangedIncidentDataElement-requiredForIncidentCreation
+        rdf:type        sh:PropertyShape ;
+        sh:class        wfitenum:ApplicationRole ;
+        sh:description  "Identifies the application role for which this data element is required to create an incident record to submit for exchange." ;
+        sh:group        datastd:ExchangeDocumentationPropertyGroup ;
+        sh:name         "required for incident creation" ;
+        sh:nodeKind     sh:IRI ;
+        sh:order        "8"^^xsd:decimal ;
+        sh:path         datastd:requiredForIncidentCreation .
+
+datastd:ExchangedResourceDataElement-temporaryNotesField
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  rdf:HTML ;
+        sh:group     datastd:ExchangeDocumentationPropertyGroup ;
+        sh:name      "temporary notes field" ;
+        sh:order     "9"^^xsd:decimal ;
+        sh:path      datastd:temporaryNotesField .
+
+edg:Identifiable-acronym
+        sh:description  "Short form of the data layer name using common acronyms or abbreviations." ;
+        sh:name         "abbreviation" .
+
+datastd:ExchangedIncidentDataElement-requiredForFinalFireReport
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:boolean ;
+        sh:group     datastd:ExchangeDocumentationPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "required for final fire report certification" ;
+        sh:order     "7"^^xsd:decimal ;
+        sh:path      datastd:requiredForFinalFireReport .
+
+datastd:DataStandard-label
+        rdf:type         sh:PropertyShape ;
+        dash:singleLine  true ;
+        graphql:name     "labels" ;
+        sh:group         edg:IdentifiersGroup ;
+        sh:name          "label" ;
+        sh:or            dash:StringOrLangString ;
+        sh:order         "0"^^xsd:decimal ;
+        sh:path          rdfs:label .
+
+datastd:ExchangedResourceDataElement-appliesTo
+        rdf:type     sh:PropertyShape ;
+        sh:group     datastd:ExchangeDocumentationPropertyGroup ;
+        sh:name      "applies to" ;
+        sh:nodeKind  sh:IRI ;
+        sh:order     "8"^^xsd:decimal ;
+        sh:path      datastd:appliesTo .
+
+datastd:GeospatialDataLayerStandard-horizontalPositionalAccuracy
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     rdf:HTML ;
+        sh:description  "Insert horizontal spatial reference information here" ;
+        sh:group        datastd:LayerDocumentationPropertyGroup ;
+        sh:name         "horizontal positional accuracy" ;
+        sh:order        "4"^^xsd:decimal ;
+        sh:path         datastd:horizontalPositionalAccuracy .
+
+datastd:ExchangedDataElement-layerLastDownload
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:date ;
+        sh:group     datastd:SourceLayerDetailsPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "last download" ;
+        sh:order     "1"^^xsd:decimal ;
+        sh:path      datastd:layerLastDownload .
+
+datastd:ExchangedDataElement-standardNotes
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  rdf:HTML ;
+        sh:group     edg:TraceableGroup ;
+        sh:name      "standard notes" ;
+        sh:order     "48"^^xsd:decimal ;
+        sh:path      datastd:standardNotes .
+
+datastd:ExchangedDataElement-lastSyncDate
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:date ;
+        sh:group     datastd:SourceLayerDetailsPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "last sync date" ;
+        sh:order     1.5 ;
+        sh:path      datastd:lastSyncDate .
+
+datastd:GeospatialDataLayerStandard-version
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     xsd:decimal ;
+        sh:description  "Numeric value representing the approved version sequence." ;
+        sh:group        edg:StatusAspectGroup ;
+        sh:name         "version" ;
+        sh:order        "51"^^xsd:decimal ;
+        sh:path         datastd:version .
+
+datastd:GeospatialDataLayerStandard-dataModel
+        rdf:type        sh:PropertyShape ;
+        sh:class        dataenum:GeospatialGeometry ;
+        sh:description  "Indicates whether the geospatial data is a point, line, or polygon." ;
+        sh:group        datastd:LayerDocumentationPropertyGroup ;
+        sh:maxCount     1 ;
+        sh:name         "data model" ;
+        sh:nodeKind     sh:IRI ;
+        sh:order        "0"^^xsd:decimal ;
+        sh:path         datastd:dataModel .
+
+edg:DataElement-criticality
+        rdf:type  sh:PropertyShape .
+
+datastd:ExchangedDataElement-exchangeBusinessRule
+        rdf:type  sh:PropertyShape ;
+        sh:class  business_rules:BusinessRule ;
+        sh:group  datastd:ExchangeDocumentationPropertyGroup ;
+        sh:name   "exchange business rule" ;
+        sh:order  "-1"^^xsd:decimal ;
+        sh:path   datastd:exchangeBusinessRule .
+
+datastd:ExchangeDocumentationPropertyGroup
+        rdf:type      sh:PropertyGroup ;
+        rdfs:comment  "Identifies specifics related to sharing this data across applications." ;
+        rdfs:label    "Exchange Documentation" ;
+        sh:order      "31"^^xsd:decimal .
+
+datastd:ExchangedIncidentDataElement-requiredUpdateIncident
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     xsd:boolean ;
+        sh:description  "Data element required when updating an incident data element." ;
+        sh:group        datastd:ExchangeDocumentationPropertyGroup ;
+        sh:name         "required for update" ;
+        sh:order        "4"^^xsd:decimal ;
+        sh:path         datastd:requiredUpdateIncident .
+
+datastd:ExchangedDataElement-sourceLayer
+        rdf:type  sh:PropertyShape ;
+        sh:class  layer:GeospatialDataLayer ;
+        sh:group  datastd:SourceLayerDetailsPropertyGroup ;
+        sh:name   "data layer" ;
+        sh:order  "-1"^^xsd:decimal ;
+        sh:path   datastd:sourceLayer .
+
+datastd:ExchangedDataElement-layerAttributeNotes
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  rdf:HTML ;
+        sh:group     datastd:SourceLayerDetailsPropertyGroup ;
+        sh:name      "layer attribute notes" ;
+        sh:order     0.5 ;
+        sh:path      datastd:layerAttributeNotes .
+
+datastd:ExchangedDataElement-layerComments
+        rdf:type  sh:PropertyShape ;
+        sh:group  datastd:SourceLayerDetailsPropertyGroup ;
+        sh:name   "layer comments" ;
+        sh:or     ( [ sh:datatype  rdf:HTML ]
+                    [ sh:datatype  xsd:string ]
+                  ) ;
+        sh:order  -0.75 ;
+        sh:path   datastd:layerComments .
+
+datastd:ExchangedDataElement-exchangeValidation
+        rdf:type        sh:PropertyShape ;
+        sh:description  "Validation IRWIN performs on the submitted or updated data element." ;
+        sh:group        datastd:ExchangeDocumentationPropertyGroup ;
+        sh:name         "irwin validation" ;
+        sh:or           ( [ sh:datatype  rdf:HTML ]
+                          [ sh:datatype  xsd:string ]
+                        ) ;
+        sh:order        "1"^^xsd:decimal ;
+        sh:path         datastd:exchangeValidation .
+
+datastd:StandardViewpoint
+        rdf:type         edg:ViewpointClass ;
+        rdfs:label       "Data Standard Viewpoint" ;
+        rdfs:subClassOf  edg:DataAssetsViewpoint , owl:Thing ;
+        dash:abstract    true .
+
+ontologyprojects:Ontology
+        rdfs:subClassOf  teamwork:Vocabulary .
+
+datastd:GeospatialDataLayerStandard-attribute
+        rdf:type        sh:PropertyShape ;
+        dash:rootClass  edg:BusinessTerm ;
+        sh:description  "A list of attributes describing the data collected in the layer. Connects to the terms describing the attributes." ;
+        sh:group        edg:TraceableGroup ;
+        sh:name         "attributes" ;
+        sh:nodeKind     sh:IRI ;
+        sh:order        "1"^^xsd:decimal ;
+        sh:path         datastd:attribute .
+
+datastd:GeospatialDataLayerStandard-dataExchangeName
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     xsd:string ;
+        sh:description  "This is the name of the standard when exchanged. Reference the NWCG Geospatial Data Standard Metadata Definitions and Values. " ;
+        sh:group        edg:IdentifiersGroup ;
+        sh:maxCount     1 ;
+        sh:name         "data exchange name" ;
+        sh:order        "41"^^xsd:decimal ;
+        sh:path         datastd:dataExchangeName .
+
+datastd:ExchangedDataElement-externalSystemUpdatePermission
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:boolean ;
+        sh:group     datastd:ExchangeDocumentationPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "can value be updated by external system" ;
+        sh:order     "5"^^xsd:decimal ;
+        sh:path      datastd:externalSystemUpdatePermission .
+
+datastd:GeospatialDataLayerStandard-background
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     rdf:HTML ;
+        sh:description  "Provide a brief description of the history of the data theme and reason for developing the standard." ;
+        sh:group        datastd:LayerDocumentationPropertyGroup ;
+        sh:maxCount     1 ;
+        sh:name         "background" ;
+        sh:order        "-1"^^xsd:decimal ;
+        sh:path         datastd:background .
+
+datastd:ExchangedIncidentDataElement
+        rdf:type         edg:AssetClass , sh:NodeShape ;
+        rdfs:label       "Exchanged Incident Data Element" ;
+        rdfs:subClassOf  datastd:ExchangedDataElement ;
+        sh:property      datastd:ExchangedIncidentDataElement-requiredForIncidentCreation , datastd:ExchangedIncidentDataElement-requiredForFinalFireReport , datastd:ExchangedIncidentDataElement-requiredUpdateIncident .
+
+datastd:DataStandard-keyStakeholder
+        rdf:type  sh:PropertyShape ;
+        sh:class  edg:Organization ;
+        sh:group  edg:TraceableGroup ;
+        sh:name   "key stakeholder" ;
+        sh:order  "1"^^xsd:decimal ;
+        sh:path   datastd:keyStakeholder .
+
+datastd:ExchangedResourceDataElement-requiredAddResource
+        rdf:type     sh:PropertyShape ;
+        sh:group     datastd:ExchangeDocumentationPropertyGroup ;
+        sh:name      "required to add resource" ;
+        sh:nodeKind  sh:IRI ;
+        sh:order     4.5 ;
+        sh:path      datastd:requiredAddResource .
+
+datastd:ExchangedDataElement-crudRequirements
+        rdf:type  sh:PropertyShape ;
+        sh:group  datastd:ExchangeDocumentationPropertyGroup ;
+        sh:name   "source system submit update requirements" ;
+        sh:or     ( [ sh:datatype  rdf:HTML ]
+                    [ sh:datatype  xsd:string ]
+                  ) ;
+        sh:order  "0"^^xsd:decimal ;
+        sh:path   datastd:crudRequirements .
+
+datastd:DataStandard  rdf:type  sh:NodeShape , edg:AssetClass ;
+        rdfs:comment     "NWCG data standards (data element and geospatial data layer) provide specifications that enable the common usage of data across wildland fire information systems." ;
+        rdfs:label       "Data Standard" ;
+        rdfs:subClassOf  datastd:StandardViewpoint ;
+        sh:property      datastd:DataStandard-implementedBy , edg:Narratable-description , datastd:DataStandard-keyStakeholder , edg:StatusAspect-status , datastd:DataStandard-label , datastd:DataStandard-type , datastd:DataStandard-steward , edg:StatusAspect-lastModified , edg:StatusAspect-effectiveStartDate .
+
+datastd:DataElementStandard-standardFor
+        rdf:type        sh:PropertyShape ;
+        sh:class        wfglos:DataStandardTerm ;
+        sh:description  "A connection between the relevant top-level glossary term and the data standard. Will allow users to trace a standard from top to bottom and glean all relevant information." ;
+        sh:group        edg:TraceableGroup ;
+        sh:name         "standard for" ;
+        sh:nodeKind     sh:IRI ;
+        sh:order        "0"^^xsd:decimal ;
+        sh:path         datastd:standardFor .
+
+datastd:ExchangedDataElement-layerAttributesUsed
+        rdf:type  sh:PropertyShape ;
+        sh:class  wfglos:GeospatialTerm ;
+        sh:group  datastd:SourceLayerDetailsPropertyGroup ;
+        sh:name   "layer attributes used" ;
+        sh:order  -0.5 ;
+        sh:path   datastd:layerAttributesUsed .
+
+datastd:GeospatialDataLayerStandard-relatedLayer
+        rdf:type     sh:PropertyShape ;
+        sh:class     datastd:GeospatialDataLayerStandard ;
+        sh:group     edg:TraceableGroup ;
+        sh:name      "related layer(s)" ;
+        sh:nodeKind  sh:IRI ;
+        sh:order     "0"^^xsd:decimal ;
+        sh:path      datastd:relatedLayer .
+
+datastd:GeospatialDataLayerStandard
+        rdf:type         edg:AssetClass , sh:NodeShape ;
+        rdfs:comment     "NWCG data standards (data element and geospatial data layer) provide specifications that enable the common usage of data across wildland fire information systems." ;
+        rdfs:label       "Geospatial Data Layer Standard" ;
+        rdfs:subClassOf  datastd:DataStandard ;
+        sh:property      datastd:GeospatialDataLayerStandard-version , datastd:GeospatialDataLayerStandard-dataExchangeName , edg:SkosNotesAspect-note , datastd:GeospatialDataLayerStandard-relatedLayer , datastd:GeospatialDataLayerStandard-background , edg:Identifiable-acronym , datastd:GeospatialDataLayerStandard-spatialReference , datastd:GeospatialDataLayerStandard-dataModel , edg:Document-abstract , datastd:GeospatialDataLayerStandard-horizontalPositionalAccuracy , datastd:GeospatialDataLayerStandard-verticalPositionalAccuracy , edg:Narratable-documentLink , datastd:GeospatialDataLayerStandard-attribute .
+
+datastd:ExchangedDataElement-exampleValue
+        rdf:type  sh:PropertyShape ;
+        sh:group  datastd:ExchangeDocumentationPropertyGroup ;
+        sh:name   "example value" ;
+        sh:or     ( [ sh:datatype  rdf:HTML ]
+                    [ sh:datatype  xsd:string ]
+                  ) ;
+        sh:order  "2"^^xsd:decimal ;
+        sh:path   datastd:exampleValue .
+
+edg:SkosNotesAspect-note
+        sh:description  "Add any additional pertinent information about the data standard here." ;
+        sh:name         "other notes" .
+
+datastd:ExchangedResourceDataElement
+        rdf:type         sh:NodeShape , edg:AssetClass ;
+        rdfs:label       "Exchanged Resource Data Element" ;
+        rdfs:subClassOf  datastd:ExchangedDataElement ;
+        sh:property      datastd:ExchangedResourceDataElement-tempRequiredToAddResource , datastd:ExchangedResourceDataElement-tempApplicableToResource , datastd:ExchangedResourceDataElement-appliesTo , datastd:ExchangedResourceDataElement-requiredAddResource , datastd:ExchangedResourceDataElement-temporaryNotesField , datastd:ExchangedDataElement-requiredSubmitResource .
+
+datastd:ExchangedDataElement-requiredSubmitResource
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     xsd:boolean ;
+        sh:description  "Element required when submitting resource information." ;
+        sh:group        datastd:ExchangeDocumentationPropertyGroup ;
+        sh:maxCount     1 ;
+        sh:name         "required to submit resource information" ;
+        sh:order        "4"^^xsd:decimal ;
+        sh:path         datastd:requiredSubmitResource .
+
+datastd:ExchangedDataElement-applicableStandard
+        rdf:type        sh:PropertyShape ;
+        sh:class        datastd:DataElementStandard ;
+        sh:description  "Identifies the NWCG data element standard this data element adheres to." ;
+        sh:group        edg:TraceableGroup ;
+        sh:maxCount     2 ;
+        sh:name         "applicable standard" ;
+        sh:nodeKind     sh:IRI ;
+        sh:order        "48"^^xsd:decimal ;
+        sh:path         datastd:applicableStandard .
+
+datastd:ExchangedDataElement
+        rdf:type         edg:AssetClass , sh:NodeShape ;
+        rdfs:comment     "An element that is exchanged across applications in the wildland fire environment." ;
+        rdfs:label       "Exchanged Data Element" ;
+        rdfs:subClassOf  edg:DataElement , datastd:StandardViewpoint ;
+        sh:property      datastd:ExchangedDataElement-crudRequirements , datastd:ExchangedDataElement-sourceLayer , datastd:ExchangedDataElement-externalSystemUpdatePermission , datastd:ExchangedDataElement-requiredForUpdate , datastd:ExchangedDataElement-layerAttributeNotes , datastd:ExchangedDataElement-layerLastDownload , datastd:ExchangedDataElement-lastSyncDate , datastd:ExchangedDataElement-apiDatatype , datastd:ExchangedDataElement-applicableStandard , datastd:ExchangedDataElement-standardNotes , datastd:ExchangedDataElement-exchangeBusinessRule , datastd:ExchangedDataElement-exchangeValidation , datastd:ExchangedDataElement-layerAttributesUsed , datastd:ExchangedDataElement-datasetDate , datastd:ExchangedDataElement-layerComments , datastd:ExchangedDataElement-exampleValue .
+
+teamwork:Vocabulary  rdfs:subClassOf  owl:Ontology .
+
+datastd:SourceLayerDetailsPropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Source Layer Details" ;
+        sh:order    "351"^^xsd:decimal .
+
+<urn:x-evn-master:datastd>
+        rdf:type              owl:Ontology , ontologyprojects:Ontology , teamwork:Vocabulary ;
+        rdfs:comment          "A model describing NWCG data and layer standards." ;
+        rdfs:label            "WF Schema - Data and Layer Standards" ;
+        graphql:publicClass   datastd:ExchangedResourceDataElement , datastd:ExchangedIncidentDataElement , datastd:DataElementStandard , datastd:GeospatialDataLayerStandard , datastd:ExchangedDataElement , datastd:DataStandard ;
+        edg:subjectArea       <urn:x-tb-governance:WF> ;
+        dc:description        "<div><strong>[4/21/2022]</strong><br />Added <em><strong>implemented by</strong></em> to Data Standard to provide a way for the IRWIN team to look at their data elements and the status of standards.</div>"^^rdf:HTML ;
+        metadata:status       metadata:UnderDevelopmentStatus ;
+        swa:defaultNamespace  "http://nwcg.gov/model/standard#" ;
+        teamwork:rootClass    datastd:StandardViewpoint ;
+        owl:imports           <urn:x-evn-master:layer> , <http://datashapes.org/graphql> , <http://edg.topbraid.solutions/1.0/schema/core> , <urn:x-evn-master:wfglos> , <http://topbraid.org/teamworkconstraints> , <urn:x-evn-master:dataenum> .
+
+datastd:DataStandard-implementedBy
+        rdf:type  sh:PropertyShape ;
+        sh:class  datastd:ExchangedDataElement ;
+        sh:group  edg:TraceableGroup ;
+        sh:name   "implemented by" ;
+        sh:order  "2"^^xsd:decimal ;
+        sh:path   [ sh:inversePath  datastd:applicableStandard ] .
+
+datastd:GeospatialDataLayerStandard-spatialReference
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     rdf:HTML ;
+        sh:description  "Enter horizontal and/or vertical spatial reference information here" ;
+        sh:group        datastd:LayerDocumentationPropertyGroup ;
+        sh:maxCount     1 ;
+        sh:name         "spatial reference information" ;
+        sh:order        "1"^^xsd:decimal ;
+        sh:path         datastd:spatialReference .
+
+datastd:DataElementStandard
+        rdf:type         edg:AssetClass , sh:NodeShape ;
+        rdfs:comment     "NWCG data standards (data element and geospatial data layer) provide specifications that enable the common usage of data across wildland fire information systems." ;
+        rdfs:label       "Data Element Standard" ;
+        rdfs:subClassOf  datastd:DataStandard ;
+        sh:property      datastd:DataElementStandard-standardFor .
+
+datastd:LayerDocumentationPropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Layer Documentation" ;
+        sh:order    "31"^^xsd:decimal .

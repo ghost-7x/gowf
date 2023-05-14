@@ -1,0 +1,165 @@
+@prefix afn:                  <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix arg:                  <http://spinrdf.org/arg#> .
+@prefix business_rules:       <http://nwcg.gov/model/business_rule#> .
+@prefix corpus:               <http://topbraid.org/corpus#> .
+@prefix corpusprojects:       <http://topbraid.org/corpus-projects#> .
+@prefix crosswalk:            <http://topbraid.org/crosswalk#> .
+@prefix crosswalk.spin:       <http://topbraid.org/crosswalk.spin#> .
+@prefix crosswalkapp:         <http://topbraid.org/swa/crosswalkapp#> .
+@prefix crosswalkprojects:    <http://teamwork.topbraidlive.org/crosswalkprojects#> .
+@prefix dash:                 <http://datashapes.org/dash#> .
+@prefix dataenum:             <http://nwcg.gov/enum/data#> .
+@prefix datagraph:            <http://teamwork.topbraidlive.org/datagraph/datagraphprojects#> .
+@prefix datastd:              <http://nwcg.gov/model/standard#> .
+@prefix datatype:             <http://qudt.org/vocab/datatype/> .
+@prefix dc:                   <http://purl.org/dc/elements/1.1/> .
+@prefix dcam:                 <http://purl.org/dc/dcam/> .
+@prefix dct:                  <http://purl.org/dc/terms/> .
+@prefix debug-swa:            <http://debug.topbraidlive.org/1.0/swa/> .
+@prefix dtype:                <http://www.linkedmodel.org/schema/dtype#> .
+@prefix edg:                  <http://edg.topbraid.solutions/model/> .
+@prefix edg.v:                <http://edg.topbraid.solutions/view/> .
+@prefix evnconstraints:       <http://topbraid.org/spin/evnconstraints#> .
+@prefix fn:                   <http://www.w3.org/2005/xpath-functions#> .
+@prefix foaf:                 <http://xmlns.com/foaf/0.1/> .
+@prefix geo:                  <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix governance:           <http://topbraid.org/teamworkgovernance.ui#> .
+@prefix graphql:              <http://datashapes.org/graphql#> .
+@prefix html:                 <http://uispin.org/html#> .
+@prefix jfn:                  <java:org.apache.jena.sparql.function.library.> .
+@prefix layer:                <http://nwcg.gov/model/referenceLayer#> .
+@prefix lib-importer:         <http://edg.topbraid.solutions/importer/lib#> .
+@prefix list:                 <http://jena.apache.org/ARQ/list#> .
+@prefix metadata:             <http://topbraid.org/metadata#> .
+@prefix metash:               <http://datashapes.org/metash#> .
+@prefix nlp:                  <http://topbraid.org/nlp#> .
+@prefix ontologyprojects:     <http://teamwork.topbraidlive.org/ontologyprojects#> .
+@prefix org:                  <http://www.w3.org/ns/org#> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix owlrl:                <http://topbraid.org/spin/owlrl#> .
+@prefix pf:                   <http://jena.hpl.hp.com/ARQ/property#> .
+@prefix prov:                 <http://www.w3.org/ns/prov#> .
+@prefix quantity:             <http://qudt.org/vocab/quantity/> .
+@prefix quantitykind:         <http://qudt.org/vocab/quantitykind/> .
+@prefix qudt:                 <http://qudt.org/schema/qudt/> .
+@prefix qudt.type:            <http://qudt.org/vocab/type/> .
+@prefix raci:                 <http://topbraid.org/raci#> .
+@prefix rdf:                  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdm:                  <http://rdm.topbraidlive.org/rdm/> .
+@prefix rdmfact:              <http://topbraid.org/rdmfact#> .
+@prefix rdmprojects:          <http://rdm.topbraidlive.org/rdmprojects#> .
+@prefix s3:                   <http://topbraid.org/s3#> .
+@prefix safindex:             <http://topbraid.org/safindex#> .
+@prefix scheduler:            <http://topbraid.org/scheduler#> .
+@prefix search:               <http://topbraid.org/search#> .
+@prefix sh:                   <http://www.w3.org/ns/shacl#> .
+@prefix sharepoint-termstore: <http://teamwork.topbraidlive.org/taxonomy/sharepoint-termstore#> .
+@prefix sioc:                 <http://rdfs.org/sioc/ns#> .
+@prefix skos:                 <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosspin:             <http://topbraid.org/spin/skosspin#> .
+@prefix skostemplate:         <http://topbraid.org/spin/skostemplates#> .
+@prefix skosxl:               <http://www.w3.org/2008/05/skos-xl#> .
+@prefix sm:                   <http://topbraid.org/sparqlmotion#> .
+@prefix smf:                  <http://topbraid.org/sparqlmotionfunctions#> .
+@prefix sml:                  <http://topbraid.org/sparqlmotionlib#> .
+@prefix softwareprojects:     <http://teamwork.topbraidlive.org/software/softwareprojects#> .
+@prefix sp:                   <http://spinrdf.org/sp#> .
+@prefix sparql:               <http://datashapes.org/sparql#> .
+@prefix spif:                 <http://spinrdf.org/spif#> .
+@prefix spin:                 <http://spinrdf.org/spin#> .
+@prefix spinmap:              <http://spinrdf.org/spinmap#> .
+@prefix spinmapl:             <http://topbraid.org/spin/spinmapl#> .
+@prefix spl:                  <http://spinrdf.org/spl#> .
+@prefix spr:                  <http://spinrdf.org/spr#> .
+@prefix spra:                 <http://spinrdf.org/spra#> .
+@prefix swa:                  <http://topbraid.org/swa#> .
+@prefix swaclasses:           <http://topbraid.org/swaclasses#> .
+@prefix swash:                <http://topbraid.org/swash#> .
+@prefix swauml:               <http://topbraid.org/swauml#> .
+@prefix swon:                 <http://uispin.org/swon#> .
+@prefix tables:               <http://topbraid.org/tables#> .
+@prefix tablesmap:            <http://topbraid.org/spin/tablesmap#> .
+@prefix taggerprojects:       <http://evn.topbraidlive.org/taggerprojects#> .
+@prefix tasks:                <http://topbraid.org/tasks#> .
+@prefix taxonomies:           <http://evn.topbraidlive.org/evnprojects#> .
+@prefix tbgeo:                <http://topbraid.org/tbgeo#> .
+@prefix tbladmin:             <http://server.topbraidlive.org/system-applications/tbladmin#> .
+@prefix teamwork:             <http://topbraid.org/teamwork#> .
+@prefix teamworkconstraints:  <http://topbraid.org/teamworkconstraints#> .
+@prefix teamworks3:           <http://teamwork.topbraidlive.org/ui/teamworks3#> .
+@prefix teamworkupdate:       <http://teamworkAPI.topbraid.com/teamworkUpdate#> .
+@prefix textindex:            <http://topbraid.org/textindex#> .
+@prefix tops:                 <http://www.topbraid.org/tops#> .
+@prefix tosh:                 <http://topbraid.org/tosh#> .
+@prefix tosh.ui:              <http://topbraid.org/tosh.ui#> .
+@prefix tracker:              <http://teamwork.topbraidlive.org/ui/tracker#> .
+@prefix ui:                   <http://uispin.org/ui#> .
+@prefix uix:                  <http://topbraidlive.org/uix#> .
+@prefix unit:                 <http://qudt.org/vocab/unit/> .
+@prefix vaem:                 <http://www.linkedmodel.org/schema/vaem#> .
+@prefix voag:                 <http://voag.linkedmodel.org/voag/> .
+@prefix vs:                   <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix wfglos:               <http://nwcg.gov/model/glossary_extension#> .
+@prefix wfitenum:             <http://nwcg.gov/enum/wfit#> .
+@prefix wot:                  <http://xmlns.com/wot/0.1/> .
+@prefix xsd:                  <http://www.w3.org/2001/XMLSchema#> .
+
+ontologyprojects:Ontology
+        rdfs:subClassOf  teamwork:Vocabulary .
+
+teamwork:Vocabulary  rdfs:subClassOf  owl:Ontology .
+
+business_rules:BusinessRule
+        rdf:type         owl:Class , sh:NodeShape ;
+        rdfs:comment     "Business rules are a set of conditions that govern the data attribute so that it occurs in a way that is acceptable to the business (or customer). A business rule is a statement that defines or constrains some aspect of the data. There may be many business rules that pertain directly to the attribute, or to its relationship to other attributes. " ;
+        rdfs:label       "Business Rule" ;
+        rdfs:subClassOf  owl:Thing ;
+        sh:property      business_rules:BusinessRule-governsExchange , business_rules:BusinessRule-usedByTerm , edg:Identifiable-type , business_rules:BusinessRule-label , edg:Narratable-description , business_rules:BusinessRule-governsDataEntry .
+
+business_rules:BusinessRule-usedByTerm
+        rdf:type        sh:PropertyShape ;
+        sh:class        wfglos:DataStandardTerm ;
+        sh:description  "A relationship to the term(s) that are governed by the business rule." ;
+        sh:group        edg:TraceableGroup ;
+        sh:name         "used by term" ;
+        sh:nodeKind     sh:IRI ;
+        sh:order        "0"^^xsd:decimal ;
+        sh:path         [ sh:inversePath  wfglos:businessRule ] .
+
+<urn:x-evn-master:business_rules>
+        rdf:type              owl:Ontology , teamwork:Vocabulary , ontologyprojects:Ontology ;
+        rdfs:comment          "Business rules are a set of conditions that govern the data attribute so that it occurs in a way that is acceptable to the business (or customer). A business rule is a statement that defines or constrains some aspect of the data. There may be many business rules that pertain directly to the attribute, or to its relationship to other attributes. " ;
+        rdfs:label            "WF Schema - Business Rules" ;
+        graphql:publicClass   owl:Thing , business_rules:BusinessRule ;
+        edg:subjectArea       <urn:x-tb-governance:WF> ;
+        metadata:status       metadata:UnderDevelopmentStatus ;
+        swa:defaultNamespace  "http://nwcg.gov/model/business_rule#" ;
+        teamwork:rootClass    business_rules:BusinessRule ;
+        owl:imports           <http://datashapes.org/graphql> , <http://edg.topbraid.solutions/1.0/schema/core> , <urn:x-evn-master:wfglos> , <http://topbraid.org/teamworkconstraints> .
+
+business_rules:BusinessRule-label
+        rdf:type         sh:PropertyShape ;
+        dash:singleLine  true ;
+        graphql:name     "labels" ;
+        sh:group         edg:IdentifiersGroup ;
+        sh:name          "business rule" ;
+        sh:or            dash:StringOrLangString ;
+        sh:order         "2"^^xsd:decimal ;
+        sh:path          rdfs:label .
+
+business_rules:BusinessRule-governsDataEntry
+        rdf:type     sh:PropertyShape ;
+        sh:group     edg:TraceableGroup ;
+        sh:name      "governs data entry" ;
+        sh:nodeKind  sh:IRI ;
+        sh:order     "2"^^xsd:decimal ;
+        sh:path      [ sh:inversePath  wfglos:dataEntryRule ] .
+
+business_rules:BusinessRule-governsExchange
+        rdf:type     sh:PropertyShape ;
+        sh:group     edg:TraceableGroup ;
+        sh:name      "governs exchange" ;
+        sh:nodeKind  sh:IRI ;
+        sh:order     "1"^^xsd:decimal ;
+        sh:path      [ sh:inversePath  wfglos:exchangeRule ] .

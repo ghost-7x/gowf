@@ -1,0 +1,150 @@
+@prefix afn:                  <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix arg:                  <http://spinrdf.org/arg#> .
+@prefix causemod:             <http://nwcg.gov/model/fireCause#> .
+@prefix corpus:               <http://topbraid.org/corpus#> .
+@prefix crosswalk:            <http://topbraid.org/crosswalk#> .
+@prefix crosswalk.spin:       <http://topbraid.org/crosswalk.spin#> .
+@prefix crosswalkapp:         <http://topbraid.org/swa/crosswalkapp#> .
+@prefix crosswalkprojects:    <http://teamwork.topbraidlive.org/crosswalkprojects#> .
+@prefix dash:                 <http://datashapes.org/dash#> .
+@prefix dc:                   <http://purl.org/dc/elements/1.1/> .
+@prefix dct:                  <http://purl.org/dc/terms/> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+@prefix debug-swa:            <http://debug.topbraidlive.org/1.0/swa/> .
+@prefix edg:                  <http://edg.topbraid.solutions/model/> .
+@prefix evnconstraints:       <http://topbraid.org/spin/evnconstraints#> .
+@prefix fn:                   <http://www.w3.org/2005/xpath-functions#> .
+@prefix governance:           <http://topbraid.org/teamworkgovernance.ui#> .
+@prefix graphql:              <http://datashapes.org/graphql#> .
+@prefix html:                 <http://uispin.org/html#> .
+@prefix jfn:                  <java:org.apache.jena.sparql.function.library.> .
+@prefix lib-importer:         <http://edg.topbraid.solutions/importer/lib#> .
+@prefix list:                 <http://jena.apache.org/ARQ/list#> .
+@prefix metadata:             <http://topbraid.org/metadata#> .
+@prefix nlp:                  <http://topbraid.org/nlp#> .
+@prefix ontologyprojects:     <http://teamwork.topbraidlive.org/ontologyprojects#> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix owlrl:                <http://topbraid.org/spin/owlrl#> .
+@prefix pf:                   <http://jena.hpl.hp.com/ARQ/property#> .
+@prefix rdf:                  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdmprojects:          <http://rdm.topbraidlive.org/rdmprojects#> .
+@prefix safindex:             <http://topbraid.org/safindex#> .
+@prefix scheduler:            <http://topbraid.org/scheduler#> .
+@prefix sh:                   <http://www.w3.org/ns/shacl#> .
+@prefix sharepoint-termstore: <http://teamwork.topbraidlive.org/taxonomy/sharepoint-termstore#> .
+@prefix skos:                 <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosshapes:           <http://topbraid.org/skos.shapes#> .
+@prefix skosspin:             <http://topbraid.org/spin/skosspin#> .
+@prefix skostemplate:         <http://topbraid.org/spin/skostemplates#> .
+@prefix skosxl:               <http://www.w3.org/2008/05/skos-xl#> .
+@prefix sm:                   <http://topbraid.org/sparqlmotion#> .
+@prefix smf:                  <http://topbraid.org/sparqlmotionfunctions#> .
+@prefix sml:                  <http://topbraid.org/sparqlmotionlib#> .
+@prefix sp:                   <http://spinrdf.org/sp#> .
+@prefix spif:                 <http://spinrdf.org/spif#> .
+@prefix spin:                 <http://spinrdf.org/spin#> .
+@prefix spinmap:              <http://spinrdf.org/spinmap#> .
+@prefix spinmapl:             <http://topbraid.org/spin/spinmapl#> .
+@prefix spl:                  <http://spinrdf.org/spl#> .
+@prefix spr:                  <http://spinrdf.org/spr#> .
+@prefix spra:                 <http://spinrdf.org/spra#> .
+@prefix swa:                  <http://topbraid.org/swa#> .
+@prefix swaclasses:           <http://topbraid.org/swaclasses#> .
+@prefix swauml:               <http://topbraid.org/swauml#> .
+@prefix swon:                 <http://uispin.org/swon#> .
+@prefix tables:               <http://topbraid.org/tables#> .
+@prefix tablesmap:            <http://topbraid.org/spin/tablesmap#> .
+@prefix tasks:                <http://topbraid.org/tasks#> .
+@prefix tbgeo:                <http://topbraid.org/tbgeo#> .
+@prefix tbladmin:             <http://server.topbraidlive.org/system-applications/tbladmin#> .
+@prefix teamwork:             <http://topbraid.org/teamwork#> .
+@prefix teamworkconstraints:  <http://topbraid.org/teamworkconstraints#> .
+@prefix teamworks3:           <http://teamwork.topbraidlive.org/ui/teamworks3#> .
+@prefix teamworkupdate:       <http://teamworkAPI.topbraid.com/teamworkUpdate#> .
+@prefix textindex:            <http://topbraid.org/textindex#> .
+@prefix tops:                 <http://www.topbraid.org/tops#> .
+@prefix tosh:                 <http://topbraid.org/tosh#> .
+@prefix tosh.ui:              <http://topbraid.org/tosh.ui#> .
+@prefix tracker:              <http://teamwork.topbraidlive.org/ui/tracker#> .
+@prefix ui:                   <http://uispin.org/ui#> .
+@prefix uix:                  <http://topbraidlive.org/uix#> .
+@prefix xsd:                  <http://www.w3.org/2001/XMLSchema#> .
+
+ontologyprojects:Ontology
+        rdfs:subClassOf  teamwork:Vocabulary .
+
+causemod:CLASS-ActivityGroup
+        rdf:type         sh:NodeShape , owl:Class ;
+        rdfs:comment     "Further refines information for prevention programs for targeted messaging. " ;
+        rdfs:label       "Activity Group" ;
+        rdfs:subClassOf  skos:Concept .
+
+causemod:CLASS-GeneralCause
+        rdf:type         sh:NodeShape , owl:Class ;
+        rdfs:comment     "Agency or circumstance which started a fire or set the stage for its occurrence." ;
+        rdfs:label       "General Cause" ;
+        rdfs:subClassOf  skos:Concept .
+
+teamwork:Vocabulary  rdfs:subClassOf  owl:Ontology .
+
+causemod:CLASS-WildfireCause-label
+        rdf:type         sh:PropertyShape ;
+        dash:singleLine  true ;
+        graphql:name     "labels" ;
+        sh:name          "labels" ;
+        sh:or            dash:StringOrLangString ;
+        sh:path          rdfs:label .
+
+<urn:x-evn-master:causemod>
+        rdf:type              teamwork:Vocabulary , owl:Ontology , ontologyprojects:Ontology ;
+        rdfs:comment          "A model describing fire cause within wildland fire. A representation of the Fire Cause Data Standard as established by NWCG." ;
+        rdfs:label            "WF Schema - Wildland Fire Cause" ;
+        edg:subjectArea       <urn:x-tb-governance:WF> ;
+        metadata:status       metadata:UnderDevelopmentStatus ;
+        swa:defaultNamespace  "http://nwcg.gov/model/fireCause#" ;
+        owl:imports           <http://topbraid.org/teamworkconstraints> , <http://datashapes.org/graphql> , <http://topbraid.org/skos.shapes> .
+
+causemod:CLASS-SpecificCauseDetail
+        rdf:type         sh:NodeShape , owl:Class ;
+        rdfs:comment     "More specific information about the cause or factors contributing to the ignition." ;
+        rdfs:label       "Specific Cause Detail" ;
+        rdfs:subClassOf  skos:Concept .
+
+causemod:CLASS-CauseClassification
+        rdf:type         sh:NodeShape , owl:Class ;
+        rdfs:comment     "Broad classification of the reason the fire occurred." ;
+        rdfs:label       "Cause Classification" ;
+        rdfs:subClassOf  skos:Concept .
+
+causemod:CLASS-SpecificCause
+        rdf:type         sh:NodeShape , owl:Class ;
+        rdfs:comment     "A further categorization of each General Cause to indicate more specifically the agency or circumstance which started a fire or set the stage for its occurrence." ;
+        rdfs:label       "Specific Cause" ;
+        rdfs:subClassOf  skos:Concept .
+
+causemod:CLASS-WildfireCause
+        rdf:type         sh:NodeShape , owl:Class ;
+        rdfs:comment     "Identifying something that started a wildfire." ;
+        rdfs:label       "Wildfire Cause" ;
+        rdfs:subClassOf  owl:Thing ;
+        sh:property      causemod:CLASS-WildfireCause-type , causemod:CLASS-WildfireCause-label .
+
+causemod:CLASS-WildfireCause-type
+        rdf:type      sh:PropertyShape ;
+        graphql:name  "types" ;
+        sh:class      rdfs:Class ;
+        sh:name       "types" ;
+        sh:path       rdf:type .
+
+causemod:CLASS-Prohibited
+        rdf:type         sh:NodeShape , owl:Class ;
+        rdfs:comment     "Allows identification of an activity which is unlawful or otherwise prohibited (burn ban, unpermitted, etc.) by local authorities." ;
+        rdfs:label       "Prohibited" ;
+        rdfs:subClassOf  skos:Concept .
+
+causemod:CLASS-AgeCategory
+        rdf:type         sh:NodeShape , owl:Class ;
+        rdfs:comment     "Discriminates between children (0-12), adolescents (13-17), and adults (18+)." ;
+        rdfs:label       "Age Category" ;
+        rdfs:subClassOf  skos:Concept .

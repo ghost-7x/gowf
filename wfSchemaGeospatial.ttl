@@ -1,0 +1,709 @@
+@prefix afn:                  <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix arg:                  <http://spinrdf.org/arg#> .
+@prefix corpus:               <http://topbraid.org/corpus#> .
+@prefix corpusprojects:       <http://topbraid.org/corpus-projects#> .
+@prefix crosswalk:            <http://topbraid.org/crosswalk#> .
+@prefix crosswalk.spin:       <http://topbraid.org/crosswalk.spin#> .
+@prefix crosswalkapp:         <http://topbraid.org/swa/crosswalkapp#> .
+@prefix crosswalkprojects:    <http://teamwork.topbraidlive.org/crosswalkprojects#> .
+@prefix dash:                 <http://datashapes.org/dash#> .
+@prefix datagraph:            <http://teamwork.topbraidlive.org/datagraph/datagraphprojects#> .
+@prefix datatype:             <http://qudt.org/vocab/datatype/> .
+@prefix dc:                   <http://purl.org/dc/elements/1.1/> .
+@prefix dcam:                 <http://purl.org/dc/dcam/> .
+@prefix dct:                  <http://purl.org/dc/terms/> .
+@prefix debug-swa:            <http://debug.topbraidlive.org/1.0/swa/> .
+@prefix dtype:                <http://www.linkedmodel.org/schema/dtype#> .
+@prefix edg:                  <http://edg.topbraid.solutions/model/> .
+@prefix edg.v:                <http://edg.topbraid.solutions/view/> .
+@prefix evnconstraints:       <http://topbraid.org/spin/evnconstraints#> .
+@prefix fn:                   <http://www.w3.org/2005/xpath-functions#> .
+@prefix foaf:                 <http://xmlns.com/foaf/0.1/> .
+@prefix geo:                  <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix governance:           <http://topbraid.org/teamworkgovernance.ui#> .
+@prefix graphql:              <http://datashapes.org/graphql#> .
+@prefix html:                 <http://uispin.org/html#> .
+@prefix jfn:                  <java:org.apache.jena.sparql.function.library.> .
+@prefix layer:                <http://nwcg.gov/model/referenceLayer#> .
+@prefix lib-importer:         <http://edg.topbraid.solutions/importer/lib#> .
+@prefix list:                 <http://jena.apache.org/ARQ/list#> .
+@prefix metadata:             <http://topbraid.org/metadata#> .
+@prefix metash:               <http://datashapes.org/metash#> .
+@prefix nlp:                  <http://topbraid.org/nlp#> .
+@prefix ontologyprojects:     <http://teamwork.topbraidlive.org/ontologyprojects#> .
+@prefix org:                  <http://www.w3.org/ns/org#> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix owlrl:                <http://topbraid.org/spin/owlrl#> .
+@prefix pf:                   <http://jena.hpl.hp.com/ARQ/property#> .
+@prefix prov:                 <http://www.w3.org/ns/prov#> .
+@prefix quantity:             <http://qudt.org/vocab/quantity/> .
+@prefix quantitykind:         <http://qudt.org/vocab/quantitykind/> .
+@prefix qudt:                 <http://qudt.org/schema/qudt/> .
+@prefix qudt.type:            <http://qudt.org/vocab/type/> .
+@prefix raci:                 <http://topbraid.org/raci#> .
+@prefix rdf:                  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdm:                  <http://rdm.topbraidlive.org/rdm/> .
+@prefix rdmfact:              <http://topbraid.org/rdmfact#> .
+@prefix rdmprojects:          <http://rdm.topbraidlive.org/rdmprojects#> .
+@prefix s3:                   <http://topbraid.org/s3#> .
+@prefix safindex:             <http://topbraid.org/safindex#> .
+@prefix scheduler:            <http://topbraid.org/scheduler#> .
+@prefix search:               <http://topbraid.org/search#> .
+@prefix sh:                   <http://www.w3.org/ns/shacl#> .
+@prefix sharepoint-termstore: <http://teamwork.topbraidlive.org/taxonomy/sharepoint-termstore#> .
+@prefix sioc:                 <http://rdfs.org/sioc/ns#> .
+@prefix skos:                 <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosspin:             <http://topbraid.org/spin/skosspin#> .
+@prefix skostemplate:         <http://topbraid.org/spin/skostemplates#> .
+@prefix skosxl:               <http://www.w3.org/2008/05/skos-xl#> .
+@prefix sm:                   <http://topbraid.org/sparqlmotion#> .
+@prefix smf:                  <http://topbraid.org/sparqlmotionfunctions#> .
+@prefix sml:                  <http://topbraid.org/sparqlmotionlib#> .
+@prefix softwareprojects:     <http://teamwork.topbraidlive.org/software/softwareprojects#> .
+@prefix sp:                   <http://spinrdf.org/sp#> .
+@prefix sparql:               <http://datashapes.org/sparql#> .
+@prefix spif:                 <http://spinrdf.org/spif#> .
+@prefix spin:                 <http://spinrdf.org/spin#> .
+@prefix spinmap:              <http://spinrdf.org/spinmap#> .
+@prefix spinmapl:             <http://topbraid.org/spin/spinmapl#> .
+@prefix spl:                  <http://spinrdf.org/spl#> .
+@prefix spr:                  <http://spinrdf.org/spr#> .
+@prefix spra:                 <http://spinrdf.org/spra#> .
+@prefix swa:                  <http://topbraid.org/swa#> .
+@prefix swaclasses:           <http://topbraid.org/swaclasses#> .
+@prefix swash:                <http://topbraid.org/swash#> .
+@prefix swauml:               <http://topbraid.org/swauml#> .
+@prefix swon:                 <http://uispin.org/swon#> .
+@prefix tables:               <http://topbraid.org/tables#> .
+@prefix tablesmap:            <http://topbraid.org/spin/tablesmap#> .
+@prefix taggerprojects:       <http://evn.topbraidlive.org/taggerprojects#> .
+@prefix tasks:                <http://topbraid.org/tasks#> .
+@prefix taxonomies:           <http://evn.topbraidlive.org/evnprojects#> .
+@prefix tbgeo:                <http://topbraid.org/tbgeo#> .
+@prefix tbladmin:             <http://server.topbraidlive.org/system-applications/tbladmin#> .
+@prefix teamwork:             <http://topbraid.org/teamwork#> .
+@prefix teamworkconstraints:  <http://topbraid.org/teamworkconstraints#> .
+@prefix teamworks3:           <http://teamwork.topbraidlive.org/ui/teamworks3#> .
+@prefix teamworkupdate:       <http://teamworkAPI.topbraid.com/teamworkUpdate#> .
+@prefix textindex:            <http://topbraid.org/textindex#> .
+@prefix tops:                 <http://www.topbraid.org/tops#> .
+@prefix tosh:                 <http://topbraid.org/tosh#> .
+@prefix tosh.ui:              <http://topbraid.org/tosh.ui#> .
+@prefix tracker:              <http://teamwork.topbraidlive.org/ui/tracker#> .
+@prefix ui:                   <http://uispin.org/ui#> .
+@prefix uix:                  <http://topbraidlive.org/uix#> .
+@prefix unit:                 <http://qudt.org/vocab/unit/> .
+@prefix vaem:                 <http://www.linkedmodel.org/schema/vaem#> .
+@prefix voag:                 <http://voag.linkedmodel.org/voag/> .
+@prefix vs:                   <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix wfitenum:             <http://nwcg.gov/enum/wfit#> .
+@prefix wot:                  <http://xmlns.com/wot/0.1/> .
+@prefix xsd:                  <http://www.w3.org/2001/XMLSchema#> .
+
+layer:GeospatialDataLayerViewpoint
+        rdf:type         edg:ViewpointClass , sh:NodeShape ;
+        rdfs:label       "Geospatial Data Layer Viewpoint" ;
+        rdfs:subClassOf  edg:DataAssetsViewpoint ;
+        dash:abstract    true .
+
+layer:RiskAssessmentPropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Risk Assessment" ;
+        sh:order    "34"^^xsd:decimal .
+
+layer:DatasetDependenciesPropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Dataset Dependencies" ;
+        sh:order    "0"^^xsd:decimal .
+
+edg:DataSet  sh:property  edg:Interoperable-dependsOnDataFrom , edg:DataSet-benchDepth , edg:DataSet-dataResponsibilityLevel , edg:DataSet-levelOfEffort .
+
+layer:LayerDocumentationPropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Layer Documentation" ;
+        sh:order    "19"^^xsd:decimal .
+
+layer:HighLevelManagementView
+        rdf:type    sh:NodeShape ;
+        rdfs:label  "High Level Management view" .
+
+layer:GeospatialDataLayer-fileSourceLink
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     xsd:anyURI ;
+        sh:description  "Link to the source file of the data layer." ;
+        sh:group        layer:LayerLocationPropertyGroup ;
+        sh:maxCount     1 ;
+        sh:name         "file source link" ;
+        sh:nodeKind     sh:Literal ;
+        sh:order        "1"^^xsd:decimal ;
+        sh:path         layer:fileSourceLink .
+
+layer:GeospatialDataLayer-publicDataDownloadLink
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     xsd:anyURI ;
+        sh:description  "This is a location where the general public can access the data layer. " ;
+        sh:group        layer:LayerLocationPropertyGroup ;
+        sh:maxCount     1 ;
+        sh:name         "public data download link" ;
+        sh:nodeKind     sh:Literal ;
+        sh:order        "0"^^xsd:decimal ;
+        sh:path         layer:publicDataDownloadLink .
+
+layer:GeospatialDataLayer-fireModified
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     xsd:boolean ;
+        sh:description  "This property indicates whether wildland fire \"enhances\" the data layer owned by another organization. For example, wildland fire may add additional attributes or polygons to the jurisdictional agencies data layer" ;
+        sh:group        layer:LayerDetailsPropertyGroup ;
+        sh:maxCount     1 ;
+        sh:name         "fire modified" ;
+        sh:order        "2"^^xsd:decimal ;
+        sh:path         layer:fireModified .
+
+edg:DataAsset  rdfs:subClassOf  layer:ReferenceDataViewpoint , layer:GeospatialDataLayerViewpoint .
+
+<http://nwcg.gov/data/referenceLayer/SILVISWUI>
+        rdf:type                      layer:GeospatialDataLayer ;
+        rdfs:label                    "SILVIS WUI" ;
+        edg:name                      "SILVIS WUI" ;
+        edg:status                    edg:ASSETSTAT_ApprovedStatus ;
+        wfitenum:applicationTier      wfitenum:tier2 ;
+        layer:dateEndorsed            "2018-05-10"^^xsd:date ;
+        layer:externalFeatureServiceSourceLink
+                "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WUI_2000_01/MapServer"^^xsd:anyURI , "https://usfs.maps.arcgis.com/home/item.html?id=096b85908f5d4b45beaa7a805f799009"^^xsd:anyURI , "https://usfs.maps.arcgis.com/home/item.html?id=353145504c27470f8c19347ec4d8891b"^^xsd:anyURI , "https://usfs.maps.arcgis.com/home/item.html?id=bfec19a14d96451eb3a04e52c4537dee"^^xsd:anyURI , "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WUI_2010_01/MapServer"^^xsd:anyURI ;
+        layer:fileSourceLink          "https://www.fs.usda.gov/rds/archive/Product/RDS-2015-0012-2"^^xsd:anyURI ;
+        layer:fireOwned               false ;
+        layer:notes                   "Separate tile services for 2010, 2000, and 1990."^^rdf:HTML ;
+        layer:owner                   "SILVIS Lab/USFS Northern Research Station" ;
+        layer:primaryServiceLink      "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WUI_2010_01/MapServer"^^xsd:anyURI ;
+        layer:publicDataDownloadLink  "https://www.fs.usda.gov/rds/archive/Catalog/RDS-2015-0012-2"^^xsd:anyURI ;
+        layer:wfitTier                wfitenum:tier2 .
+
+<http://nwcg.gov/data/referenceLayer/PublicLandSurveySystemPolygons>
+        rdf:type                  layer:GeospatialDataLayer ;
+        rdfs:label                "Public Land Survey System Polygons (PLSS)" ;
+        edg:name                  "PublicLandSurveySystemPolygons" ;
+        edg:status                edg:ProposedNew ;
+        wfitenum:applicationTier  wfitenum:tier4 ;
+        layer:externalFeatureServiceSourceLink
+                "https://gis.blm.gov/arcgis/rest/services/Cadastral/BLM_Natl_PLSS_CadNSDI/MapServer"^^xsd:anyURI ;
+        layer:fileSourceLink      "https://gis.blm.gov/EGISDownload/LayerPackages/BLM_National_PLSS.zip"^^xsd:anyURI ;
+        layer:fireModified        false ;
+        layer:fireOwned           false ;
+        layer:metadataLink        "https://catalog.data.gov/dataset/blm-national-public-land-survey-system-polygons-national-geospatial-data-asset-ngda"^^xsd:anyURI , "https://gis.blm.gov/egisdownload/Metadata/BLM_National_PLSS.xml"^^xsd:anyURI ;
+        layer:notes               "<div lang=\"\">Layer is listed as a National Geospatial Data Asset (NGDA) by the Federal Geographic Data Committee (FGDC).<br />&nbsp;&nbsp;<br />When it comes to the aligned records, the authoritative source are the land records, nothing in the GIS is authoritative in that sense. This is the best representation of the PLSS in a GIS format. Further information may be found in the metadata for this layer, <a href=\"https://gis.blm.gov/egisdownload/Metadata/BLM_National_PLSS.xml\">https://gis.blm.gov/egisdownload/Metadata/BLM_National_PLSS.xml</a> .<br /><br />This BLM Dataset mainly covers Federal interest lands therefore there will be other datasets at PAD-US, state, county, and local governments that will be better used for nonfederal interest lands.</div>"^^rdf:HTML ;
+        layer:owner               "Bureau of Land Management" ;
+        layer:primaryServiceLink  "https://gis.blm.gov/arcgis/rest/services/Cadastral/BLM_Natl_PLSS_CadNSDI/MapServer"^^xsd:anyURI .
+
+layer:ProgramManagerView
+        rdf:type    sh:NodeShape ;
+        rdfs:label  "Program Manager view" .
+
+edg:DataSet-levelOfEffort
+        rdf:type     sh:PropertyShape ;
+        sh:class     <http://nwcg.gov/enum/data#LevelOfEffort> ;
+        sh:group     layer:RiskAssessmentPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "level of effort" ;
+        sh:order     "-2"^^xsd:decimal ;
+        sh:path      layer:levelOfEffort .
+
+edg:DataSet-benchDepth
+        rdf:type     sh:PropertyShape ;
+        sh:class     <http://nwcg.gov/enum/data#BenchDepth> ;
+        sh:group     layer:RiskAssessmentPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "bench depth" ;
+        sh:order     "0"^^xsd:decimal ;
+        sh:path      layer:benchDepth .
+
+edg:DataAndInformation-dependents
+        dash:applicableToClass  edg:DataSet .
+
+layer:GeospatialDataLayer-metadataLink
+        rdf:type        sh:PropertyShape ;
+        sh:description  "Link to layer metadata" ;
+        sh:group        layer:LayerDocumentationPropertyGroup ;
+        sh:name         "metadata link" ;
+        sh:nodeKind     sh:Literal ;
+        sh:order        "-1"^^xsd:decimal ;
+        sh:path         layer:metadataLink .
+
+layer:GeospatialDataLayer-primaryServiceLink
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:anyURI ;
+        sh:group     layer:LayerLocationPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:name      "primary service link" ;
+        sh:nodeKind  sh:Literal ;
+        sh:order     "2"^^xsd:decimal ;
+        sh:path      layer:primaryServiceLink .
+
+layer:ApplicationManagerView
+        rdf:type     sh:NodeShape ;
+        rdfs:label   "Application Manager view" ;
+        sh:property  layer:ApplicationManagerView-rationale .
+
+<http://nwcg.gov/data/referenceLayer/JurisdictionalAgencies>
+        rdf:type                      layer:GeospatialDataLayer ;
+        rdfs:label                    "Jurisdictional Agencies" ;
+        edg:name                      "Jurisdictional Agencies" ;
+        edg:status                    edg:ASSETSTAT_ApprovedStatus ;
+        wfitenum:applicationTier      wfitenum:tier1 ;
+        layer:dateEndorsed            "2017-04-13"^^xsd:date ;
+        layer:fireModified            true ;
+        layer:fireOwned               true ;
+        layer:nifcOrgAgolFeatureService
+                "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/Jurisdictional_Unit_(Public)/FeatureServer?"^^xsd:anyURI ;
+        layer:nifcOrgAgolFeatureServiceDescriptionPage
+                "https://nifc.maps.arcgis.com/home/item.html?id=9dfd2f68922d428eb4a9f61a1eba4d93"^^xsd:anyURI ;
+        layer:owner                   "USGS Gap Analysis Program / FGDC Fed Lands Working Group" ;
+        layer:primaryServiceLink      "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/Jurisdictional_Unit_(Public)/FeatureServer?"^^xsd:anyURI ;
+        layer:publicDataDownloadLink  "https://s3-us-west-1.amazonaws.com/wfdss/public/JurisdictionalAgencies.zip"^^xsd:anyURI ;
+        layer:wfitTier                wfitenum:tier1 .
+
+layer:GeospatialDataLayer-owner
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     xsd:string ;
+        sh:description  "Temporary field for collecting owner - intend to replace with reusable list." ;
+        sh:group        layer:LayerDetailsPropertyGroup ;
+        sh:name         "owner" ;
+        sh:order        "5"^^xsd:decimal ;
+        sh:path         layer:owner .
+
+edg:DataAndInformation-dependencies
+        dash:applicableToClass  edg:DataSet .
+
+layer:GeospatialDataLayer-layerOwner
+        rdf:type        sh:PropertyShape ;
+        sh:class        edg:Organization ;
+        sh:description  "This is the organization(s) who are responsible for creating and maintaining the data source." ;
+        sh:group        layer:LayerDetailsPropertyGroup ;
+        sh:name         "layer owner" ;
+        sh:order        "4"^^xsd:decimal ;
+        sh:path         layer:layerOwner .
+
+<http://nwcg.gov/data/referenceLayer/AmericanIndianAlaskaNativeAndNativeHawaiianAreas>
+        rdf:type                      layer:GeospatialDataLayer ;
+        rdfs:label                    "American Indian, Alaska Native, and Native Hawaiian Areas" ;
+        edg:description               "Federal American Indian Reservations, Off-Reservation Trust Lands (ORTL), State American Indian Reservations, Hawaiian Home Lands (HHL), Alaska Native Village Statistical Areas (ANVSA), Oklahoma Tribal Statistical Areas (OTSA), State Designated Tribal Statistical Areas (SDTSA), Tribal Designated Statistical Areas (TDSA), American Indian Joint-Use Areas (AIJUA), Joint-Use Oklahoma Tribal Statistical Areas; January 1, 2021 vintage"^^rdf:HTML ;
+        edg:name                      "American Indian, Alaska Native, and Native Hawaiian Areas" ;
+        edg:status                    edg:ProposedNew ;
+        layer:externalFeatureServiceSourceLink
+                "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/AIANNHA/MapServer/47"^^xsd:anyURI ;
+        layer:fileSourceLink          "https://www2.census.gov/geo/tiger/TIGER2021/AIANNH/tl_2021_us_aiannh.zip"^^xsd:anyURI ;
+        layer:fireModified            false ;
+        layer:fireOwned               false ;
+        layer:metadataLink            "https://meta.geo.census.gov/data/existing/decennial/GEO/GPMB/TIGERline/TIGER2020/aiannh/tl_2020_us_aiannh.shp.iso.xml" , "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/AIANNHA/MapServer/47/metadata" ;
+        layer:owner                   "Census Bureau" ;
+        layer:primaryServiceLink      "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/AIANNHA/MapServer/47"^^xsd:anyURI ;
+        layer:publicDataDownloadLink  "https://www2.census.gov/geo/tiger/TIGER2021/AIANNH/tl_2021_us_aiannh.zip"^^xsd:anyURI ;
+        layer:wfitTier                wfitenum:tier4 ;
+        skos:altLabel                 "Federal Admin Areas - BIA/Tribal (WFDSS)" .
+
+layer:DatasetDependencies
+        rdf:type    sh:NodeShape ;
+        rdfs:label  "Dataset Dependencies" .
+
+edg:DataSet-dataResponsibilityLevel
+        rdf:type     sh:PropertyShape ;
+        sh:class     <http://nwcg.gov/enum/data#DataResponsibilityLevel> ;
+        sh:group     layer:RiskAssessmentPropertyGroup ;
+        sh:maxCount  1 ;
+        sh:minCount  1 ;
+        sh:name      "data responsibility level" ;
+        sh:order     "-3"^^xsd:decimal ;
+        sh:path      layer:dataResponsibilityLevel .
+
+layer:DeveloperView  rdf:type  sh:NodeShape ;
+        rdfs:label  "Developer view" .
+
+layer:DatasetView  rdf:type  edg:AssetClass , sh:NodeShape ;
+        rdfs:label       "Dataset View" ;
+        rdfs:subClassOf  edg:DataSet ;
+        sh:property      layer:DatasetView-partOfDataset .
+
+layer:GeospatialDataLayer-usedByApplication
+        rdf:type          sh:PropertyShape ;
+        dash:reifiableBy  layer:ApplicationManagerView ;
+        sh:class          edg:TechnicalAsset ;
+        sh:description    "Identifies applications using this layer." ;
+        sh:group          edg:TraceableGroup ;
+        sh:name           "used by application" ;
+        sh:nodeKind       sh:IRI ;
+        sh:order          "101"^^xsd:decimal ;
+        sh:path           layer:usedByApplication .
+
+<http://nwcg.gov/data/referenceLayer/CommunitiesResidentialPopulation>
+        rdf:type                  layer:GeospatialDataLayer ;
+        rdfs:label                "Communities - Residential Developed Population Areas" ;
+        edg:name                  "Communities - Residential Developed Population Areas" ;
+        edg:status                edg:ASSETSTAT_ApprovedStatus ;
+        layer:dateEndorsed        "2018-05-10"^^xsd:date ;
+        layer:fireOwned           true ;
+        layer:nifcOrgAgolFeatureService
+                "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/NHVRA_Communities_FeatureService/FeatureServer"^^xsd:anyURI ;
+        layer:nifcOrgAgolFeatureServiceDescriptionPage
+                "https://nifc.maps.arcgis.com/home/item.html?id=aee3229d2a464a018e671cdf44220788"^^xsd:anyURI ;
+        layer:owner               "USDA Forest Service - Rocky Mountain Research Station - Human Dimensions Science Program" ;
+        layer:primaryServiceLink  "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/NHVRA_Communities_FeatureService/FeatureServer"^^xsd:anyURI .
+
+<http://nwcg.gov/data/referenceLayer/ProtectionAreas>
+        rdf:type                      layer:GeospatialDataLayer ;
+        rdfs:label                    "Protection Areas" , "Protection Areas (DPA/Responsible Agencies)" ;
+        edg:name                      "Protection Areas (DPA/Responsible Agencies)" ;
+        edg:status                    edg:ASSETSTAT_ApprovedStatus ;
+        wfitenum:applicationTier      wfitenum:tier1 ;
+        layer:dateEndorsed            "2017-04-13"^^xsd:date ;
+        layer:externalFeatureServiceSourceLink
+                "https://services.arcgis.com/4OV0eRKiLAYkbH2J/ArcGIS/rest/services/Responsible_Agencies/FeatureServer/0"^^xsd:anyURI ;
+        layer:fileSourceLink          "Various"^^xsd:anyURI ;
+        layer:fireOwned               true ;
+        layer:nifcOrgAgolFeatureService
+                "https://services3.arcgis.com/T4QMspbfLg3qTGWY/ArcGIS/rest/services/Protection_Unit_and_Agency/FeatureServer/0"^^xsd:anyURI ;
+        layer:nifcOrgAgolFeatureServiceDescriptionPage
+                "https://nifc.maps.arcgis.com/home/item.html?id=256049f6f88846f883066cd652e3489f"^^xsd:anyURI ;
+        layer:notes                   "" ;
+        layer:owner                   "WFDSS (AK, CA, ID, MT, MN, NM)" ;
+        layer:primaryServiceLink      "https://services3.arcgis.com/T4QMspbfLg3qTGWY/ArcGIS/rest/services/Protection_Unit_and_Agency/FeatureServer/0"^^xsd:anyURI ;
+        layer:publicDataDownloadLink  "https://s3-us-west-1.amazonaws.com/wfdss/public/ResponsibleAgencies.zip"^^xsd:anyURI ;
+        layer:wfitTier                wfitenum:tier1 .
+
+layer:GeospatialDataLayer-queryEnabled
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:boolean ;
+        sh:group     edg:TechnicalContextGroup ;
+        sh:maxCount  1 ;
+        sh:name      "query enabled" ;
+        sh:order     "21"^^xsd:decimal ;
+        sh:path      layer:queryEnabled .
+
+<http://nwcg.gov/data/referenceLayer/CongressionalDistrict>
+        rdf:type                      layer:GeospatialDataLayer ;
+        rdfs:label                    "Congressional District" ;
+        edg:name                      "Congressional District" ;
+        edg:status                    edg:ASSETSTAT_ApprovedStatus ;
+        layer:dateEndorsed            "2018-05-10"^^xsd:date ;
+        layer:externalFeatureServiceSourceLink
+                "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Legislative/MapServer/0"^^xsd:anyURI ;
+        layer:fileSourceLink          "https://www2.census.gov/geo/tiger/TIGER2021/CD/"^^xsd:anyURI ;
+        layer:fireOwned               false ;
+        layer:owner                   "Census TIGER" ;
+        layer:primaryServiceLink      "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Legislative/MapServer/0"^^xsd:anyURI ;
+        layer:publicDataDownloadLink  "https://www2.census.gov/geo/tiger/TIGER2021/CD/"^^xsd:anyURI .
+
+<http://nwcg.gov/data/referenceLayer/StateBoundaries>
+        rdf:type                  layer:GeospatialDataLayer ;
+        rdfs:label                "State Boundaries" ;
+        edg:name                  "State boundaries" ;
+        edg:status                edg:ASSETSTAT_ApprovedStatus ;
+        wfitenum:applicationTier  wfitenum:tier4 ;
+        layer:dateEndorsed        "2017-04-13"^^xsd:date ;
+        layer:externalFeatureServiceSourceLink
+                "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/tigerWMS_ACS2021/MapServer/76"^^xsd:anyURI ;
+        layer:fileSourceLink      "https://www2.census.gov/geo/tiger/TIGER2021/STATE/"^^xsd:anyURI ;
+        layer:fireModified        false ;
+        layer:fireOwned           false ;
+        layer:owner               "Census TIGER" ;
+        layer:primaryServiceLink  "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/tigerWMS_ACS2021/MapServer/76"^^xsd:anyURI ;
+        layer:wfitTier            wfitenum:tier4 .
+
+layer:ApplicationManagerView-rationale
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     rdf:HTML ;
+        sh:description  "An explanation of why the layer is included in the application" ;
+        sh:name         "rationale" ;
+        sh:path         layer:rationale .
+
+ontologyprojects:Ontology
+        rdfs:subClassOf  teamwork:Vocabulary .
+
+<urn:x-evn-master:layer>
+        rdf:type              ontologyprojects:Ontology , owl:Ontology , teamwork:Vocabulary ;
+        rdfs:label            "WF Schema - Geospatial Data Layer" ;
+        graphql:publicClass   layer:GeospatialDataLayerViewpoint , layer:GeospatialDataLayer ;
+        edg:subjectArea       <urn:x-tb-governance:WF> ;
+        metadata:status       metadata:UnderDevelopmentStatus ;
+        swa:defaultNamespace  "http://nwcg.gov/model/referenceLayer#" ;
+        teamwork:rootClass    owl:Thing ;
+        owl:imports           <http://topbraid.org/teamworkconstraints> , <http://edg.topbraid.solutions/1.0/schema/datamodels> , <urn:x-evn-master:wfitenum> , <http://datashapes.org/graphql> .
+
+layer:DatasetView-partOfDataset
+        rdf:type     sh:PropertyShape ;
+        sh:class     edg:DataSet ;
+        sh:group     edg:DataContextGroup ;
+        sh:maxCount  1 ;
+        sh:name      "part of dataset" ;
+        sh:order     "101"^^xsd:decimal ;
+        sh:path      layer:partOfDataset .
+
+layer:DataManagerView
+        rdf:type    sh:NodeShape ;
+        rdfs:label  "Data Manager view" .
+
+layer:GeospatialDataLayer-dateEndorsed
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     xsd:date ;
+        sh:description  "This is the date that the NWCG Geospatial Subcommittee endorsed the layer." ;
+        sh:group        layer:LayerDetailsPropertyGroup ;
+        sh:maxCount     1 ;
+        sh:name         "date endorsed" ;
+        sh:order        "3"^^xsd:decimal ;
+        sh:path         layer:dateEndorsed .
+
+layer:GeospatialDataLayer-dataLayer
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:string ;
+        sh:group     edg:IdentifiersGroup ;
+        sh:name      "data layer" ;
+        sh:order     "100"^^xsd:decimal ;
+        sh:path      layer:dataLayer .
+
+layer:DatasetDependents
+        rdf:type    sh:NodeShape ;
+        rdfs:label  "Dataset Dependents" .
+
+layer:GeospatialDataLayer
+        rdf:type         edg:AssetClass , sh:NodeShape ;
+        rdfs:label       "Geospatial Data Layer" ;
+        rdfs:subClassOf  layer:DatasetView ;
+        sh:property      layer:GeospatialDataLayer-publicDataDownloadLink , layer:GeospatialDataLayer-fireModified , layer:GeospatialDataLayer-queryEnabled , layer:GeospatialDataLayer-usedByApplication , layer:GeospatialDataLayer-externalFeatureServiceSourceLink , layer:GeospatialDataLayer-primaryServiceLink , layer:GeospatialDataLayer-notes , layer:GeospatialDataLayer-fileSourceLink , layer:GeospatialDataLayer-metadataLink , layer:GeospatialDataLayer-fireOwned , layer:GeospatialDataLayer-nifcOrgAgolFeatureServiceDescriptionPage , layer:GeospatialDataLayer-dateEndorsed , layer:GeospatialDataLayer-layerOwner , layer:GeospatialDataLayer-wfitTier , layer:GeospatialDataLayer-owner , layer:GeospatialDataLayer-nifcOrgAgolFeatureService , layer:GeospatialDataLayer-dataLayer .
+
+<http://nwcg.gov/data/referenceLayer/BLMLightningServices>
+        rdf:type                  layer:GeospatialDataLayer ;
+        rdfs:label                "BLM Lightning Services" ;
+        edg:description           "<div lang=\"\">Layers are not available publicly; authentication to these services is provided through EGP.<br /><br />Three layers are available:<br /><strong>24h Lightning Density (raster grid)</strong> (0): https://egp.nwcg.gov/arcgis/rest/services/FireCOP/LightningStrikes/MapServer/0<br /><br /><strong>24h Lightning (points)</strong> (1): https://egp.nwcg.gov/arcgis/rest/services/FireCOP/LightningStrikes/MapServer/1<br /><br /><strong>Last 2 to 7 Days (points)</strong> (2): https://egp.nwcg.gov/arcgis/rest/services/FireCOP/LightningStrikes/MapServer/2</div>"^^rdf:HTML ;
+        edg:name                  "BLMLightningServices" ;
+        edg:status                edg:ProposedNew ;
+        wfitenum:applicationTier  wfitenum:tier2 ;
+        layer:externalFeatureServiceSourceLink
+                "https://egp.nwcg.gov/arcgis/rest/services/FireCOP/LightningStrikes/MapServer/1"^^xsd:anyURI , "https://egp.nwcg.gov/arcgis/rest/services/FireCOP/LightningStrikes/MapServer/0"^^xsd:anyURI , "https://egp.nwcg.gov/arcgis/rest/services/FireCOP/LightningStrikes/MapServer/2"^^xsd:anyURI , "https://egp.nwcg.gov/arcgis/rest/services/FireCOP/LightningStrikes/MapServer"^^xsd:anyURI ;
+        layer:fireOwned           false ;
+        layer:layerOwner          <http://nwcg.gov/ent/nwcg_org/ORG_FDSC> , <http://nwcg.gov/ent/nwcg_org/ORG_GSC> ;
+        layer:notes               "<div>These data are provided through a contract with a third-party data provider.&nbsp; Earlier versions and future versions of similar datasets may use different sensor setups, mathematical models or methodology, collection and delivery mechanisms, and/or attribution. <br /><br />Caution should be used when combining sources of lightning data. Duplication or gaps may result which would not be readily apparent to the user.<br /><br />Some interagency partners have contracted with other service providers. Investigation of other available, relevant datasets may reveal requirements to use other lightning data for specific local or agency applications.</div>"^^rdf:HTML ;
+        layer:owner               "BLM " ;
+        layer:primaryServiceLink  "https://egp.nwcg.gov/arcgis/rest/services/FireCOP/LightningStrikes/MapServer"^^xsd:anyURI .
+
+layer:GeospatialDataLayer-notes
+        rdf:type  sh:PropertyShape ;
+        sh:group  layer:LayerDocumentationPropertyGroup ;
+        sh:name   "notes" ;
+        sh:or     ( [ sh:datatype  rdf:HTML ]
+                    [ sh:datatype  xsd:string ]
+                  ) ;
+        sh:order  "0"^^xsd:decimal ;
+        sh:path   layer:notes .
+
+<http://nwcg.gov/data/referenceLayer/NationalGACCBoundaries>
+        rdf:type                      layer:GeospatialDataLayer ;
+        rdfs:label                    "National GACC Boundaries" , "Geographic Areas (GACC/Tier 2 Boundaries)" ;
+        edg:name                      "National GACC Boundaries" ;
+        edg:status                    edg:ASSETSTAT_ApprovedStatus ;
+        wfitenum:applicationTier      wfitenum:tier1 ;
+        layer:dateEndorsed            "2017-04-13"^^xsd:date ;
+        layer:externalFeatureServiceSourceLink
+                ""^^xsd:anyURI ;
+        layer:fileSourceLink          "https://data-nifc.opendata.arcgis.com/datasets/nifc::national-gacc-boundaries/about"^^xsd:anyURI ;
+        layer:fireOwned               true ;
+        layer:nifcOrgAgolFeatureService
+                "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/National_GACC_Current/FeatureServer/0"^^xsd:anyURI ;
+        layer:nifcOrgAgolFeatureServiceDescriptionPage
+                "https://nifc.maps.arcgis.com/home/item.html?id=7dc5f4a286bd47e0aaafa0ab05302fe9"^^xsd:anyURI ;
+        layer:owner                   "National Predictive Services Subcommittee" , "National Coordination System Committee" , "Geospatial Subcommittee" ;
+        layer:primaryServiceLink      "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/National_GACC_Current/FeatureServer/0"^^xsd:anyURI ;
+        layer:publicDataDownloadLink  "https://data-nifc.opendata.arcgis.com/datasets/nifc::national-gacc-boundaries/about"^^xsd:anyURI .
+
+<http://nwcg.gov/data/referenceLayer/SignificantFirePotentialPSA>
+        rdf:type                  layer:GeospatialDataLayer ;
+        rdfs:label                "Significant Fire Potential" , "Significant Fire Potential / PSAs" ;
+        edg:name                  "Significant Fire Potential by PSA" ;
+        edg:status                edg:ASSETSTAT_ApprovedStatus ;
+        wfitenum:applicationTier  wfitenum:tier1 ;
+        layer:dateEndorsed        "2017-04-13"^^xsd:date ;
+        layer:externalFeatureServiceSourceLink
+                "https://fsapps.nwcg.gov/psp/arcgis/rest/services/npsg/outlooks_forecast/MapServer"^^xsd:anyURI ;
+        layer:fileSourceLink      "https://opendata.arcgis.com/datasets/e580f3fd4d644366b121676714d69c2d_0.zip"^^xsd:anyURI ;
+        layer:fireOwned           true ;
+        layer:layerOwner          <http://nwcg.gov/ent/nwcg_org/ORG_GSC> , <http://nwcg.gov/ent/nwcg_org/ORG_FENC> ;
+        layer:nifcOrgAgolFeatureService
+                "https://services3.arcgis.com/T4QMspbfLg3qTGWY/ArcGIS/rest/services/National_PSA_Current/FeatureServer/0"^^xsd:anyURI ;
+        layer:nifcOrgAgolFeatureServiceDescriptionPage
+                "https://nifc.maps.arcgis.com/home/item.html?id=e580f3fd4d644366b121676714d69c2d"^^xsd:anyURI ;
+        layer:owner               "Predictive Services" ;
+        layer:primaryServiceLink  "https://services3.arcgis.com/T4QMspbfLg3qTGWY/ArcGIS/rest/services/National_PSA_Current/FeatureServer/0"^^xsd:anyURI ;
+        layer:wfitTier            wfitenum:tier1 .
+
+layer:GeospatialDataLayer-nifcOrgAgolFeatureServiceDescriptionPage
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     xsd:anyURI ;
+        sh:description  "A link to the description of the data layer service on the National Interagency Fire Center's ArcGIS Online Feature Service. " ;
+        sh:group        layer:LayerDocumentationPropertyGroup ;
+        sh:name         "nifc org agol feature service description page" ;
+        sh:order        "2"^^xsd:decimal ;
+        sh:path         layer:nifcOrgAgolFeatureServiceDescriptionPage .
+
+layer:GeospatialDataLayer-externalFeatureServiceSourceLink
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     xsd:anyURI ;
+        sh:description  "The feature service source that is outside of the wildland fire environment. This may be public or it may require government credentials." ;
+        sh:group        layer:LayerLocationPropertyGroup ;
+        sh:name         "external feature service source link" ;
+        sh:order        "3"^^xsd:decimal ;
+        sh:path         layer:externalFeatureServiceSourceLink .
+
+<http://nwcg.gov/data/referenceLayer/Country>
+        rdf:type                  layer:GeospatialDataLayer ;
+        rdfs:label                "Country" ;
+        edg:name                  "Country" ;
+        edg:status                edg:ASSETSTAT_ApprovedStatus ;
+        wfitenum:applicationTier  wfitenum:tier4 ;
+        layer:dateEndorsed        "2017-04-13"^^xsd:date ;
+        layer:fireModified        true ;
+        layer:fireOwned           false ;
+        layer:notes               "<div>Country boundary for United States.&nbsp; To build this layer, dissolve the entire <a href=\"https://datainventory.doi.gov/edg/tbl/wf_endorsed_geospatial_data_layer.basic_workflow___andrew_d_bailey_on_2022_02_09_18_25_11.editor?uri=http%3A%2F%2Fnwcg.gov%2Fmodel%2Fwf_core_ref%23CLASS-EndorsedGeospatialDataLayer-dataLayerCounties\">Counties</a> dataset.</div>"^^rdf:HTML ;
+        layer:owner               "Census TIGER" ;
+        layer:wfitTier            wfitenum:tier4 .
+
+layer:GeospatialDataLayer-wfitTier
+        rdf:type        sh:PropertyShape ;
+        sh:class        wfitenum:applicationTier ;
+        sh:description  "The tiers indicate stewardship, ownership, and responsibility levels of systems, datasets, and other wildland fire asset collections." ;
+        sh:group        layer:LayerDetailsPropertyGroup ;
+        sh:maxCount     1 ;
+        sh:name         "wfit tier" ;
+        sh:nodeKind     sh:IRI ;
+        sh:order        "2"^^xsd:decimal ;
+        sh:path         layer:wfitTier .
+
+layer:ReferenceDataViewpoint
+        rdf:type         edg:AssetClass , sh:NodeShape ;
+        rdfs:label       "Reference Data Viewpoint" ;
+        rdfs:subClassOf  owl:Thing .
+
+teamwork:Vocabulary  rdfs:subClassOf  owl:Ontology .
+
+layer:GeospatialDataLayer-nifcOrgAgolFeatureService
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     xsd:anyURI ;
+        sh:description  "A link to the data layer's feature service on the National Interagency Fire Center's ArcGIS Online Feature Service. " ;
+        sh:group        layer:LayerLocationPropertyGroup ;
+        sh:maxCount     1 ;
+        sh:name         "nifc org agol feature service" ;
+        sh:order        "4"^^xsd:decimal ;
+        sh:path         layer:nifcOrgAgolFeatureService .
+
+<http://nwcg.gov/data/referenceLayer/BIARegions>
+        rdf:type                      layer:GeospatialDataLayer ;
+        rdfs:label                    "BIA Regions" ;
+        edg:description               "<div>BIA Regional Boundaries and names. For contact information, refer to the BIA offices points or the BIA Regional&nbsp;<a href=\"https://www.bia.gov/regional-offices\" target=\"_blank\" rel=\"noopener\">website</a>.\n<div>&nbsp;</div>\n<div>\n<p>Delivery of program services to the&nbsp;federally recognized tribes and individual Indians and Alaska Natives, whether directly or through contracts, grants or compacts, is administered by the twelve regional offices and 83 agencies that report to the BIA Deputy Director-Field Operations, located in Washington, D.C.</p>\n<p>Each regional office is headed by a Regional Director who is responsible for all Bureau activities within a defined geographical area except education, law enforcement and functions of an administrative nature. The typical Regional Office includes a Deputy Regional Director for Trust Services and Deputy Regional Director for Indian Services.</p>\n<p>The Deputy Regional Director for Trust Services oversees a staff of specialists&nbsp;responsible for natural resources (water resources, forestry and fire, irrigation and safety of dams), agriculture, (farm, pasture, and range), fish, wildlife and parks and real estate services (land acquisition and disposal land title records office, probate, rights-of-way, and lease/permit).</p>\n<p>The Deputy Regional Director for Indian Services oversees a staff of specialists responsible for transportation (planning, design, construction, and maintenance) and Indian services (tribal governments, human services, housing improvement).</p>\n<p>The twelve regional offices are located in the heart of Indian Country with the agencies located at the reservation level.</p>\n</div></div>"^^rdf:HTML ;
+        edg:name                      "BIARegions" ;
+        edg:status                    edg:ProposedNew ;
+        wfitenum:applicationTier      wfitenum:tier4 ;
+        layer:externalFeatureServiceSourceLink
+                "https://biamaps.doi.gov/server/rest/services/BOGS/BIA_Regions/FeatureServer"^^xsd:anyURI , "https://biamaps.doi.gov/server/rest/services/BOGS/BIA_Regions/MapServer"^^xsd:anyURI ;
+        layer:fireModified            false ;
+        layer:fireOwned               false ;
+        layer:metadataLink            "https://biamaps.doi.gov/server/rest/services/BOGS/BIA_Regions/MapServer/0/metadata"^^xsd:anyURI ;
+        layer:notes                   "Added as proposed at request of INFORM Fuels (Kristy Swartz) on 3/21/2022."^^rdf:HTML ;
+        layer:owner                   "Bureau of Indian Affairs" ;
+        layer:primaryServiceLink      "https://biamaps.doi.gov/server/rest/services/BOGS/BIA_Regions/MapServer"^^xsd:anyURI ;
+        layer:publicDataDownloadLink  "https://biamaps.doi.gov/bogs/datadownload.html"^^xsd:anyURI .
+
+layer:LayerDetailsPropertyGroup
+        rdf:type    sh:PropertyGroup ;
+        rdfs:label  "Layer Details" ;
+        sh:order    "6"^^xsd:decimal .
+
+<http://nwcg.gov/data/referenceLayer/ScottBurganFuelModels>
+        rdf:type                      layer:GeospatialDataLayer ;
+        rdfs:label                    "Scott and Burgan (40) Fuel Models" ;
+        edg:description               "<a href=\"https://www.landfire.gov/fbfm40.php\" lang=\"\">https://www.landfire.gov/fbfm40.php</a>"^^rdf:HTML , "<a href=\"https://www.fs.fed.us/rm/pubs/rmrs_gtr153.pdf\" lang=\"\">https://www.fs.fed.us/rm/pubs/rmrs_gtr153.pdf</a>"^^rdf:HTML , "A set of fire behavior fuel models that increases prediction accuracy by providing more models in the fuel types (grass, shrub, timber, slash) than Anderson&rsquo;s 13, captures moisture variations and unique fuel differences, allows user to plan or illustrate the effects of multiple or varying fuel and fire scenarios beyond the severe fire season, such as prescribed fire and fire use applications."^^rdf:HTML ;
+        edg:name                      "Scott and Burgan (40) Fuel Models" ;
+        edg:status                    edg:ASSETSTAT_ApprovedStatus ;
+        wfitenum:applicationTier      wfitenum:tier1 ;
+        layer:dateEndorsed            "2018-05-10"^^xsd:date ;
+        layer:externalFeatureServiceSourceLink
+                "https://landfire.cr.usgs.gov/arcgis/rest/services/Landfire/US_200/MapServer/20"^^xsd:anyURI , "https://landfire.cr.usgs.gov/arcgis/rest/services/Landfire/AK_200/MapServer/4"^^xsd:anyURI , "https://landfire.cr.usgs.gov/arcgis/rest/services/Landfire/HI_200/MapServer/12"^^xsd:anyURI ;
+        layer:fileSourceLink          "https://landfire.gov/bulk/downloadfile.php?FNAME=US_200_mosaic-LF2020_FBFM40_200_CONUS.zip&TYPE=landfire"^^xsd:anyURI ;
+        layer:fireOwned               true ;
+        layer:metadataLink            "https://landfire.cr.usgs.gov/distmeta/servlet/gov.usgs.edc.MetaBuilder?TYPE=XML&DATASET=FI8"^^xsd:anyURI ;
+        layer:notes                   "" ;
+        layer:owner                   "LANDFIRE" ;
+        layer:primaryServiceLink      "https://landfire.cr.usgs.gov/arcgis/rest/services/Landfire/US_200/MapServer/20"^^xsd:anyURI ;
+        layer:publicDataDownloadLink  "https://landfire.gov/bulk/downloadfile.php?FNAME=US_200_mosaic-LF2020_FBFM40_200_CONUS.zip&TYPE=landfire"^^xsd:anyURI ;
+        layer:wfitTier                wfitenum:tier1 .
+
+<http://nwcg.gov/data/referenceLayer/AndersonFuelModels>
+        rdf:type                      layer:GeospatialDataLayer ;
+        rdfs:label                    "Anderson (13) Fuel Models" ;
+        edg:description               "<a href=\"https://www.fs.fed.us/rm/pubs_int/int_gtr122.pdf\">https://www.fs.fed.us/rm/pubs_int/int_gtr122.pdf</a>"^^rdf:HTML , "<a href=\"https://www.landfire.gov/fbfm13.php\">https://www.landfire.gov/fbfm13.php</a>"^^rdf:HTML , "A set of fire behavior fuel models that represent distinct distributions of fuel loading found among surface fuel components (live and dead),size classes, and fuel types, based on grass, shrub, timber, and slash fuel types and categorized into 13 models to help users estimate fire behavior, including rate of fire spread and fire intensity, generally represents severe fire conditions."^^rdf:HTML ;
+        edg:name                      "Anderson (13) Fuel Models" ;
+        edg:status                    edg:ASSETSTAT_ApprovedStatus ;
+        wfitenum:applicationTier      wfitenum:tier1 ;
+        layer:dateEndorsed            "2018-05-10"^^xsd:date ;
+        layer:externalFeatureServiceSourceLink
+                "https://landfire.cr.usgs.gov/arcgis/rest/services/Landfire/US_200/MapServer/19"^^xsd:anyURI , "https://landfire.cr.usgs.gov/arcgis/rest/services/Landfire/AK_200/MapServer/5"^^xsd:anyURI , "https://landfire.cr.usgs.gov/arcgis/rest/services/Landfire/HI_200/MapServer/11"^^xsd:anyURI ;
+        layer:fileSourceLink          "https://landfire.gov/bulk/downloadfile.php?FNAME=US_200_mosaic-LF2020_FBFM13_200_CONUS.zip&TYPE=landfire"^^xsd:anyURI ;
+        layer:fireOwned               true ;
+        layer:metadataLink            "https://landfire.cr.usgs.gov/distmeta/servlet/gov.usgs.edc.MetaBuilder?TYPE=XML&DATASET=FI7"^^xsd:anyURI ;
+        layer:owner                   "LANDFIRE" ;
+        layer:publicDataDownloadLink  "https://landfire.gov/bulk/downloadfile.php?FNAME=US_200_mosaic-LF2020_FBFM13_200_CONUS.zip&TYPE=landfire"^^xsd:anyURI ;
+        layer:wfitTier                wfitenum:tier1 .
+
+<http://nwcg.gov/data/referenceLayer/Counties>
+        rdf:type                      layer:GeospatialDataLayer ;
+        rdfs:label                    "Counties" ;
+        edg:name                      "Counties" ;
+        edg:status                    edg:ASSETSTAT_ApprovedStatus ;
+        wfitenum:applicationTier      wfitenum:tier4 ;
+        layer:dateEndorsed            "2017-04-13"^^xsd:date ;
+        layer:externalFeatureServiceSourceLink
+                "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/tigerWMS_ACS2021/MapServer/78"^^xsd:anyURI ;
+        layer:fileSourceLink          "https://www2.census.gov/geo/tiger/TIGER2021/COUNTY/"^^xsd:anyURI ;
+        layer:fireModified            false ;
+        layer:fireOwned               false ;
+        layer:owner                   "Census TIGER" ;
+        layer:primaryServiceLink      "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/tigerWMS_ACS2021/MapServer/78"^^xsd:anyURI ;
+        layer:publicDataDownloadLink  "https://www2.census.gov/geo/tiger/TIGER2021/COUNTY/"^^xsd:anyURI ;
+        layer:wfitTier                wfitenum:tier4 .
+
+edg:Identifiable-assetName
+        sh:description  "This is the name of the GSC endorsed geospatial data layer" ;
+        sh:name         "asset name" .
+
+<http://nwcg.gov/data/referenceLayer/NationalFederalDispatchBoundaries>
+        rdf:type                      layer:GeospatialDataLayer ;
+        rdfs:label                    "National Dispatch Boundaries (Federal)" ;
+        edg:name                      "National Dispatch Boundaries" ;
+        edg:status                    edg:ASSETSTAT_ApprovedStatus ;
+        wfitenum:applicationTier      wfitenum:tier1 ;
+        layer:dateEndorsed            "2017-04-13"^^xsd:date ;
+        layer:externalFeatureServiceSourceLink
+                ""^^xsd:anyURI ;
+        layer:fileSourceLink          "https://data-nifc.opendata.arcgis.com/datasets/nifc::national-dispatch-boundaries/about"^^xsd:anyURI ;
+        layer:fireOwned               true ;
+        layer:nifcOrgAgolFeatureService
+                "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/National_Dispatch_Current/FeatureServer/0"^^xsd:anyURI ;
+        layer:nifcOrgAgolFeatureServiceDescriptionPage
+                "https://nifc.maps.arcgis.com/home/item.html?id=f0b016c313f24a83a4e5c515fc59b113"^^xsd:anyURI ;
+        layer:notes                   "<p lang=\"\"><strong>Description:</strong> Polygon boundaries depicting the administrative area of Wildland Fire Dispatch Areas across the USA used in incident management, including wildland fire. Dispatch Area Boundaries included in this dataset are also known as Tier 3 Dispatch Areas.</p>"^^rdf:HTML ;
+        layer:owner                   "Geospatial Subcommittee" , "National Coordination System Committee" , "National Predictive Services Subcommittee " ;
+        layer:primaryServiceLink      "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/National_Dispatch_Current/FeatureServer/0"^^xsd:anyURI ;
+        layer:publicDataDownloadLink  "https://data-nifc.opendata.arcgis.com/datasets/nifc::national-dispatch-boundaries/about"^^xsd:anyURI ;
+        layer:wfitTier                wfitenum:tier1 .
+
+layer:LayerLocationPropertyGroup
+        rdf:type      sh:PropertyGroup ;
+        rdfs:comment  "Includes various links to the geospatial data layer." ;
+        rdfs:label    "Layer Location" ;
+        sh:order      "20"^^xsd:decimal .
+
+layer:GeospatialDataLayer-fireOwned
+        rdf:type        sh:PropertyShape ;
+        sh:datatype     xsd:boolean ;
+        sh:description  "Indicates whether wildland fire stakeholders own this data layer." ;
+        sh:group        layer:LayerDetailsPropertyGroup ;
+        sh:maxCount     1 ;
+        sh:name         "fire owned" ;
+        sh:order        "1"^^xsd:decimal ;
+        sh:path         layer:fireOwned .

@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="http://inciweb.wildfire.gov/">
+  <channel>
+    <title>Incident Publication Feed</title>
+    <link>http://inciweb.wildfire.gov/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>Bolt Creek, Suiattle, Boulder Lake, and Loch Katrine Soil Burn Severity Maps Released</title>
+  <link>http://inciweb.wildfire.gov/node/312543</link>
+  <description>
+&lt;span&gt;Bolt Creek, Suiattle, Boulder Lake, and Loch Katrine Soil Burn Severity Maps Released&lt;/span&gt;
+
+&lt;span&gt;&lt;span lang="" about="http://inciweb.wildfire.gov/user/5413" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;cpyle&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Sun, 10/30/2022 - 13:35&lt;/span&gt;
+
+
+  &lt;div class="field field--name-field-announcement-type field--type-entity-reference field--label-above"&gt;
+    &lt;div class="title"&gt;Publication Type&lt;/div&gt;
+                  &lt;div class="field__item"&gt;&lt;a href="http://inciweb.wildfire.gov/taxonomy/term/377" hreflang="en"&gt;News&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+
+
+  &lt;div class="field field--name-field-announcement-content field--type-text-long field--label-above"&gt;
+    &lt;div class="title"&gt;Publication Content&lt;/div&gt;
+                  &lt;div class="field__item"&gt;&lt;p&gt;On October 27, 2022, Forest Service BAER team specialists completed their field data gathering on federal lands burned by the Bolt Creek, Suiattle, Boulder Lake and Loch Katrine fires. The post-fire maps and data display soil burn severity (SBS) categories of unburned/very low, low, moderate, and high.&lt;/p&gt;
+
+&lt;p&gt;The BAER assessment team used preliminary remote sensing data based on satellite imagery of the fire perimeter with field-validated data collected over several days to produce the final SBS maps. The SBS map products are an estimate of fire effects on soils and not a measure of direct effects to vegetation. SBS characterizes the soil surface and below-ground impact, whereas effects on vegetation are estimates of mortality based primarily on changes in vegetation canopy. &lt;/p&gt;
+
+&lt;p&gt;Changes in soil cover, water repellency, and soil physical/biological conditions guide the interpretations to determine the severity burn level of the soil. Water repellency can occur naturally in soil and may change as a result of fire. Fire can increase the strength and thickness (or depth) of water-repellent layers in soil, considerably affecting post-fire water runoff and possibly extending time for recovery of the burned area.&lt;/p&gt;
+
+&lt;p&gt;Soil burn severity indicators can be found within the Rocky Mountain Research Station’s &lt;em&gt;General Technical Report 243 – Field Guide for Mapping Post-Fire Soil Burn Severity &lt;/em&gt;&lt;a href="https://www.fs.usda.gov/rm/pubs/rmrs_gtr243.pdf"&gt;https://www.fs.usda.gov/rm/pubs/rmrs_gtr243.pdf&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The BAER team will use the SBS data to analyze and model post-fire hydrologic response for each of the watersheds to determine if there are threats or risks to BAER critical values: human life and safety, property, critical natural resources, and critical cultural resources. The team shares its analysis with cooperating agencies such as Washington Department of Natural Resources who have the authority to work with private property owners downstream from the burned area that potentially may have post-fire threats from increased water and debris flows. The BAER team’s analysis and findings will be documented in an assessment report that will be posted to the Post-Fire BAER InciWeb page after the report has been reviewed and approved by Forest Service leadership.&lt;/p&gt;
+
+&lt;p&gt;The SBS maps can be downloaded at the “Mt.Baker Snoqualmie Post Fire BAER” InciWeb site (https://inciweb.nwcg.gov/incident-information/wamsf-mt-bakersnoqualmie-postfire-baer) as a JPEG or PDF format image under the “Maps” tab.&lt;/p&gt;
+
+&lt;p&gt;For additional information about understanding SBS, see: &lt;a href="https://inciweb.nwcg.gov/incident/article/8345/70821/"&gt;Post-Fire Effects Understanding Soil Burn Severity - InciWeb the Incident Information System (nwcg.gov)&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;
+              &lt;/div&gt;
+
+
+  &lt;div class="field field--name-field-related-fire-incident field--type-entity-reference field--label-above"&gt;
+    &lt;div class="title"&gt;Incident&lt;/div&gt;
+        &lt;div&gt;
+                    &lt;div class="field__item"&gt;&lt;a href="http://inciweb.wildfire.gov/wamsf-mt-bakersnoqualmie-postfire-baer" hreflang="en"&gt;Mt. Baker-Snoqualmie Post-Fire BAER&lt;/a&gt;&lt;/div&gt;
+                &lt;/div&gt;
+      &lt;/div&gt;
+</description>
+  <pubDate>Sun, 30 Oct 2022 17:35:39 +0000</pubDate>
+    <dc:creator>cpyle</dc:creator>
+    <guid isPermaLink="false">312543 at http://inciweb.wildfire.gov</guid>
+    </item>
+<item>
+  <title>Kalama Fire Update - October 28, 2022</title>
+  <link>http://inciweb.wildfire.gov/node/312541</link>
+  <description>
+&lt;span&gt;Kalama Fire Update - October 28, 2022&lt;/span&gt;
+
+&lt;span&gt;&lt;span lang="" about="http://inciweb.wildfire.gov/user/5477" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;apengelly&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Fri, 10/28/2022 - 21:14&lt;/span&gt;
+
+
+  &lt;div class="field field--name-field-announcement-type field--type-entity-reference field--label-above"&gt;
+    &lt;div class="title"&gt;Publication Type&lt;/div&gt;
+                  &lt;div class="field__item"&gt;&lt;a href="http://inciweb.wildfire.gov/taxonomy/term/377" hreflang="en"&gt;News&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+
+
+  &lt;div class="field field--name-field-announcement-content field--type-text-long field--label-above"&gt;
+    &lt;div class="title"&gt;Publication Content&lt;/div&gt;
+                  &lt;div class="field__item"&gt;&lt;p&gt;Kalama Firefighters have finished all suppression repair activities on Kalama Fire and are in the process of demobilizing. The fire is now 100% contained. Though Firefighting efforts have been completed, there is still active fire inside the fire perimeter and will remain that way over the next few months. Smoke will be visible in the area for a couple of months as the fire continues to smolder in heavy duff within containment lines. Heat below the surface of the forest floor is protected and insulated by the thick layer of duff above it, and tree canopies can prevent rain from reaching the forest floor. It will take months of wet weather to completely put the fire out.&lt;/p&gt;
+
+&lt;p&gt;A public safety closure is in place due to fire activity and hazardous trees. Hemlocks which are common in the area, have very shallow roots and many of these were burned. Trees that appear healthy and green, can fall without warning which necessitates this closure to stay in place.&lt;/p&gt;
+
+&lt;p&gt;The public safety closure area for the Kalama Fire has been reduced as of Friday October 28th, 2022. At this time, Forest Road 81 and Kalama Horse Camp have been reopened to the public. Additionally, Goat Marsh Trail 231D and Fossil Trail 242 have also been reopened. The trailhead in Kalama Horse Camp remains closed, along with portions of the Cinnamon Trail 204, Toutle Trail 238, Kalama Falls Trail 242A, and Forest Road 8122.&lt;/p&gt;
+
+&lt;p&gt;Review the closure map to gain a better understanding of the remaining closure area: &lt;a href="http://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd1069699.pdf?fbclid=IwAR3lfzaOoDZctIeev2vL5VZCkdgvJUM0MyZSay9hy98WM9DyGI9FvTFM8yU"&gt;www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd1069699.pdf&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Closure Order: &lt;a href="http://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd1069698.pdf?fbclid=IwAR04JCSyVOu36FlyCRNnVdDlHH6CDzBzurIRV6J2fVpkOQpprkE6iulZUOc"&gt;www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd1069698.pdf&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Sign up for Cowlitz County public alerts: &lt;a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.co.cowlitz.wa.us%2F702%2FPublic-Alerts%3Ffbclid%3DIwAR3BXb8ZkkOa2QeyryZJd0wrwdMq863j1zqAwtfkjPS_Ciz1rv9lvQk8KOs&amp;h=AT0ocDaFmeBnWEx2N4xBleQx3rcUTfX7-YORZK-dpKX-pu8wCXmtZxiKJPBRjOS7STaIg01pqlHU63E3iDIj_N0opIzgXJtE6ygRTiFQc1s109n04-kAvGjvqnKOnBPOXV8n&amp;__tn__=-UK-R&amp;c[0]=AT0v3iAHzsL5lK-3aXIuCWy3grWNc-srV08tvtWigxbmaMy_uTjFUCI24SDsbNYtaKQTAl-Q0gk26oqeglmMw7s6h4jxCOXZvYyH0GPldDn6UBvDUsNp0CXYINAxvhZlCj71KfrxSqb75g2KTxG22WtFCtookrBw7PJX33rpBnqXUAEKnA"&gt;https://www.co.cowlitz.wa.us/702/Public-Alerts&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+              &lt;/div&gt;
+
+
+  &lt;div class="field field--name-field-related-fire-incident field--type-entity-reference field--label-above"&gt;
+    &lt;div class="title"&gt;Incident&lt;/div&gt;
+        &lt;div&gt;
+                    &lt;div class="field__item"&gt;&lt;a href="http://inciweb.wildfire.gov/wagpf-kalama-fire" hreflang="en"&gt;Kalama Fire&lt;/a&gt;&lt;/div&gt;
+                &lt;/div&gt;
+      &lt;/div&gt;
+</description>
+  <pubDate>Sat, 29 Oct 2022 01:14:47 +0000</pubDate>
+    <dc:creator>apengelly</dc:creator>
+    <guid isPermaLink="false">312541 at http://inciweb.wildfire.gov</guid>
+    </item>
+<item>
+  <title>Kootenai River Complex Fire Fact Sheet 10/28/2022</title>
+  <link>http://inciweb.wildfire.gov/node/312540</link>
+  <description>
+&lt;span&gt;Kootenai River Complex Fire Fact Sheet 10/28/2022&lt;/span&gt;
+
+&lt;span&gt;&lt;span lang="" about="http://inciweb.wildfire.gov/user/6867" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;jbaker3&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Fri, 10/28/2022 - 18:05&lt;/span&gt;
+
+
+  &lt;div class="field field--name-field-announcement-type field--type-entity-reference field--label-above"&gt;
+    &lt;div class="title"&gt;Publication Type&lt;/div&gt;
+                  &lt;div class="field__item"&gt;&lt;a href="http://inciweb.wildfire.gov/taxonomy/term/377" hreflang="en"&gt;News&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+
+
+  &lt;div class="field field--name-field-announcement-content field--type-text-long field--label-above"&gt;
+    &lt;div class="title"&gt;Publication Content&lt;/div&gt;
+                  &lt;div class="field__item"&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;Kootenai River Complex Update &lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;Friday, October 28, 2022&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;  &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;Facebook&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;: &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;a href="https://www.facebook.com/USFSIPNF"&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;https://www.facebook.com/USFSIPNF&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;Idaho Panhandle National Forests, Bonners Ferry Ranger District &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;img alt="Image removed." src="http://inciweb.wildfire.gov/core/misc/icons/e32700/error.svg" title="This image has been removed. For security reasons, only images from the local domain are allowed." height="16" width="16" class="filter-image-invalid" /&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;Phone&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;: (208) 557-8813&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;**Additional updates will occur only if there is a change in conditions**&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;Location&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;: 7 miles NW of Bonners Ferry, ID, in Boundary County, ID     &lt;strong&gt;Size&lt;/strong&gt;: 25,402 acres&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;Personnel&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;: 9       &lt;strong&gt;Completion&lt;/strong&gt;: 100%       &lt;strong&gt;Incident Commander&lt;/strong&gt;: ICT4 Ohweiler&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;Highlights: &lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;&lt;span&gt;There is minimal fire activity with some flanking, backing, and creeping. The fire is a mix of timber fuels including subalpine fir, lodgepole, larch, cedar, and mixed shrub understory with huckleberry. Heavy dead and down logs combined with standing dead trees along with steep topography pose a hazard to firefighters.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;This time of year, fire activity is significantly reduced due to precipitation, shorter days, lower temperatures, and higher daytime humidity&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;a href="#_msocom_1"&gt;[MKF1]&lt;/a&gt; &lt;/span&gt;&lt;span&gt;&lt;a href="#_msocom_2"&gt;[BJFNI2]&lt;/a&gt; &lt;/span&gt;&lt;span&gt;&lt;a href="#_msocom_3"&gt;[BJFNI3]&lt;/a&gt; &lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;. Expect to see continued smoke until the snow falls or significant rain occurs. Still, with decreased fire behavior, the threat is much less than it was earlier in the season. In areas around properties where the threat is significantly reduced, like those with cold burned areas around them, crews are assessing where structure protection equipment like pumps and hoses can be taken down. &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;Firefighters plan to conduct suppression repair actions where appropriate in &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;the areas around Trout Road and Ball Creek Road. Using&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt; heavy equipment and hand tools firefighters work to take measures to repair damage to areas where firefighting action has occurred as well as remove some lingering dangers left by the fire. During this time firefighters will continue to remove handlines, hoses, and sprinkler systems, and work to remove snags while reassessing the area dangers and safety concerns as it impacts public use and travel. During this work, firefighters will create log decks and slash piles as they remove hazardous fuels and restore natural areas. THESE LOG DECKS ARE NOT FOR PUBLIC CONSUMPTION. When venturing out please note that taking from these piles is PROHIBITED.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;Closures &amp; Evacuations&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;: Where possible, closures have been reduced. Effective 10/28/2022, the following roads and trails are now open:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;McGinty Ridge Trail (No. 143) and Clifty Trail (No. 182) and Cascade Creek Road (FS 2411) and Fisher Peak Trail (No. 7) &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;The following National Forest Trails and Roads remain closed while firefighters reassess the safety concerns for public use:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;The entirety of Ball Creek Road (FSR 432), Trout Creek Road (FSR 634), and Burton Road (FSR 2411). Also, the Parker Ridge Trail (No. 221), Russell Mountain Trail (No. 12), Russell Ridge Trail (No. 92), Ball &amp; Pyramid Lakes Trail (No. 43), Pyramid Pass Trail (No. 13), Pyramid Peak Trail (No. 7), Fisher Peak Trail (No. 27), Myrtle Peak Trail (No. 286), Burton Peak Trail (No. 9), Trout Lake Trail (No. 41), and Long Canyon Trail (No. 16).&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;Please note that after our post-fire BAER team analysis, multiple high-risk hazards remain such as potential rock &amp; debris slides, down trees, and snags; the public should NOT EXPECT Trout Creek Road (FSR634) and Ball Creek Road (FSR 432) to reopen until next year&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;Changes in closure status will be promptly shared. There are NO evacuations. However, when living in fire-prone areas, it is recommended that all area residents have an evacuation plan in place, including having all important documents, pictures, prescriptions, and pets gathered up and quickly transportable. Residents of Boundary County, ID can visit &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;a href="https://www.nixle.com/"&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;https://www.nixle.com&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt; or text their home zip code to 888777 to sign up for emergency alerts.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;Weather&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;: &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;Widespread wetting precipitation is expected to persist over most of the area. Several systems are expected throughout the week, resulting in a prolonged wet and cool period.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br /&gt;
+ &lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;Hunting in the IPNF&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;: The Idaho Panhandle National Forests encourages visitors to enjoy their public land by following travel management guidelines to minimize erosion impacts, aid in wildlife protection, provide non-motorized recreation and hunting opportunities, and protect natural resource values. Specific closure area information for the Idaho Panhandle National Forests, including maps, are posted on the IPNF Alerts &amp; Notices web page (&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;a href="https://www.fs.usdalgov/alerts/ipnf/alertsnotices"&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;https://www.fs.usdalgov/alerts/ipnf/alertsnotices&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;) statewide information on fires and closures is provided on the Idaho Department of Fish and Game’s Fire Map web page (&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;a href="https://idfg.idaho.gov/ifwis/maps/realtime/fire/"&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;https://idfg.idaho.gov/ifwis/maps/realtime/fire/&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;)  Prescribed fire plans can be found at &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;a href="http://bit.ly/NorthIdahoRxFire"&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;http://bit.ly/NorthIdahoRxFire&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;. In the opened areas, the public should be prepared to meet heavy equipment and other traffic on roads; be aware that weather conditions such as precipitation and wind can rapidly change conditions on the ground, especially in fire areas. Wind can blow trees across roadways and trails, and precipitation can wash debris across roads and trails, blocking access and raising stream and river levels. Forest visitors must be prepared to stay longer than expected due to changing circumstances. Preparing for the unexpected is the best plan.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;###&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/div&gt;
+              &lt;/div&gt;
+
+
+  &lt;div class="field field--name-field-related-fire-incident field--type-entity-reference field--label-above"&gt;
+    &lt;div class="title"&gt;Incident&lt;/div&gt;
+        &lt;div&gt;
+                    &lt;div class="field__item"&gt;&lt;a href="http://inciweb.wildfire.gov/idipf-kootenai-river-complex" hreflang="en"&gt;Kootenai River Complex &lt;/a&gt;&lt;/div&gt;
+                &lt;/div&gt;
+      &lt;/div&gt;
+</description>
+  <pubDate>Fri, 28 Oct 2022 22:05:33 +0000</pubDate>
+    <dc:creator>jbaker3</dc:creator>
+    <guid isPermaLink="false">312540 at http://inciweb.wildfire.gov</guid>
+    </item>
+<item>
+  <title>Diamond Fire Fact Sheet 10/27/2022</title>
+  <link>http://inciweb.wildfire.gov/node/312539</link>
+  <description>
+&lt;span&gt;Diamond Fire Fact Sheet 10/27/2022&lt;/span&gt;
+
+&lt;span&gt;&lt;span lang="" about="http://inciweb.wildfire.gov/user/6867" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;jbaker3&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Fri, 10/28/2022 - 18:00&lt;/span&gt;
+
+
+  &lt;div class="field field--name-field-announcement-type field--type-entity-reference field--label-above"&gt;
+    &lt;div class="title"&gt;Publication Type&lt;/div&gt;
+                  &lt;div class="field__item"&gt;&lt;a href="http://inciweb.wildfire.gov/taxonomy/term/377" hreflang="en"&gt;News&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+
+
+  &lt;div class="field field--name-field-announcement-content field--type-text-long field--label-above"&gt;
+    &lt;div class="title"&gt;Publication Content&lt;/div&gt;
+                  &lt;div class="field__item"&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;Diamond Watch &lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;Wildfire Update &lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;Thursday, October 27, 2022&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;Facebook&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;: &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;a href="https://www.facebook.com/USFSIPNF"&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;https://www.facebook.com/USFSIPNF&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;Idaho Panhandle National Forests, Priest Lake Ranger District &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;Phone&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;: (208) 557-8813&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;**Additional updates will occur only if there is a change in conditions**&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;Location&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;: 5.5 miles west of Nordman, ID, in Pend Oreille County, WA&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;a&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;Size&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;&lt;span&gt;: 1,4&lt;span&gt;&lt;span&gt;4&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;2&lt;/span&gt;&lt;/span&gt;9 acres     &lt;strong&gt;Personnel&lt;/strong&gt;: &lt;span&gt;&lt;span&gt;16       &lt;/span&gt;&lt;/span&gt;5       &lt;strong&gt;Containment&lt;/strong&gt;: 80%       &lt;strong&gt;Incident Commander&lt;/strong&gt;: ICT4 Hirst&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;a href="#_msocom_1"&gt;[MKF1]&lt;/a&gt; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;Overview&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;&lt;span&gt;: The lightning-caused Diamond Watch Fire was detected on the evening of July 14th. The fire is visible from ID Highway 57 near Priest Lake and is burning on a ridge east of Diamond Peak, located 5.5 miles west of Nordman, ID, in Pend Oreille County, WA. &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;The fire is primarily burning in timber litter with jackpots of heavier fuels under a dense canopy. The brush component has been in a heat sink with higher live fuel moisture than average and is slowing fire spread when encountered&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;. Firefighters and public safety remain the top priority.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;Planned Actions&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;&lt;span&gt;: The firefighters plan to conduct suppression repair actions in &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;the area south and west of Diamond Creek/657 Road, north and east of 308 roads. Using&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt; heavy equipment and hand tools firefighters work to take measures to repair damage to areas where firefighting action has occurred as well as remove some lingering dangers left by the fire. During this time firefighters will begin to remove handlines, hoses, and sprinkler systems; and work to remove snags while reassessing the area dangers and safety concerns as it impacts public use and travel. During this work, firefighters will create Log Decks and Slash piles as they remove and restore natural areas. THESE LOG DECKS ARE NOT FOR PUBLIC CONSUMPTION, please when venturing out know that taking from these piles is PROHIBITED. &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;Weather&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;: N&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;ormal seasonal temps in the 30s to 40s with a moderated chance of rain this coming week will allow for slow to minimal fire growth. Smoke can still be seen from some areas still smoldering from the fire.&lt;/span&gt;&lt;/span&gt;&lt;br /&gt;
+ &lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;Closures &amp; Evacuations&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;:  Closures for Forest Service Roads 311, 308, 1362H, and the area near the Diamond Watch Fire will be rescinded on 10/27/2022. Timing will depend on when crews are finished with snagging operations on FSR 308. Please keep in mind that personnel is still working in the area, and you may encounter firefighting traffic.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;Forest Service Road 657 remains closed to public use&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;There are NO evacuations. However, when living in fire-prone areas, it is recommended that all area residents have an evacuation plan in place, including having all important documents, pictures, prescriptions, and pets gathered up and quickly transportable. Residents of Bonner County, ID, or Pend Oreille, WA, can visit &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;a href="https://www.nixle.com/"&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;https://www.nixle.com&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt; or text their home zip code to 888777 to sign up for emergency alerts.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;Hunting in the IPNF&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;&lt;span&gt;: The Idaho Panhandle National Forests encourages visitors to enjoy their public land by following travel management guidelines to minimize erosion impacts, aid in wildlife protection, provide non-motorized recreation and hunting opportunities, and protect natural resource values. Specific closure area information for the Idaho Panhandle National Forests, including maps, are posted on the IPNF Alerts &amp; Notices web page (&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;a href="https://www.fs.usdalgov/alerts/ipnf/alertsnotices"&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;https://www.fs.usdalgov/alerts/ipnf/alertsnotices&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;) statewide information on fires and closures is provided on the Idaho Department of Fish and Game’s Fire Map web page (&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;a href="https://idfg.idaho.gov/ifwis/maps/realtime/fire/"&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;https://idfg.idaho.gov/ifwis/maps/realtime/fire/&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;)  Prescribed fire plans can be found at &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;a href="http://bit.ly/NorthIdahoRxFire"&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;http://bit.ly/NorthIdahoRxFire&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;. In the opened areas, the public should be prepared to meet heavy equipment and other traffic on roads; be aware that weather conditions such as precipitation and wind can rapidly change conditions on the ground, especially in fire areas. Wind can blow trees across roadways and trails, and precipitation can wash debris across roads and trails, blocking access and raising stream and river levels. Forest visitors must be prepared to stay longer than expected due to changing circumstances. Preparing for the unexpected is the best plan.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;###&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+              &lt;/div&gt;
+
+
+  &lt;div class="field field--name-field-related-fire-incident field--type-entity-reference field--label-above"&gt;
+    &lt;div class="title"&gt;Incident&lt;/div&gt;
+        &lt;div&gt;
+                    &lt;div class="field__item"&gt;&lt;a href="http://inciweb.wildfire.gov/idipf-diamond-watch-fire" hreflang="en"&gt;Diamond Watch Fire&lt;/a&gt;&lt;/div&gt;
+                &lt;/div&gt;
+      &lt;/div&gt;
+</description>
+  <pubDate>Fri, 28 Oct 2022 22:00:12 +0000</pubDate>
+    <dc:creator>jbaker3</dc:creator>
+    <guid isPermaLink="false">312539 at http://inciweb.wildfire.gov</guid>
+    </item>
+<item>
+  <title>Forest Service Burned Area Emergency Response (BAER) Team Conducts Post-fire Assessment of fires on the Mt. Baker-Snoqualmie National Forest</title>
+  <link>http://inciweb.wildfire.gov/node/312538</link>
+  <description>
+&lt;span&gt;Forest Service Burned Area Emergency Response (BAER) Team Conducts Post-fire Assessment of fires on the Mt. Baker-Snoqualmie National Forest&lt;/span&gt;
+
+&lt;span&gt;&lt;span lang="" about="http://inciweb.wildfire.gov/user/5413" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;cpyle&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Fri, 10/28/2022 - 16:18&lt;/span&gt;
+
+
+  &lt;div class="field field--name-field-announcement-type field--type-entity-reference field--label-above"&gt;
+    &lt;div class="title"&gt;Publication Type&lt;/div&gt;
+                  &lt;div class="field__item"&gt;&lt;a href="http://inciweb.wildfire.gov/taxonomy/term/377" hreflang="en"&gt;News&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+
+
+  &lt;div class="field field--name-field-announcement-content field--type-text-long field--label-above"&gt;
+    &lt;div class="title"&gt;Publication Content&lt;/div&gt;
+                  &lt;div class="field__item"&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;The Mt. Baker-Snoqualmie National Forest (MBSNF) has re-convened a BAER team to re-assess National Forest System (NFS) lands impacted by the Bolt Creek, Boulder Lake, and Suiattle River Fires. A previous BAER team had completed an assessment on most of these fires, however, due to the unseasonably late fire season another assessment was determined to be needed to reassess changes in wildfire impacts from the previous assessment. This assessment will also include the Loch Katrine fire which was not previously assessed. &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;Information about the fires can be found online at: Bolt Creek Fire &lt;/span&gt;&lt;a href="https://inciweb.nwcg.gov/incident-information/wanws-bolt-creek-fire"&gt;&lt;span&gt;https://inciweb.nwcg.gov/incident-information/wanws-bolt-creek-fire&lt;/span&gt;&lt;/a&gt;&lt;span&gt;, Suiattle River, Boulder Lake &lt;/span&gt;and &lt;span&gt;Loch Katrine Fires &lt;a href="https://inciweb.nwcg.gov/incident-information/wamsf-loch-katrine-fire"&gt;https://inciweb.nwcg.gov/incident-information/wamsf-loch-katrine-fire&lt;/a&gt;.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;After a large wildfire, special actions may be necessary to provide for public and community safety and protect critical natural and cultural resources from post-fire events like soil erosion and flooding. BAER teams focus on emergency actions necessary to protect human life and safety, property, and natural and cultural resources, including affected watersheds. BAER assessments identify unacceptable risks on federal lands from post-fire threats and help land managers prepare burned areas for potential threats from rainstorms. &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;The Forest Service BAER team on the MBSNF consist of hydrologists, soil scientists, botanists, biologists, archaeologists, engineers, and geographic information system (GIS) specialists. The BAER program uses ground and aerial surveys, satellite imagery and computer models to evaluate conditions and recommend emergency treatments to protect values at risk from further damage. The first step in the BAER assessment process is to take pre-fire and post-fire satellite imagery and data to produce a soil burn severity map, which will provide baseline information on changed watershed conditions and potential watershed impacts from the fire. &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;The BAER team will coordinate and share information from their assessment with other federal agencies, as well as state agencies and local counties and municipalities who work with adjacent and downstream private homeowners, landowners, and businesses to prepare for potential post-fire flooding and debris flow impacts.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;For additional information about the BAER assessment and to view the report once it is completed visit: &lt;/span&gt;&lt;a href="https://inciweb.nwcg.gov/incident-information/wamsf-mt-bakersnoqualmie-postfire-baer"&gt;&lt;span&gt;https://inciweb.nwcg.gov/incident-information/wamsf-mt-bakersnoqualmie-postfire-baer&lt;/span&gt;&lt;/a&gt;&lt;span&gt;. The BAER team’s assessment report will include recommended emergency stabilization treatments and actions, if any, designed to decreased possible impacts to critical values from the burned areas during rainstorm events such as: life and safety, property, critical natural resources, and cultural resources.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;BAER SAFETY MESSAGE: Everyone near and downstream from the burned areas should remain alert and stay updated on weather conditions that may result in heavy rains and increased water runoff. Flash flooding may occur quickly during heavy rain events – be prepared to act. Current weather and emergency notifications can be found at the National Weather Service website:  www.weather.gov/abq/.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+              &lt;/div&gt;
+
+
+  &lt;div class="field field--name-field-related-fire-incident field--type-entity-reference field--label-above"&gt;
+    &lt;div class="title"&gt;Incident&lt;/div&gt;
+        &lt;div&gt;
+                    &lt;div class="field__item"&gt;&lt;a href="http://inciweb.wildfire.gov/wamsf-mt-bakersnoqualmie-postfire-baer" hreflang="en"&gt;Mt. Baker-Snoqualmie Post-Fire BAER&lt;/a&gt;&lt;/div&gt;
+                &lt;/div&gt;
+      &lt;/div&gt;
+</description>
+  <pubDate>Fri, 28 Oct 2022 20:18:43 +0000</pubDate>
+    <dc:creator>cpyle</dc:creator>
+    <guid isPermaLink="false">312538 at http://inciweb.wildfire.gov</guid>
+    </item>
+<item>
+  <title>Goat Rocks, Siouxon and Sunset Fires Update, October 28, 2022</title>
+  <link>http://inciweb.wildfire.gov/node/312537</link>
+  <description>
+&lt;span&gt;Goat Rocks, Siouxon and Sunset Fires Update, October 28, 2022&lt;/span&gt;
+
+&lt;span&gt;&lt;span lang="" about="http://inciweb.wildfire.gov/user/4314" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;mhuels&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Fri, 10/28/2022 - 11:45&lt;/span&gt;
+
+
+  &lt;div class="field field--name-field-announcement-type field--type-entity-reference field--label-above"&gt;
+    &lt;div class="title"&gt;Publication Type&lt;/div&gt;
+                  &lt;div class="field__item"&gt;&lt;a href="http://inciweb.wildfire.gov/taxonomy/term/377" hreflang="en"&gt;News&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+
+
+  &lt;div class="field field--name-field-announcement-content field--type-text-long field--label-above"&gt;
+    &lt;div class="title"&gt;Publication Content&lt;/div&gt;
+                  &lt;div class="field__item"&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;Management of fires transitioning back to the Gifford Pinchot National Forest&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;The Rocky Mountain Complex Incident Management Team (CIMT) Three will return management of the fires to the Gifford Pinchot National Forest tomorrow morning at 7:00 a.m. Rocky Mountain CIMT Three would like to thank the businesses, hoteliers, restauranteurs, and the community at large for their kindness and support of the IMT and firefighters.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;Current Situation: &lt;/span&gt;&lt;/strong&gt;&lt;span&gt;Rainy, cool weather is expected to continue into next week around the Goat Rocks, Siouxon, and Sunset fires. With the low probability of fire spread and difficulties completing repair work until after soils dry out, many resources are being released from the fires today and through the weekend.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;The Goat Rocks, Siouxon and Sunset fires are still burning, including in logs, stumps, roots, and deep duff. Work will continue on the fires as needed and as the weather allows. A limited number of engines, crews, and other fire personnel will remain to conduct fire patrols and continue suppression, clean-up and repair operations when and where it is safe to do so. Fire activity and smoke production will increase during warmer and drier weather, and may be visible from Packwood and US 12. Additional resources will be assigned to the fire as needed to conduct fire suppression and repair work.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;Forest closures will remain in effect for the fire areas for the foreseeable future. Hazardous conditions persist in the burned areas, including fire-weakened trees, areas of active burning, hot ash pits, and rolling debris. Falling trees are blocking roads and could strike passing or parked vehicles. Trees and rocks will fall in greater numbers during heavy rains and when it is windy. Many roads are also narrow with little room for passing vehicles. Forest officials urge the public to continue to observe the forest closures for both public and firefighter safety.  &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;Information for the Goat Rocks, Siouxon, and Sunset fires will be available on InciWeb and the Gifford Pinchot National Forest Facebook sites. Future updates will occur twice a week starting next week.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;Weather Information:&lt;/span&gt;&lt;/strong&gt;&lt;span&gt; Rain will return today into tomorrow, with the snow level rising to around 5,000 to 6,000 feet. Monday will be the start of a cooling trend, with snow levels falling Tuesday to around 3,000 feet. Please slow down and watch for slick roads.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;Forest Closures: &lt;/span&gt;&lt;/strong&gt;&lt;span&gt;A full list of closures in place for the Goat Rocks, Siouxon, and Sunset fires can be found under “Alerts &amp; Notices” on the &lt;/span&gt;&lt;a href="blank"&gt;&lt;span&gt;&lt;span&gt;Gifford Pinchot National Forest website&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;span&gt;.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;Fire Danger:&lt;/span&gt;&lt;/strong&gt;&lt;span&gt; The Fire Danger Rating on the Gifford Pinchot National Forest is LOW. Industrial Fire Precaution Level (IFPL) Zones 659S (Goat Rocks Fire) and 660 (Siouxon and Sunset fires) are Level I on USFS lands. &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;The Temporary Flight Restriction has been lifted for the Goat Rocks Fire vicinity. &lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+              &lt;/div&gt;
+
+
+  &lt;div class="field field--name-field-related-fire-incident field--type-entity-reference field--label-above"&gt;
+    &lt;div class="title"&gt;Incident&lt;/div&gt;
+        &lt;div&gt;
+                    &lt;div class="field__item"&gt;&lt;a href="http://inciweb.wildfire.gov/wagpf-goat-rocks-fire" hreflang="en"&gt;Goat Rocks Fire&lt;/a&gt;&lt;/div&gt;
+              &lt;div class="field__item"&gt;&lt;a href="http://inciweb.wildfire.gov/wagpf-siouxon-and-sunset-fires" hreflang="en"&gt;Siouxon and Sunset Fires&lt;/a&gt;&lt;/div&gt;
+                &lt;/div&gt;
+      &lt;/div&gt;
+</description>
+  <pubDate>Fri, 28 Oct 2022 15:45:58 +0000</pubDate>
+    <dc:creator>mhuels</dc:creator>
+    <guid isPermaLink="false">312537 at http://inciweb.wildfire.gov</guid>
+    </item>
+<item>
+  <title>Cedar Creek Fire Update (Spanish) - October 27, 2022</title>
+  <link>http://inciweb.wildfire.gov/node/312535</link>
+  <description>
+&lt;span&gt;Cedar Creek Fire Update (Spanish) - October 27, 2022&lt;/span&gt;
+
+&lt;span&gt;&lt;span lang="" about="http://inciweb.wildfire.gov/user/6847" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;jerrymcadams&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Thu, 10/27/2022 - 14:47&lt;/span&gt;
+
+
+  &lt;div class="field field--name-field-announcement-type field--type-entity-reference field--label-above"&gt;
+    &lt;div class="title"&gt;Publication Type&lt;/div&gt;
+                  &lt;div class="field__item"&gt;&lt;a href="http://inciweb.wildfire.gov/taxonomy/term/377" hreflang="en"&gt;News&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+
+
+  &lt;div class="field field--name-field-announcement-content field--type-text-long field--label-above"&gt;
+    &lt;div class="title"&gt;Publication Content&lt;/div&gt;
+                  &lt;div class="field__item"&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;&lt;span&gt;&lt;span&gt;Resumen del Incendio Cedar Creek &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;Extensión: &lt;/span&gt;&lt;/strong&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;127,283 acres&lt;/span&gt;&lt;strong&gt;               &lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;Origen: &lt;/span&gt;&lt;/strong&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;15 millas E de Oakridge, OR&lt;/span&gt;&lt;strong&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;             Recursos: &lt;/span&gt;&lt;/strong&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;4 camiones;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;Contenido: &lt;/span&gt;&lt;/strong&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;60%&lt;/span&gt;                               &lt;strong&gt;&lt;span&gt;Causa: &lt;/span&gt;&lt;/strong&gt;&lt;span&gt;Relámpagos&lt;/span&gt;                                      &lt;span&gt;2 Grupos; 1 helicóptero;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;Personal: &lt;/span&gt;&lt;/strong&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;222&lt;/span&gt;                                   &lt;strong&gt;&lt;span&gt;Fecha de Inicio:&lt;/span&gt;&lt;/strong&gt;&lt;span&gt; 1ro agosto, 2022&lt;/span&gt;               &lt;span&gt;2 Masticadores&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;**Reunión comunitaria, hoy martes, a las 5:30 pm, en el Auditorio de la Escuela Secundaria en Oakridge**&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;       **Reunión transmitida en vivo en la página de Facebook para el Incendio de Cedar Creek** &lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;&lt;span&gt;Condiciones climáticas:&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;  &lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;El jueves, se observará un clima seco y cálido con altas temperaturas a mediado de los 50 grados. Se experimentará la presencia de un sol intermitente y nubes considerablemente elevadas.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;La humedad relativa alcanzará su punto más bajo durante varios días, pero permanecerá en un 50%. Con la llegada de lluvias ligeras y cierta cantidad de nieve, se anticipa la continuación de un clima seco hasta el viernes en horas del anochecer. &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;&lt;span&gt;Operaciones realizadas: &lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;&lt;span&gt;Cabe recalcar&lt;/span&gt;&lt;/span&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;&lt;span&gt; que, con la precipitación dada recientemente, se está tratando de asegurar la vida de los bomberos trabajando en el interior y alrededor de la línea de fuego. Su seguridad es un aspecto primordial en el Incidente. Las carreteras sobre las cuales se están movilizando, también siguen siendo evaluadas cautelosamente con la finalidad de asegurar la salud y la seguridad del personal de bomberos.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;&lt;span&gt;En cuanto el estado de las rutas de acceso se mejore, los bomberos regresaran a la línea del incendio para completar los trabajos de reparación y rehabilitación de las líneas construidas a mano y con las construidas con la ayuda de bulldozers. Se continúan generando emanaciones de humo desde el interior de capas profundas de material de combustión pesado. Para el día de hoy y mañana, con el arribo de un periodo corto de sequía, aun con las cantidades de humo que se han estado disminuyendo, se lograra observar áreas manteniendo calor a veces y presentándose en forma de llamas y columnas de humo, con la posibilidad de generar cantidades mayores de humo que las experimentadas en los últimos días. &lt;/span&gt;&lt;/span&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;Podría verse impactada la calidad del aire, hasta que el próximo Sistema húmedo del clima se logre introducir este fin de semana. &lt;/span&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;&lt;span&gt;Mientras se da la transición del manejo del incendio hacia una organización más pequeña y los trabajos en la zona de Oakridge en donde paso el incendio continúen, por favor tome en cuenta la incrementación del tráfico sobre la carretera 58, incluyendo maquinaria pesada y trailers.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;&lt;span&gt;Cierres de camino:&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt; &lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;&lt;span&gt;Actualmente, se emitió una reducción en la orden de cierre de caminos para los Bosques Nacionales de Deschutes y Willamette. Estas órdenes permanecerán en pie hasta que se haya realizado un estudio del peligro en las zonas que han sido fuertemente impactadas por el incendio y los bomberos hayan eliminado estos peligros. &lt;/span&gt;&lt;/span&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;&lt;span&gt;Por favor respete las ordenes de cierre de caminos para su seguridad y la de los bomberos. &lt;/span&gt;&lt;/span&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;&lt;span&gt;Para información actual y mapas, visite:&lt;/span&gt;&lt;/span&gt; &lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;&lt;a href="https://www.fs.usda.gov/alerts/willamette/alerts-notices"&gt;&lt;span&gt;Willamette National Forest&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;&lt;span&gt; y &lt;/span&gt;&lt;/span&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;&lt;a href="https://www.fs.usda.gov/alerts/deschutes/alerts-notices"&gt;&lt;span&gt;Deschutes National Forest&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;&lt;span&gt; Se recomienda para los excursionistas en el sendero de Pacific Crest Trail, que visiten &lt;/span&gt;&lt;/span&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;&lt;a href="https://www.pcta.org/"&gt;&lt;span&gt;&lt;span&gt;pcta.org&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/span&gt; &lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;&lt;span&gt;para mantenerse informados del avance en el incendio.&lt;/span&gt;&lt;/span&gt; &lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;&lt;span&gt;Se levanto la orden temporal de vuelos sobre la zona del Incendio Cedar Creek debido a la reducción de aviones necesarios para las operaciones del incendio.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;Condiciones del Humo&lt;/span&gt;&lt;/strong&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;: Debido a la presencia del humo, se esperan condiciones de la calidad del aire entre el rango de Buenas a Moderadas en el pronóstico para esta área. Para información actual, lea  &lt;/span&gt;&lt;a href="https://fire.airnow.gov/"&gt;&lt;span&gt;&lt;span&gt;Fire.airnow.gov&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;&lt;span&gt;, &lt;/span&gt;&lt;/span&gt;&lt;a href="https://oakridgeair.org/smoke"&gt;&lt;span&gt;&lt;span&gt;oakridgeair.org&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;&lt;span&gt;, y &lt;/span&gt;&lt;/span&gt;&lt;a href="https://www.lrapa.org/216/Todays-Current-Air-Quality"&gt;&lt;span&gt;&lt;span&gt;LRAPA - Today's Current Air&lt;/span&gt;&lt;/span&gt;&lt;/a&gt; &lt;a href="https://www.lrapa.org/216/Todays-Current-Air-Quality"&gt;&lt;span&gt;&lt;span&gt;Quality&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;&lt;span&gt;. &lt;/span&gt;&lt;/span&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;Pronósticos del humo están disponibles en &lt;/span&gt;&lt;a href="https://outlooks.wildlandfiresmoke.net/outlook"&gt;&lt;span&gt;https://outlooks.wildlandfiresmoke.net/outlook&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;&lt;span&gt;Evacuaciones: &lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;&lt;span&gt;Las evacuaciones que estaban en pie, han sido levantadas para el condado de Lane. Por  favor, si necesita información actualizada en los cambios dados en el incendio visite,  &lt;/span&gt;&lt;/span&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;&lt;a href="https://www.lanecountyor.gov/cms/one.aspx?pageId=18859722"&gt;&lt;span&gt;&lt;span&gt;Lane County Sheriff’s Office&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;&lt;span&gt;&lt;span&gt;,&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; &lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;&lt;span&gt;541-682-4150&lt;span&gt;  y la Oficina del Alguacil del condado de Deschutes &lt;/span&gt;(&lt;/span&gt;&lt;/span&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;&lt;a href="https://www.deschutes.org/sheriff/page/evacuation-notices"&gt;&lt;span&gt;&lt;span&gt;Deschutes County Sheriff’s Office&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;&lt;span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;&lt;span&gt;, &lt;/span&gt;&lt;/span&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;&lt;span&gt;541-693-6911&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;Online: &lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;a href="https://inciweb.nwcg.gov/incident/8307/"&gt;&lt;strong&gt;&lt;span lang="EN-US" xml:lang="EN-US" xml:lang="EN-US"&gt;&lt;span&gt;&lt;span&gt;https://inciweb.nwcg.gov/incident/8307/&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;a href="https://www.facebook.com/CedarCreekFire2022/"&gt;&lt;strong&gt;&lt;span lang="EN-US" xml:lang="EN-US" xml:lang="EN-US"&gt;&lt;span&gt;&lt;span&gt;www.facebook.com/CedarCreekFire2022/&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;a href="http://www.tinyurl.com/cedarcreekfireyoutube"&gt;&lt;strong&gt;&lt;span lang="EN-US" xml:lang="EN-US" xml:lang="EN-US"&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;www.tinyurl.com/cedarcreekfireyoutube&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;&lt;span&gt;Línea informativa: 541-201-2335, 8:00 AM – 8:00 PM&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;&lt;span&gt;Para consultas con Medios comunicativos: 541-327-9925&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;&lt;span&gt;Email: &lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;a href="mailto:2022.cedarcreek@firenet.gov"&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;2022.cedarcreek@firenet.gov&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;Online: &lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;span lang="es-419" xml:lang="es-419" xml:lang="es-419"&gt;&lt;span&gt;&lt;a href="https://inciweb.nwcg.gov/incident/8307/"&gt;&lt;strong&gt;&lt;span lang="EN-US" xml:lang="EN-US" xml:lang="EN-US"&gt;&lt;span&gt;&lt;span&gt;https://inciweb.nwcg.gov/incident/8307/&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+              &lt;/div&gt;
+
+
+  &lt;div class="field field--name-field-related-fire-incident field--type-entity-reference field--label-above"&gt;
+    &lt;div class="title"&gt;Incident&lt;/div&gt;
+        &lt;div&gt;
+                    &lt;div class="field__item"&gt;&lt;a href="http://inciweb.wildfire.gov/orwif-cedar-creek-fire" hreflang="en"&gt;Cedar Creek Fire&lt;/a&gt;&lt;/div&gt;
+                &lt;/div&gt;
+      &lt;/div&gt;
+</description>
+  <pubDate>Thu, 27 Oct 2022 18:47:25 +0000</pubDate>
+    <dc:creator>jerrymcadams</dc:creator>
+    <guid isPermaLink="false">312535 at http://inciweb.wildfire.gov</guid>
+    </item>
+<item>
+  <title>Cedar Creek Fire Update - October 27, 2022</title>
+  <link>http://inciweb.wildfire.gov/node/312534</link>
+  <description>
+&lt;span&gt;Cedar Creek Fire Update - October 27, 2022&lt;/span&gt;
+
+&lt;span&gt;&lt;span lang="" about="http://inciweb.wildfire.gov/user/6847" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;jerrymcadams&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Thu, 10/27/2022 - 14:02&lt;/span&gt;
+
+
+  &lt;div class="field field--name-field-announcement-type field--type-entity-reference field--label-above"&gt;
+    &lt;div class="title"&gt;Publication Type&lt;/div&gt;
+                  &lt;div class="field__item"&gt;&lt;a href="http://inciweb.wildfire.gov/taxonomy/term/377" hreflang="en"&gt;News&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+
+
+  &lt;div class="field field--name-field-announcement-content field--type-text-long field--label-above"&gt;
+    &lt;div class="title"&gt;Publication Content&lt;/div&gt;
+                  &lt;div class="field__item"&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;Cedar Creek Fire Quick &lt;span&gt;Facts&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;Size: &lt;/span&gt;&lt;/strong&gt;&lt;span&gt;127,283 acres&lt;/span&gt;&lt;strong&gt;             &lt;span&gt;            Origin: &lt;/span&gt;&lt;/strong&gt;&lt;span&gt;15 miles E of Oakridge, OR&lt;/span&gt;&lt;strong&gt;&lt;span&gt;             Resources: &lt;/span&gt;&lt;/strong&gt;&lt;span&gt;4 engines;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;Containment: &lt;/span&gt;&lt;/strong&gt;&lt;span&gt;60%&lt;/span&gt;                          &lt;strong&gt;&lt;span&gt;Cause: &lt;/span&gt;&lt;/strong&gt;&lt;span&gt;Lightning&lt;/span&gt;                                          &lt;span&gt;2 crews; 1 helicopter;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;Total personnel: &lt;/span&gt;&lt;/strong&gt;&lt;span&gt;222&lt;/span&gt;                       &lt;strong&gt;&lt;span&gt;Start Date:&lt;/span&gt;&lt;/strong&gt;&lt;span&gt; August 1, 2022&lt;/span&gt;              &lt;span&gt;            2 Masticators&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;          **Community Meeting is today at the Oakridge Highschool Auditorium 5:30 p.m.** &lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;       **Community Meeting to be livestreamed on the “Cedar Creek Fire” Facebook page.** &lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;Weather:&lt;/span&gt;&lt;/strong&gt;  Thursday will be noticeably drier and warmer with high temperatures in the mid 50s.  There will be considerable high clouds and intermittent sunshine. Relative humidity will dip to its lowest point in several days but remain above 50%. The dry weather is anticipated to continue until Friday night when the light rain and snow may return.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;Operations:  &lt;/span&gt;&lt;/strong&gt;&lt;span&gt;With the recent precipitation, firefighter safety in and near the fire line continues to be top priority. Travel routes remain closely monitored and patrolled to ensure the health and safety of fire personnel. As access continues to improve, fire crews will return to the fire line to complete repair and rehab of handlines and dozer lines.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;Smoke continues to be generated in heavy fuels and deep layers. Although the amount of smoke is slowly becoming less and less, with a short dry period coming today and tomorrow, those areas holding heat have the potential to smolder, burn, and generate more smoke than has been seen the past few days. Air quality may be impacted until the next wet weather system moves through over the weekend.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;As the transition to a smaller fire organization and footprint at the Oakridge fire camp continue, be aware of increased traffic involving larger equipment and trailers along Highway 58.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;Closures: &lt;/span&gt;&lt;/strong&gt;&lt;span&gt;There are updated, reduced closures in effect on both the Deschutes National Forest and Willamette National Forest. These closures will remain in place until areas impacted by the fire are surveyed for safety risks and fire crews are able to mitigate these hazards. Please respect Forest closures for firefighter and public safety. Please visit &lt;/span&gt;&lt;a href="https://www.fs.usda.gov/alerts/willamette/alerts-notices"&gt;&lt;span&gt;&lt;span&gt;Willamette National Forest&lt;/span&gt;&lt;/span&gt;&lt;/a&gt; &lt;span&gt;and &lt;/span&gt;&lt;a href="https://www.fs.usda.gov/alerts/deschutes/alerts-notices"&gt;&lt;span&gt;&lt;span&gt;Deschutes&lt;/span&gt;&lt;/span&gt;&lt;/a&gt; &lt;a href="https://www.fs.usda.gov/alerts/deschutes/alerts-notices"&gt;&lt;span&gt;&lt;span&gt;National Forest&lt;/span&gt;&lt;/span&gt;&lt;/a&gt; &lt;span&gt;for the most recent closure orders and maps. Pacific Crest Trail hikers should visit &lt;/span&gt;&lt;a href="https://www.pcta.org/"&gt;&lt;span&gt;&lt;span&gt;pcta.org&lt;/span&gt;&lt;/span&gt;&lt;/a&gt; &lt;span&gt;for current information. &lt;span&gt;&lt;span&gt;The &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;a href="https://tfr.faa.gov/tfr2/list.jsp"&gt;&lt;span&gt;&lt;span&gt;Temporary Flight Restriction&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt; over the Cedar Creek Fire area has been lifted due to a reduction of aircraft needs for fire operations.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;Smoke&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;:&lt;span&gt; Air quality conditions due to smoke are expected to range from good to moderate within the forecast area. &lt;/span&gt;For current conditions, see &lt;/span&gt;&lt;a href="https://fire.airnow.gov/"&gt;&lt;span&gt;&lt;span&gt;Fire.airnow.gov&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;span&gt;&lt;span&gt;, &lt;/span&gt;&lt;/span&gt;&lt;a href="https://oakridgeair.org/smoke"&gt;&lt;span&gt;&lt;span&gt;oakridgeair.org&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;span&gt;&lt;span&gt;, and &lt;/span&gt;&lt;/span&gt;&lt;a href="https://www.lrapa.org/216/Todays-Current-Air-Quality"&gt;&lt;span&gt;&lt;span&gt;LRAPA - Today's Current Air&lt;/span&gt;&lt;/span&gt;&lt;/a&gt; &lt;a href="https://www.lrapa.org/216/Todays-Current-Air-Quality"&gt;&lt;span&gt;&lt;span&gt;Quality&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;span&gt;&lt;span&gt;. &lt;/span&gt;&lt;/span&gt;&lt;span&gt;Smoke Forecast Outlooks are available at &lt;/span&gt;&lt;a href="https://outlooks.wildlandfiresmoke.net/outlook"&gt;&lt;span&gt;&lt;span&gt;https://outlooks.wildlandfiresmoke.net/outlook&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;span&gt;.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;Evacuations: &lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;&lt;span&gt;The remaining evacuations for Lane County have been lifted. Please check with &lt;/span&gt;&lt;/span&gt;&lt;a href="https://www.lanecountyor.gov/cms/one.aspx?pageId=18859722"&gt;&lt;span&gt;&lt;span&gt;Lane County Sheriff’s Office&lt;/span&gt;&lt;/span&gt;&lt;/a&gt; &lt;span&gt;&lt;span&gt;at 541-682-4150 and &lt;/span&gt;&lt;/span&gt;&lt;a href="https://www.deschutes.org/sheriff/page/evacuation-notices"&gt;&lt;span&gt;&lt;span&gt;Deschutes County Sheriff’s Office&lt;/span&gt;&lt;/span&gt;&lt;/a&gt; &lt;span&gt;&lt;span&gt;at 541-693-6911 for updates and changes.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;Online: &lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;a href="https://inciweb.nwcg.gov/incident/8307/"&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;https://inciweb.nwcg.gov/incident/8307/&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;a href="https://www.facebook.com/CedarCreekFire2022/"&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;www.facebook.com/CedarCreekFire2022/&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;a href="http://www.tinyurl.com/cedarcreekfireyoutube"&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;www.tinyurl.com/cedarcreekfireyoutube&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;Fire Information Line: 541-201-2335, 8:00 AM – 8:00 PM&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;For Media Inquiries: 541-327-9925 | Email: &lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;&lt;span&gt;&lt;a href="mailto:2022.cedarcreek@firenet.gov"&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;2022.cedarcreek@firenet.gov&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+              &lt;/div&gt;
+
+
+  &lt;div class="field field--name-field-related-fire-incident field--type-entity-reference field--label-above"&gt;
+    &lt;div class="title"&gt;Incident&lt;/div&gt;
+        &lt;div&gt;
+                    &lt;div class="field__item"&gt;&lt;a href="http://inciweb.wildfire.gov/orwif-cedar-creek-fire" hreflang="en"&gt;Cedar Creek Fire&lt;/a&gt;&lt;/div&gt;
+                &lt;/div&gt;
+      &lt;/div&gt;
+</description>
+  <pubDate>Thu, 27 Oct 2022 18:02:14 +0000</pubDate>
+    <dc:creator>jerrymcadams</dc:creator>
+    <guid isPermaLink="false">312534 at http://inciweb.wildfire.gov</guid>
+    </item>
+<item>
+  <title>Goat Rocks, Siouxon and Sunset Fires Update, October 27, 2022</title>
+  <link>http://inciweb.wildfire.gov/node/312533</link>
+  <description>
+&lt;span&gt;Goat Rocks, Siouxon and Sunset Fires Update, October 27, 2022&lt;/span&gt;
+
+&lt;span&gt;&lt;span lang="" about="http://inciweb.wildfire.gov/user/4314" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;mhuels&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Thu, 10/27/2022 - 12:47&lt;/span&gt;
+
+
+  &lt;div class="field field--name-field-announcement-type field--type-entity-reference field--label-above"&gt;
+    &lt;div class="title"&gt;Publication Type&lt;/div&gt;
+                  &lt;div class="field__item"&gt;&lt;a href="http://inciweb.wildfire.gov/taxonomy/term/377" hreflang="en"&gt;News&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+
+
+  &lt;div class="field field--name-field-announcement-content field--type-text-long field--label-above"&gt;
+    &lt;div class="title"&gt;Publication Content&lt;/div&gt;
+                  &lt;div class="field__item"&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;Resources return home amid season-ending weather events&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;Current Situation: &lt;/span&gt;&lt;/strong&gt;&lt;span&gt;The wet conditions that had persisted over the Goat Rocks, Siouxon, and Sunset fires briefly lifted on Wednesday. Certainty has built that recent and forecasted precipitation will be a season-ending event for wildland fires in the area. Fire resources no longer needed for remaining fire suppression activities are being released from the incident. Traffic is expected to be heavy in Packwood on Thursday as firefighters begin returning home to prepare for their next assignment. The brief break in weather between storm systems gave pilots an opportunity to move the four helicopters that had been stationed at the Packwood Airport to other locations. &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;On Thursday, crews remaining on the Goat Rocks Fire will continue the previous days’ work of patrolling areas along the fires’ perimeters where it is safe to do so. They will continue post-fire suppression cleanup – removing the remaining equipment, flagging, and all other items left after the past weeks of firefighting. On the Siouxon and Sunset fires, crews will continue patrolling the area and addressing remaining hot spots near the fire’s edge that they can safely engage. &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;As temperatures warm slightly and there is a pause in precipitation between storms, areas within the fires’ perimeters will continue to hold heat as fallen trees, stumps, and thick duff continue to smolder. While there is a great amount of certainty that the fires will not become active again, interior fuels will continue to produce smoke and flames may be visible in the understory that is sheltered from light rains. Smoke and low-intensity flames are expected to continue until soils and fuels in the duff layer become saturated. &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;Weather Information: &lt;/span&gt;&lt;/strong&gt;&lt;span&gt;Today is expected to be relatively dry, followed by several more days of rain. Slower speeds are highly recommended when driving, especially in areas where firefighters or equipment are present. Current weather conditions will keep fire activity at a minimum, but smoke may be visible at times. &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;Forest Closures: &lt;/span&gt;&lt;/strong&gt;&lt;span&gt;A full list of closures in place for the Goat Rocks, Siouxon, and Sunset fires can be found under “Alerts &amp; Notices” on the &lt;/span&gt;&lt;a href="blank"&gt;&lt;span&gt;&lt;span&gt;Gifford Pinchot National Forest website&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;span&gt;. Although fire activity has abated, closure areas still contain fire-weakened trees, pockets of heat, and other hazards. Forest officials urge the public to continue to observe the closures for both public and firefighter safety. Forest closures around all three fires are expected to remain in place through fall and beyond. &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;Fire Danger:&lt;/span&gt;&lt;/strong&gt;&lt;span&gt; The Fire Danger Rating on the Gifford Pinchot National Forest is LOW. Industrial Fire Precaution Level (IFPL) Zones 659S (Goat Rocks Fire) and 660 (Siouxon and Sunset fires) are Level I on USFS lands. &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;Temporary Flight Restrictions:&lt;/span&gt;&lt;/strong&gt;&lt;span&gt; A Temporary Flight Restriction remains in place on the Goat Rocks Fire. Wildfires are a No Drone Zone. If you fly, we can’t. Whenever a drone is spotted near the fire, all aircraft are grounded until we can ensure the drone is clear of the area. For more information, please visit &lt;/span&gt;&lt;a href="blank"&gt;&lt;span&gt;&lt;span&gt;http://knowbeforeyoufly.org&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;span&gt;.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+              &lt;/div&gt;
+
+
+  &lt;div class="field field--name-field-related-fire-incident field--type-entity-reference field--label-above"&gt;
+    &lt;div class="title"&gt;Incident&lt;/div&gt;
+        &lt;div&gt;
+                    &lt;div class="field__item"&gt;&lt;a href="http://inciweb.wildfire.gov/wagpf-siouxon-and-sunset-fires" hreflang="en"&gt;Siouxon and Sunset Fires&lt;/a&gt;&lt;/div&gt;
+                &lt;/div&gt;
+      &lt;/div&gt;
+</description>
+  <pubDate>Thu, 27 Oct 2022 16:47:24 +0000</pubDate>
+    <dc:creator>mhuels</dc:creator>
+    <guid isPermaLink="false">312533 at http://inciweb.wildfire.gov</guid>
+    </item>
+<item>
+  <title>Goat Rocks, Siouxon and Sunset Update, October 27, 2022</title>
+  <link>http://inciweb.wildfire.gov/node/312532</link>
+  <description>
+&lt;span&gt;Goat Rocks, Siouxon and Sunset Update, October 27, 2022&lt;/span&gt;
+
+&lt;span&gt;&lt;span lang="" about="http://inciweb.wildfire.gov/user/4314" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;mhuels&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Thu, 10/27/2022 - 12:39&lt;/span&gt;
+
+
+  &lt;div class="field field--name-field-announcement-type field--type-entity-reference field--label-above"&gt;
+    &lt;div class="title"&gt;Publication Type&lt;/div&gt;
+                  &lt;div class="field__item"&gt;&lt;a href="http://inciweb.wildfire.gov/taxonomy/term/377" hreflang="en"&gt;News&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+
+
+  &lt;div class="field field--name-field-announcement-content field--type-text-long field--label-above"&gt;
+    &lt;div class="title"&gt;Publication Content&lt;/div&gt;
+                  &lt;div class="field__item"&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;Resources return home amid season-ending weather events&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;Current Situation: &lt;/span&gt;&lt;/strong&gt;&lt;span&gt;The wet conditions that had persisted over the Goat Rocks, Siouxon, and Sunset fires briefly lifted on Wednesday. Certainty has built that recent and forecasted precipitation will be a season-ending event for wildland fires in the area. Fire resources no longer needed for remaining fire suppression activities are being released from the incident. Traffic is expected to be heavy in Packwood on Thursday as firefighters begin returning home to prepare for their next assignment. The brief break in weather between storm systems gave pilots an opportunity to move the four helicopters that had been stationed at the Packwood Airport to other locations. &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;On Thursday, crews remaining on the Goat Rocks Fire will continue the previous days’ work of patrolling areas along the fires’ perimeters where it is safe to do so. They will continue post-fire suppression cleanup – removing the remaining equipment, flagging, and all other items left after the past weeks of firefighting. On the Siouxon and Sunset fires, crews will continue patrolling the area and addressing remaining hot spots near the fire’s edge that they can safely engage. &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;As temperatures warm slightly and there is a pause in precipitation between storms, areas within the fires’ perimeters will continue to hold heat as fallen trees, stumps, and thick duff continue to smolder. While there is a great amount of certainty that the fires will not become active again, interior fuels will continue to produce smoke and flames may be visible in the understory that is sheltered from light rains. Smoke and low-intensity flames are expected to continue until soils and fuels in the duff layer become saturated. &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;Weather Information: &lt;/span&gt;&lt;/strong&gt;&lt;span&gt;Today is expected to be relatively dry, followed by several more days of rain. Slower speeds are highly recommended when driving, especially in areas where firefighters or equipment are present. Current weather conditions will keep fire activity at a minimum, but smoke may be visible at times. &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;Forest Closures: &lt;/span&gt;&lt;/strong&gt;&lt;span&gt;A full list of closures in place for the Goat Rocks, Siouxon, and Sunset fires can be found under “Alerts &amp; Notices” on the &lt;/span&gt;&lt;a href="blank"&gt;&lt;span&gt;&lt;span&gt;Gifford Pinchot National Forest website&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;span&gt;. Although fire activity has abated, closure areas still contain fire-weakened trees, pockets of heat, and other hazards. Forest officials urge the public to continue to observe the closures for both public and firefighter safety. Forest closures around all three fires are expected to remain in place through fall and beyond. &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;Fire Danger:&lt;/span&gt;&lt;/strong&gt;&lt;span&gt; The Fire Danger Rating on the Gifford Pinchot National Forest is LOW. Industrial Fire Precaution Level (IFPL) Zones 659S (Goat Rocks Fire) and 660 (Siouxon and Sunset fires) are Level I on USFS lands. &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;Temporary Flight Restrictions:&lt;/span&gt;&lt;/strong&gt;&lt;span&gt; A Temporary Flight Restriction remains in place on the Goat Rocks Fire. Wildfires are a No Drone Zone. If you fly, we can’t. Whenever a drone is spotted near the fire, all aircraft are grounded until we can ensure the drone is clear of the area. For more information, please visit &lt;/span&gt;&lt;a href="blank"&gt;&lt;span&gt;&lt;span&gt;http://knowbeforeyoufly.org&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;span&gt;.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+              &lt;/div&gt;
+
+
+  &lt;div class="field field--name-field-related-fire-incident field--type-entity-reference field--label-above"&gt;
+    &lt;div class="title"&gt;Incident&lt;/div&gt;
+        &lt;div&gt;
+                    &lt;div class="field__item"&gt;&lt;a href="http://inciweb.wildfire.gov/wagpf-goat-rocks-fire" hreflang="en"&gt;Goat Rocks Fire&lt;/a&gt;&lt;/div&gt;
+                &lt;/div&gt;
+      &lt;/div&gt;
+</description>
+  <pubDate>Thu, 27 Oct 2022 16:39:18 +0000</pubDate>
+    <dc:creator>mhuels</dc:creator>
+    <guid isPermaLink="false">312532 at http://inciweb.wildfire.gov</guid>
+    </item>
+
+  </channel>
+</rss>
